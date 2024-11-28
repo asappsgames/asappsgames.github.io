@@ -298,4 +298,70 @@ footer {
     .footer-links a {
         margin: 0 1rem;
     }
+
+    /* Add these styles to your existing styles.css */
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6rem 2rem 2rem;
+}
+
+.contact-container {
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-email {
+    text-align: center;
+}
+
+.contact-email h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.contact-email p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.email-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.email-button:hover {
+    transform: scale(1.05);
+}
+
 }
