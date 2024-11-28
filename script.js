@@ -1,43 +1,48 @@
-// Create script.js file
 document.addEventListener('DOMContentLoaded', function() {
     const sliders = document.querySelectorAll('.game-slider');
     
     sliders.forEach(slider => {
-        const screenshots = [
-            'Images/color-blocks/screenshot1.png',
-            'Images/color-blocks/screenshot2.png',
-            'Images/color-blocks/screenshot3.png'
-        ];
+        const screenshots = slider.querySelectorAll('.screenshot-container');
         const dots = slider.querySelectorAll('.slider-dot');
-        const img = slider.querySelector('.game-screenshot');
         let currentIndex = 0;
 
-        // Add click event to each dot
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                updateSlider();
-            });
-        });
-
-        function updateSlider() {
-            // Update image
-            img.src = screenshots[currentIndex];
-            
-            // Update dots
+        // Only run slider on mobile
+        if (window.innerWidth < 1024) {
+            // Add click event to each dot
             dots.forEach((dot, index) => {
-                if (index === currentIndex) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                });
             });
-        }
 
-        // Optional: Auto-slide every 5 seconds
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % screenshots.length;
-            updateSlider();
-        }, 5000);
+            function updateSlider() {
+                // Update screenshots
+                screenshots.forEach((screenshot, index) => {
+                    if (index === currentIndex) {
+                        screenshot.classList.add('active');
+                    } else {
+                        screenshot.classList.remove('active');
+                    }
+                });
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            // Auto-slide every 5 seconds on mobile
+            setInterval(() => {
+                if (window.innerWidth < 1024) {
+                    currentIndex = (currentIndex + 1) % screenshots.length;
+                    updateSlider();
+                }
+            }, 5000);
+        }
     });
-}); 
+});

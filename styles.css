@@ -123,14 +123,60 @@ main {
 
 .game-slider {
     position: relative;
-    height: 600px;
     overflow: hidden;
 }
 
-.game-screenshot {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Desktop View */
+@media (min-width: 1024px) {
+    .game-slider {
+        display: flex;
+        gap: 1rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .screenshot-container {
+        flex: 1;
+        aspect-ratio: 9/16;
+        position: relative;
+    }
+
+    .game-screenshot {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 0.5rem;
+    }
+
+    .slider-nav {
+        display: none; /* Hide dots on desktop as all images are visible */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 1023px) {
+    .game-slider {
+        height: 600px;
+        padding: 1rem;
+    }
+
+    .screenshot-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .screenshot-container.active {
+        opacity: 1;
+    }
+
+    .game-screenshot {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .slider-nav {
