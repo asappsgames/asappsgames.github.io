@@ -1,31 +1,262 @@
-/*** Previous CSS remains the same until screenshot-container ***/
+/* Modern dark theme with game-inspired colors */
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --accent-blue: #0066ff;
+    --accent-purple: #8000ff;
+    --accent-hover: #2563eb;
+    --card-bg: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+header {
+    background-color: var(--bg-secondary);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+}
+
+.nav-links a.active {
+    color: var(--accent-blue);
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 5rem;
+    min-height: calc(100vh - 100px);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 2rem;
+    background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Games Section */
+.games {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+}
+
+.games-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/* Game Card Styles */
+.game-card {
+    background-color: var(--card-bg);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.game-slider {
+    position: relative;
+    overflow: hidden;
+}
 
 .screenshot-container {
     position: relative;
-    aspect-ratio: 1/2; /* Changed from 9/16 to 1/2 to make it taller */
-    padding: 0.5rem; /* Added padding to prevent image touching the edges */
+    aspect-ratio: 1/2;
+    padding: 0.5rem;
 }
 
 .game-screenshot {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Changed from cover to contain to show full image */
+    object-fit: contain;
     border-radius: 0.5rem;
 }
 
-/*** Rest of the CSS remains the same until mobile styles ***/
+.slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: var(--accent-blue);
+}
+
+.game-content {
+    padding: 2rem;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-blue);
+}
+
+.feature-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+    background: var(--accent-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+.game-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* App Store Button */
+.app-store-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.app-store-button:hover {
+    transform: scale(1.05);
+}
+
+.app-store-button img {
+    width: 160px;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--bg-secondary);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-blue);
+}
+
+.copyright {
+    color: var(--text-secondary);
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    /*** Previous mobile styles remain the same ***/
+    .nav-links {
+        display: none;
+    }
+
+    .game-card {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+    }
 
     .game-slider {
-        flex: 0 0 45%; /* Slightly reduced from 50% to maintain proportions */
+        flex: 0 0 45%;
         margin: 0;
     }
 
     .screenshot-container {
-        aspect-ratio: 1/2; /* Consistent with desktop */
+        aspect-ratio: 1/2;
     }
 
     .game-screenshot {
@@ -34,7 +265,47 @@
         height: 100%;
     }
 
-    /*** Rest of the mobile styles remain the same ***/
+    .game-content {
+        flex: 1;
+        padding: 0;
+    }
+
+    .feature-tags {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .feature-tag {
+        text-align: center;
+    }
+
+    .game-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .game-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+        margin: 0 1rem;
+    }
+
+    .app-store-button img {
+        width: 140px;
+    }
 }
 
 /* Desktop Specific Styles */
@@ -44,7 +315,7 @@
         gap: 1rem;
         height: auto;
         padding: 1rem;
-        min-height: 600px; /* Added minimum height for desktop */
+        min-height: 600px;
     }
 
     .screenshot-container {
@@ -52,5 +323,7 @@
         aspect-ratio: 1/2;
     }
 
-    /*** Rest of the desktop styles remain the same ***/
+    .slider-nav {
+        display: none;
+    }
 }
