@@ -1,10 +1,11 @@
-/* Modern dark theme with subtle gradients */
+/* Modern dark theme with game-inspired colors */
 :root {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
     --text-primary: #e2e8f0;
     --text-secondary: #94a3b8;
-    --accent: #3b82f6;
+    --accent-blue: #0066ff;
+    --accent-purple: #8000ff;
     --accent-hover: #2563eb;
     --card-bg: #1e293b;
 }
@@ -22,6 +23,7 @@ body {
     line-height: 1.6;
 }
 
+/* Navigation Styles */
 header {
     background-color: var(--bg-secondary);
     padding: 1rem 0;
@@ -44,7 +46,10 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--accent);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .nav-links a {
@@ -55,13 +60,14 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--accent);
+    color: var(--accent-blue);
 }
 
 .nav-links a.active {
-    color: var(--accent);
+    color: var(--accent-blue);
 }
 
+/* Main Content Styles */
 main {
     padding-top: 5rem;
     min-height: calc(100vh - 100px);
@@ -76,6 +82,11 @@ main {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
 
 .hero p {
@@ -83,6 +94,7 @@ main {
     font-size: 1.2rem;
 }
 
+/* Games Grid Styles */
 .games {
     max-width: 1200px;
     margin: 0 auto;
@@ -96,52 +108,104 @@ main {
     margin-top: 2rem;
 }
 
+/* Game Card Styles */
 .game-card {
     background-color: var(--card-bg);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     overflow: hidden;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .game-card:hover {
     transform: translateY(-5px);
 }
 
-.game-image {
+.game-slider {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.game-screenshot {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
 }
 
+.slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: var(--accent-blue);
+}
+
 .game-content {
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .game-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-blue);
 }
 
 .game-description {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.game-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
 }
 
 .app-store-button {
-    display: inline-block;
-    background-color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    font-weight: 500;
 }
 
 .app-store-button:hover {
-    background-color: var(--accent-hover);
+    transform: scale(1.05);
 }
 
+.app-store-button img {
+    width: 24px;
+    margin-right: 0.5rem;
+}
+
+/* Footer Styles */
 footer {
     background-color: var(--bg-secondary);
     padding: 2rem 0;
@@ -161,10 +225,11 @@ footer {
     color: var(--text-secondary);
     text-decoration: none;
     margin-right: 2rem;
+    transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: var(--accent);
+    color: var(--accent-blue);
 }
 
 .copyright {
@@ -173,6 +238,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .game-slider {
+        height: 400px;
+    }
+    
     .nav-links {
         display: none;
     }
