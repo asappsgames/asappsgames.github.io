@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     sliders.forEach(slider => {
         const screenshots = [
-            'images/color-blocks/screenshot1.png',
-            'images/color-blocks/screenshot2.png',
-            'images/color-blocks/screenshot3.png'
+            'Images/color-blocks/screenshot1.png',
+            'Images/color-blocks/screenshot2.png',
+            'Images/color-blocks/screenshot3.png'
         ];
         const dots = slider.querySelectorAll('.slider-dot');
         const img = slider.querySelector('.game-screenshot');
@@ -40,4 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
             updateSlider();
         }, 5000);
     });
-});
+}); 
