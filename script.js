@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let currentIndex = 0;
 
         // Only run slider on mobile
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 769) {
             // Add click event to each dot
             dots.forEach((dot, index) => {
                 dot.addEventListener('click', () => {
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             function updateSlider() {
-                // Update screenshots
                 screenshots.forEach((screenshot, index) => {
                     if (index === currentIndex) {
                         screenshot.classList.add('active');
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 
-                // Update dots
                 dots.forEach((dot, index) => {
                     if (index === currentIndex) {
                         dot.classList.add('active');
@@ -36,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
 
-            // Auto-slide every 5 seconds on mobile
+            // Auto-slide every 5 seconds
             setInterval(() => {
-                if (window.innerWidth < 1024) {
+                if (window.innerWidth < 769) {
                     currentIndex = (currentIndex + 1) % screenshots.length;
                     updateSlider();
                 }
