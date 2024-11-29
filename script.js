@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.alt = `${gameFolder} Gameplay`;
                 img.className = 'game-screenshot';
                 container.appendChild(img);
-                slider.insertBefore(container, slider.firstChild);
+                slider.insertBefore(container, slider.querySelector('.slider-nav'));
             });
 
             // Create navigation dots
