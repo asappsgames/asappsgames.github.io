@@ -50,6 +50,8 @@ nav {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-decoration: none; /* Added this */
+    cursor: pointer; /* Added this */
 }
 
 .nav-links a {
