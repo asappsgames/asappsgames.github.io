@@ -76,7 +76,7 @@ main {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 2rem 2rem 1rem; /* Reduced bottom padding */
+    padding: 2rem 2rem 1rem;
     background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
     margin-bottom: 0.2rem;
 }
@@ -106,7 +106,7 @@ main {
 
 .games-grid {
     display: grid;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 0.2rem;
 }
 
@@ -117,7 +117,7 @@ main {
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    padding-bottom: 1rem; /* Add some padding at the bottom */
+    padding-bottom: 1rem;
 }
 
 .game-slider {
@@ -312,17 +312,17 @@ footer {
 @media (min-width: 769px) {
     .game-slider {
         display: grid;
-        grid-template-columns: repeat(6, 1fr); /* Exactly 6 columns */
+        grid-template-columns: repeat(6, 1fr);
         gap: 0.5rem;
         padding: 0.5rem;
-        height: 450px; /* Fixed height that works well with 6 screenshots */
+        height: 450px;
         background-color: var(--bg-primary);
     }
 
     .screenshot-container {
         height: 100%;
         width: 100%;
-        display: block !important; /* Always show all screenshots on desktop */
+        display: block !important;
     }
 
     .game-screenshot {
@@ -332,6 +332,12 @@ footer {
     }
 
     .slider-nav {
-        display: none; /* No need for navigation dots on desktop */
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
