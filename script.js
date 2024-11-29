@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const gameFolder = slider.dataset.game;
         const screenshots = [];
         let currentIndex = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
 
         // Function to check if an image exists
         async function imageExists(url) {
@@ -63,9 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 nav.appendChild(dot);
             });
 
-            // Add click events to dots
-            const dots = slider.querySelectorAll('.slider-dot');
+            // Add click events to dots and touch events for swipe
             if (window.innerWidth < 769) {
+                // Dot navigation
+                const dots = slider.querySelectorAll('.slider-dot');
                 dots.forEach((dot, index) => {
                     dot.addEventListener('click', () => {
                         currentIndex = index;
@@ -73,13 +76,45 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 });
 
-                // Auto-slide every 5 seconds on mobile
+                // Touch events for swipe
+                slider.addEventListener('touchstart', (e) => {
+                    touchStartX = e.touches[0].clientX;
+                });
+
+                slider.addEventListener('touchmove', (e) => {
+                    // Prevent default scrolling while swiping
+                    e.preventDefault();
+                });
+
+                slider.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].clientX;
+                    handleSwipe();
+                });
+
+                // Auto-slide every 5 seconds on mobile (only if not recently swiped)
                 setInterval(() => {
                     if (window.innerWidth < 769) {
                         currentIndex = (currentIndex + 1) % screenshots.length;
                         updateSlider();
                     }
                 }, 5000);
+            }
+        }
+
+        // Function to handle swipe
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum swipe distance
+            const swipeDistance = touchEndX - touchStartX;
+
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                if (swipeDistance > 0) {
+                    // Swipe right - go to previous
+                    currentIndex = (currentIndex - 1 + screenshots.length) % screenshots.length;
+                } else {
+                    // Swipe left - go to next
+                    currentIndex = (currentIndex + 1) % screenshots.length;
+                }
+                updateSlider();
             }
         }
 
