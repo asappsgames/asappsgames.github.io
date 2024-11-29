@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const screenshots = [];
         let currentIndex = 0;
         let touchStartX = 0;
+        let touchStartY = 0;
         let touchEndX = 0;
+        let touchEndY = 0;
 
         // Function to check if an image exists
         async function imageExists(url) {
@@ -79,19 +81,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Touch events for swipe
                 slider.addEventListener('touchstart', (e) => {
                     touchStartX = e.touches[0].clientX;
+                    touchStartY = e.touches[0].clientY;
                 });
 
                 slider.addEventListener('touchmove', (e) => {
-                    // Prevent default scrolling while swiping
-                    e.preventDefault();
+                    touchEndX = e.touches[0].clientX;
+                    touchEndY = e.touches[0].clientY;
+
+                    // Calculate horizontal and vertical distance
+                    const deltaX = Math.abs(touchEndX - touchStartX);
+                    const deltaY = Math.abs(touchEndY - touchStartY);
+
+                    // If horizontal swipe is more prominent than vertical scroll
+                    if (deltaX > deltaY && deltaX > 10) {
+                        e.preventDefault(); // Prevent scrolling only during horizontal swipes
+                    }
                 });
 
                 slider.addEventListener('touchend', (e) => {
                     touchEndX = e.changedTouches[0].clientX;
+                    touchEndY = e.changedTouches[0].clientY;
                     handleSwipe();
                 });
 
-                // Auto-slide every 5 seconds on mobile (only if not recently swiped)
+                // Auto-slide every 5 seconds on mobile
                 setInterval(() => {
                     if (window.innerWidth < 769) {
                         currentIndex = (currentIndex + 1) % screenshots.length;
@@ -104,10 +117,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Function to handle swipe
         function handleSwipe() {
             const swipeThreshold = 50; // Minimum swipe distance
-            const swipeDistance = touchEndX - touchStartX;
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = Math.abs(touchEndY - touchStartY);
 
-            if (Math.abs(swipeDistance) > swipeThreshold) {
-                if (swipeDistance > 0) {
+            // Only handle horizontal swipes that are more significant than vertical movement
+            if (Math.abs(deltaX) > swipeThreshold && Math.abs(deltaX) > deltaY) {
+                if (deltaX > 0) {
                     // Swipe right - go to previous
                     currentIndex = (currentIndex - 1 + screenshots.length) % screenshots.length;
                 } else {
