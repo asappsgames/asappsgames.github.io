@@ -312,15 +312,21 @@ footer {
     .game-slider {
         display: flex;
         gap: 1rem;
-        height: auto;
+        height: 700px; /* Fixed height instead of auto */
         padding: 1rem;
         min-height: 600px;
     }
 
     .screenshot-container {
         flex: 1;
+        height: 100%; /* Take full height of parent */
         display: block;
-        aspect-ratio: 1/2;
+    }
+
+    .game-screenshot {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 
     .slider-nav {

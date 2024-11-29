@@ -27,23 +27,28 @@ document.addEventListener('DOMContentLoaded', function() {
             while (true) {
                 const imagePath = `Images/${gameFolder}/screenshot${index}.png`;
                 if (await imageExists(imagePath)) {
-                    screenshots.push(imagePath);
+                    screenshots.push({
+                        path: imagePath,
+                        number: index
+                    });
                     index++;
                 } else {
                     break;
                 }
             }
+            // Sort screenshots by number
+            screenshots.sort((a, b) => a.number - b.number);
             initializeSlider();
         }
 
         // Function to create screenshot elements
         function initializeSlider() {
             // Create screenshot containers
-            screenshots.forEach((src, index) => {
+            screenshots.forEach((screenshot, index) => {
                 const container = document.createElement('div');
                 container.className = `screenshot-container ${index === 0 ? 'active' : ''}`;
                 const img = document.createElement('img');
-                img.src = src;
+                img.src = screenshot.path;
                 img.alt = `${gameFolder} Gameplay`;
                 img.className = 'game-screenshot';
                 container.appendChild(img);
