@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASApps Games</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a1a2e'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%230066ff'>A</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor-glow" id="cursorGlow"></div>
     <header>
         <nav>
             <a href="index.html" class="logo">ASApps Games</a>
@@ -16,6 +18,11 @@
                 <a href="Privacy-Policy">Privacy Policy</a>
                 <a href="contact.html">Contact</a>
             </div>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </nav>
     </header>
 
@@ -23,17 +30,23 @@
         <section class="hero">
             <h1>Welcome to ASApps Games</h1>
             <p>Discover our collection of engaging mobile games</p>
+            <div class="hero-badge">5 Games on the App Store</div>
         </section>
 
         <section class="games">
             <div class="games-grid">
                 <!-- Color Blocks -->
                 <div class="game-card">
+                    <div class="card-shine"></div>
+                    <div class="card-border-glow"></div>
                     <div class="game-slider" data-game="color-blocks">
                         <div class="slider-nav"></div>
                     </div>
                     <div class="game-content">
-                        <h2 class="game-title">Color Blocks</h2>
+                        <div class="game-title-row">
+                            <img src="Images/color-blocks/icon.png" alt="Color Blocks icon" class="game-icon">
+                            <h2 class="game-title">Color Blocks</h2>
+                        </div>
                         <div class="feature-tags">
                             <span class="feature-tag">No Pop-up Ads</span>
                             <span class="feature-tag">Easy to Play</span>
@@ -50,11 +63,16 @@
 
                 <!-- Solitaire -->
                 <div class="game-card">
+                    <div class="card-shine"></div>
+                    <div class="card-border-glow"></div>
                     <div class="game-slider" data-game="solitaire">
                         <div class="slider-nav"></div>
                     </div>
                     <div class="game-content">
-                        <h2 class="game-title">Solitaire</h2>
+                        <div class="game-title-row">
+                            <img src="Images/solitaire/icon.png" alt="Solitaire icon" class="game-icon">
+                            <h2 class="game-title">Solitaire</h2>
+                        </div>
                         <div class="feature-tags">
                             <span class="feature-tag">No Pop-up Ads</span>
                             <span class="feature-tag">No Wi-Fi</span>
@@ -71,11 +89,16 @@
 
                 <!-- Sudoku -->
                 <div class="game-card">
+                    <div class="card-shine"></div>
+                    <div class="card-border-glow"></div>
                     <div class="game-slider" data-game="sudoku">
                         <div class="slider-nav"></div>
                     </div>
                     <div class="game-content">
-                        <h2 class="game-title">Sudoku</h2>
+                        <div class="game-title-row">
+                            <img src="Images/sudoku/icon.png" alt="Sudoku icon" class="game-icon">
+                            <h2 class="game-title">Sudoku</h2>
+                        </div>
                         <div class="feature-tags">
                             <span class="feature-tag">No Pop-up Ads</span>
                             <span class="feature-tag">For Every Age</span>
@@ -92,11 +115,16 @@
 
                 <!-- Blocks -->
                 <div class="game-card">
+                    <div class="card-shine"></div>
+                    <div class="card-border-glow"></div>
                     <div class="game-slider" data-game="blocks">
                         <div class="slider-nav"></div>
                     </div>
                     <div class="game-content">
-                        <h2 class="game-title">Blocks</h2>
+                        <div class="game-title-row">
+                            <img src="Images/blocks/icon.png" alt="Blocks icon" class="game-icon">
+                            <h2 class="game-title">Blocks</h2>
+                        </div>
                         <div class="feature-tags">
                             <span class="feature-tag">No Pop-up Ads</span>
                             <span class="feature-tag">Classic Puzzle</span>
@@ -113,11 +141,16 @@
 
                 <!-- Sudoku Blocks -->
                 <div class="game-card">
+                    <div class="card-shine"></div>
+                    <div class="card-border-glow"></div>
                     <div class="game-slider" data-game="sudoku-blocks">
                         <div class="slider-nav"></div>
                     </div>
                     <div class="game-content">
-                        <h2 class="game-title">Sudoku Blocks</h2>
+                        <div class="game-title-row">
+                            <img src="Images/sudoku-blocks/icon.png" alt="Sudoku Blocks icon" class="game-icon">
+                            <h2 class="game-title">Sudoku Blocks</h2>
+                        </div>
                         <div class="feature-tags">
                             <span class="feature-tag">No Pop-up Ads</span>
                             <span class="feature-tag">Fun Puzzle Game</span>
@@ -142,7 +175,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <div class="copyright">
-                © 2024 ASApps Games. All rights reserved.
+                &copy; 2024 ASApps Games. All rights reserved.
             </div>
         </div>
     </footer>

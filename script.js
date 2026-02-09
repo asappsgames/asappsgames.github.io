@@ -159,3 +159,214 @@ document.addEventListener('DOMContentLoaded', function() {
         await findScreenshots();
     });
 });
+
+// --- Scroll Animations ---
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.game-card, .contact-container, .privacy-container');
+
+    animatedElements.forEach(function(el) {
+        el.classList.add('animate-on-scroll');
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.05,
+        rootMargin: '0px 0px 80px 0px'
+    });
+
+    animatedElements.forEach(function(el) {
+        observer.observe(el);
+    });
+});
+
+// --- Mobile Hamburger Menu ---
+document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.querySelector('.hamburger');
+    var navLinks = document.querySelector('.nav-links');
+    if (!hamburger || !navLinks) return;
+
+    // Create overlay element
+    var overlay = document.createElement('div');
+    overlay.className = 'nav-overlay';
+    document.body.appendChild(overlay);
+
+    function toggleMenu() {
+        var isOpen = navLinks.classList.toggle('is-open');
+        hamburger.classList.toggle('is-active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        overlay.classList.toggle('is-visible');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        overlay.classList.remove('is-visible');
+        document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on link click
+    navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeMenu();
+    });
+});
+
+// --- Cursor Glow + Card Tilt (desktop only) ---
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth < 769 || 'ontouchstart' in window) return;
+
+    var cursorGlow = document.getElementById('cursorGlow');
+    var cards = document.querySelectorAll('.game-card');
+    var mouseX = 0;
+    var mouseY = 0;
+    var glowX = 0;
+    var glowY = 0;
+    var rafId = null;
+
+    // Smooth cursor glow with lerp
+    function updateGlow() {
+        glowX += (mouseX - glowX) * 0.15;
+        glowY += (mouseY - glowY) * 0.15;
+        cursorGlow.style.left = glowX + 'px';
+        cursorGlow.style.top = glowY + 'px';
+        rafId = requestAnimationFrame(updateGlow);
+    }
+
+    // --- Particle Trail ---
+    var POOL_SIZE = 50;
+    var pool = [];
+    var poolIndex = 0;
+    var lastTrailX = 0;
+    var lastTrailY = 0;
+    var prevTrailX = 0;
+    var prevTrailY = 0;
+    var trailColors = [
+        'rgba(0, 102, 255, 0.5)',
+        'rgba(60, 130, 255, 0.45)',
+        'rgba(128, 0, 255, 0.4)',
+        'rgba(100, 60, 255, 0.45)',
+        'rgba(0, 170, 255, 0.4)'
+    ];
+
+    // Pre-create particle elements
+    for (var i = 0; i < POOL_SIZE; i++) {
+        var p = document.createElement('div');
+        p.className = 'trail-particle';
+        p.style.display = 'none';
+        document.body.appendChild(p);
+        pool.push(p);
+    }
+
+    function spawnParticle(x, y, vx, vy) {
+        var p = pool[poolIndex];
+        poolIndex = (poolIndex + 1) % POOL_SIZE;
+
+        var size = 3 + Math.random() * 5;
+        var color = trailColors[Math.floor(Math.random() * trailColors.length)];
+        var duration = 0.6 + Math.random() * 0.6;
+        // Slight random spread perpendicular to movement
+        var spread = (Math.random() - 0.5) * 20;
+        var dx = vx * -8 + spread;
+        var dy = vy * -8 + spread;
+
+        p.style.display = 'block';
+        p.style.left = x - size / 2 + 'px';
+        p.style.top = y - size / 2 + 'px';
+        p.style.width = size + 'px';
+        p.style.height = size + 'px';
+        p.style.background = color;
+        p.style.setProperty('--trail-color', color);
+        p.style.setProperty('--trail-duration', duration + 's');
+        p.style.setProperty('--trail-dx', dx + 'px');
+        p.style.setProperty('--trail-dy', dy + 'px');
+        // Restart animation
+        p.style.animation = 'none';
+        p.offsetHeight; // force reflow
+        p.style.animation = '';
+
+        // Hide after animation ends
+        setTimeout(function() { p.style.display = 'none'; }, duration * 1000);
+    }
+
+    document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        if (!cursorGlow.classList.contains('is-active')) {
+            cursorGlow.classList.add('is-active');
+        }
+
+        // Spawn trail particles at distance intervals
+        var dx = mouseX - lastTrailX;
+        var dy = mouseY - lastTrailY;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist > 12) {
+            // Velocity direction (normalized)
+            var vx = dx / dist;
+            var vy = dy / dist;
+            spawnParticle(mouseX, mouseY, vx, vy);
+            // Occasionally spawn an extra particle for density
+            if (dist > 30 && Math.random() > 0.4) {
+                spawnParticle(
+                    mouseX - dx * 0.4 + (Math.random() - 0.5) * 6,
+                    mouseY - dy * 0.4 + (Math.random() - 0.5) * 6,
+                    vx, vy
+                );
+            }
+            lastTrailX = mouseX;
+            lastTrailY = mouseY;
+        }
+    });
+
+    document.addEventListener('mouseleave', function() {
+        cursorGlow.classList.remove('is-active');
+    });
+
+    rafId = requestAnimationFrame(updateGlow);
+
+    // Card tilt + shine effect
+    cards.forEach(function(card) {
+        card.addEventListener('mousemove', function(e) {
+            var rect = card.getBoundingClientRect();
+            var x = e.clientX - rect.left;
+            var y = e.clientY - rect.top;
+            var centerX = rect.width / 2;
+            var centerY = rect.height / 2;
+
+            // Tilt: max 4 degrees
+            var rotateX = ((y - centerY) / centerY) * -4;
+            var rotateY = ((x - centerX) / centerX) * 4;
+
+            card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-4px)';
+            card.style.transition = 'box-shadow 0.3s ease, border-color 0.3s ease';
+
+            // Update shine/glow position via CSS custom properties
+            var percentX = (x / rect.width) * 100;
+            var percentY = (y / rect.height) * 100;
+            card.style.setProperty('--mouse-x', percentX + '%');
+            card.style.setProperty('--mouse-y', percentY + '%');
+        });
+
+        card.addEventListener('mouseleave', function() {
+            card.style.transform = '';
+            card.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease, border-color 0.5s ease';
+            card.style.removeProperty('--mouse-x');
+            card.style.removeProperty('--mouse-y');
+        });
+    });
+});
