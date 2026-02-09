@@ -1318,6 +1318,54 @@ footer::before {
     text-decoration: underline;
 }
 
+/* More Games Section */
+.more-games {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--card-border);
+    text-align: center;
+}
+
+.more-games h2 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.more-games-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.more-game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.more-game-item:hover {
+    color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.more-game-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.more-game-item span {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
 @media (max-width: 768px) {
     .game-detail-section {
         padding: 2rem 1rem;

@@ -27,6 +27,8 @@
     <meta name="twitter:image" content="https://asappsgames.com/Images/color-blocks/screenshot1.png">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a1a2e'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%230066ff'>A</text></svg>">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
@@ -63,6 +65,26 @@
             "@type": "Organization",
             "name": "ASApps Games"
         }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://asappsgames.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Color Blocks",
+                "item": "https://asappsgames.com/color-blocks/"
+            }
+        ]
     }
     </script>
 </head>
@@ -145,6 +167,24 @@
                     <a href="https://apps.apple.com/us/app/color-blocks-wooduko/id1476903896" class="app-store-button" rel="noopener" target="_blank">
                         <img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
                     </a>
+                </div>
+
+                <div class="more-games">
+                    <h2>More Games from ASApps</h2>
+                    <div class="more-games-grid">
+                        <a href="/sudoku/" class="more-game-item">
+                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Ads" class="more-game-icon" loading="lazy">
+                            <span>Sudoku</span>
+                        </a>
+                        <a href="/blocks/" class="more-game-item">
+                            <img src="/Images/blocks/icon.png" alt="Blocks" class="more-game-icon" loading="lazy">
+                            <span>Blocks</span>
+                        </a>
+                        <a href="/sudoku-blocks/" class="more-game-item">
+                            <img src="/Images/sudoku-blocks/icon.png" alt="Sudoku Blocks" class="more-game-icon" loading="lazy">
+                            <span>Sudoku Blocks</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
