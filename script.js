@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // --- Scroll Animations ---
 document.addEventListener('DOMContentLoaded', function() {
-    const animatedElements = document.querySelectorAll('.game-card, .contact-container, .privacy-container');
+    const animatedElements = document.querySelectorAll('.game-card, .contact-container, .privacy-container, .game-detail-container');
 
     animatedElements.forEach(function(el) {
         el.classList.add('animate-on-scroll');
