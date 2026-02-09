@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 img.src = screenshot.path;
                 img.alt = `${gameFolder} Gameplay`;
                 img.className = 'game-screenshot';
+                img.loading = 'lazy';
                 container.appendChild(img);
                 slider.insertBefore(container, slider.querySelector('.slider-nav'));
             });
@@ -339,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     rafId = requestAnimationFrame(updateGlow);
 
-    // Card tilt + shine effect
+    // Card tilt + shine effect (desktop only)
     cards.forEach(function(card) {
         card.addEventListener('mousemove', function(e) {
             var rect = card.getBoundingClientRect();
@@ -367,6 +368,92 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease, border-color 0.5s ease';
             card.style.removeProperty('--mouse-x');
             card.style.removeProperty('--mouse-y');
+        });
+    });
+});
+
+// --- Back to Top Button ---
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+            btn.classList.add('is-visible');
+        } else {
+            btn.classList.remove('is-visible');
+        }
+    });
+
+    btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
+// --- Animated Stats Counter ---
+document.addEventListener('DOMContentLoaded', function() {
+    var statsSection = document.querySelector('.hero-stats');
+    if (!statsSection) return;
+
+    var animated = false;
+
+    function animateCounter(el) {
+        var target = parseFloat(el.dataset.target);
+        var decimals = parseInt(el.dataset.decimals) || 0;
+        var duration = 1500;
+        var start = 0;
+        var startTime = null;
+
+        function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            var progress = Math.min((timestamp - startTime) / duration, 1);
+            // Ease out cubic
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = start + (target - start) * eased;
+            el.textContent = current.toFixed(decimals);
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            } else {
+                el.textContent = target.toFixed(decimals);
+            }
+        }
+
+        requestAnimationFrame(step);
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting && !animated) {
+                animated = true;
+                var counters = statsSection.querySelectorAll('.stat-number');
+                counters.forEach(function(counter) {
+                    animateCounter(counter);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(statsSection);
+});
+
+// --- Page Transitions ---
+document.addEventListener('DOMContentLoaded', function() {
+    // Only intercept internal navigation links (not hash links or external)
+    var links = document.querySelectorAll('a[href]');
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var href = link.getAttribute('href');
+            // Skip hash links, external links, mailto, tel, javascript
+            if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:') || href.startsWith('http')) return;
+
+            e.preventDefault();
+            document.body.classList.remove('page-transition-in');
+            document.body.classList.add('page-transition-out');
+
+            setTimeout(function() {
+                window.location.href = href;
+            }, 350);
         });
     });
 });
