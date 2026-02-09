@@ -437,6 +437,40 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(statsSection);
 });
 
+// --- Star Rating Rounding ---
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.stars').forEach(function(starsEl) {
+        var rating = parseFloat(starsEl.dataset.rating);
+        var rounded = Math.round(rating);
+        var stars = starsEl.querySelectorAll('svg');
+        stars.forEach(function(star, index) {
+            if (index < rounded) {
+                star.classList.remove('star-partial');
+            } else {
+                star.classList.add('star-partial');
+            }
+        });
+    });
+});
+
+// --- Clickable Game Cards ---
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.game-card').forEach(function(card) {
+        var titleLink = card.querySelector('.game-title a');
+        if (!titleLink) return;
+        var href = titleLink.getAttribute('href');
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            if (e.target.closest('a, button')) return;
+            document.body.classList.remove('page-transition-in');
+            document.body.classList.add('page-transition-out');
+            setTimeout(function() {
+                window.location.href = href;
+            }, 350);
+        });
+    });
+});
+
 // --- Page Transitions ---
 document.addEventListener('DOMContentLoaded', function() {
     // Only intercept internal navigation links (not hash links or external)
@@ -456,4 +490,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 350);
         });
     });
+});
+
+// --- Back Button Fix (bfcache) ---
+window.addEventListener('pageshow', function(e) {
+    if (e.persisted) {
+        document.body.classList.remove('page-transition-out');
+        document.body.classList.add('page-transition-in');
+    }
 });
