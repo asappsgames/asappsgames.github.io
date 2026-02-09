@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         async function findScreenshots() {
             let index = 1;
             while (true) {
-                const imagePath = `Images/${gameFolder}/screenshot${index}.png`;
+                const imagePath = `/Images/${gameFolder}/screenshot${index}.png`;
                 if (await imageExists(imagePath)) {
                     screenshots.push({
                         path: imagePath,

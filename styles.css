@@ -1177,6 +1177,165 @@ footer::before {
 }
 
 /* ======================== */
+/* Game Detail Page          */
+/* ======================== */
+
+.game-detail-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+}
+
+.game-detail-container {
+    background: var(--card-bg-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-card);
+    padding: 3rem;
+}
+
+.game-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-detail-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.game-detail-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.game-detail-description {
+    margin: 2rem 0;
+}
+
+.game-detail-description h2 {
+    font-size: 1.3rem;
+    color: var(--accent-blue);
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+}
+
+.game-detail-description h2:first-child {
+    margin-top: 0;
+}
+
+.game-detail-description p {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.game-detail-description ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.75rem 0;
+}
+
+.game-detail-description ul li {
+    color: var(--text-secondary);
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+.game-detail-description ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+}
+
+.game-detail-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.game-detail-cta h2 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.game-detail-cta p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.game-detail-container .game-slider {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+/* Game title links (homepage cards) */
+.game-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+}
+
+.game-title a:hover {
+    opacity: 0.8;
+}
+
+.game-learn-more {
+    display: inline-block;
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    transition: color var(--transition-fast);
+}
+
+.game-learn-more:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .game-detail-section {
+        padding: 2rem 1rem;
+    }
+
+    .game-detail-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .game-detail-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .game-detail-header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ======================== */
 /* Reduced Motion           */
 /* ======================== */
 
