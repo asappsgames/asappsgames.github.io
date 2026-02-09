@@ -1184,6 +1184,8 @@ footer::before {
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 2rem 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .game-detail-container {
