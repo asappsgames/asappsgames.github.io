@@ -33,56 +33,132 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Sudoku No Ads",
-        "description": "A clean, ad-free Sudoku puzzle game for iOS with 4 difficulty levels, smart hints, and a beautiful interface.",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "ratingCount": "5435",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "screenshot": [
-            "https://asappsgames.com/Images/sudoku/screenshot1.png",
-            "https://asappsgames.com/Images/sudoku/screenshot2.png",
-            "https://asappsgames.com/Images/sudoku/screenshot3.png",
-            "https://asappsgames.com/Images/sudoku/screenshot4.png",
-            "https://asappsgames.com/Images/sudoku/screenshot5.png",
-            "https://asappsgames.com/Images/sudoku/screenshot6.png"
-        ],
-        "image": "https://asappsgames.com/Images/sudoku/icon.png",
-        "url": "https://asappsgames.com/sudoku/",
-        "installUrl": "https://apps.apple.com/us/app/sudoku-no-ads/id1624437334",
-        "author": {
-            "@type": "Organization",
-            "name": "ASApps Games"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://asappsgames.com/"
+                "@type": "VideoGame",
+                "@id": "https://asappsgames.com/sudoku/#game",
+                "name": "Sudoku No Pop-up Ads",
+                "alternateName": "Sudoku No Ads",
+                "description": "Ad-free Sudoku puzzle game for iPhone and iPad. No pop-up ads, no banner ads, no interstitials. Four difficulty levels (Easy, Medium, Hard, Expert), smart hints, fast notes, unlimited undo, and offline play.",
+                "applicationCategory": "GameApplication",
+                "applicationSubCategory": "Puzzle",
+                "genre": ["Puzzle", "Logic", "Number Puzzle"],
+                "gamePlatform": ["iOS", "iPhone", "iPad"],
+                "operatingSystem": "iOS 13.0 or later",
+                "inLanguage": "en",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.7",
+                    "ratingCount": "6892",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "screenshot": [
+                    "https://asappsgames.com/Images/sudoku/screenshot1.png",
+                    "https://asappsgames.com/Images/sudoku/screenshot2.png",
+                    "https://asappsgames.com/Images/sudoku/screenshot3.png",
+                    "https://asappsgames.com/Images/sudoku/screenshot4.png",
+                    "https://asappsgames.com/Images/sudoku/screenshot5.png",
+                    "https://asappsgames.com/Images/sudoku/screenshot6.png"
+                ],
+                "image": "https://asappsgames.com/Images/sudoku/icon.png",
+                "url": "https://asappsgames.com/sudoku/",
+                "installUrl": "https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334",
+                "downloadUrl": "https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334",
+                "sameAs": "https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334",
+                "author": { "@id": "https://asappsgames.com/#organization" },
+                "publisher": { "@id": "https://asappsgames.com/#organization" }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Sudoku No Ads",
-                "item": "https://asappsgames.com/sudoku/"
+                "@type": "Organization",
+                "@id": "https://asappsgames.com/#organization",
+                "name": "ASApps Games",
+                "alternateName": "AS Apps Games",
+                "url": "https://asappsgames.com/",
+                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
+                "description": "Independent iOS game studio publishing ad-free puzzle games. No pop-up ads, no banners, no required in-app purchases.",
+                "founder": { "@id": "https://asappsgames.com/#developer" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://asappsgames.com/#developer",
+                "name": "Faraj Ebrahimi",
+                "jobTitle": "Indie iOS Game Developer",
+                "worksFor": { "@id": "https://asappsgames.com/#organization" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Sudoku No Pop-up Ads really free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is free to download and play. There are no required in-app purchases to access any of the four difficulty levels or core features."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are there pop-up ads during gameplay?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. There are no pop-up ads, no interstitial ads, and no full-screen ads interrupting your puzzles. That is the entire reason the app exists."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Sudoku No Pop-up Ads work without an internet connection?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is fully playable offline. No Wi-Fi or mobile data is required to start a new puzzle or continue an existing one."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What difficulty levels are available?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Four: Easy, Medium, Hard, and Expert. Each level uses different puzzle generation rules so the difficulty progression is consistent rather than random."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does the game include hints?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Smart hints highlight the next logical step using actual Sudoku solving techniques rather than just revealing the answer, so they help you learn rather than skip the puzzle."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Sudoku No Pop-up Ads available on Android?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Currently iOS only — iPhone, iPad, and iPod touch. There is no Android version at this time."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asappsgames.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Sudoku No Pop-up Ads", "item": "https://asappsgames.com/sudoku/" }
+                ]
             }
         ]
     }
@@ -109,7 +185,7 @@
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
                 <div class="game-detail-header">
-                    <img src="/Images/sudoku/icon.png" alt="Sudoku No Ads app icon" class="game-detail-icon" loading="lazy">
+                    <img src="/Images/sudoku/icon.png" alt="Sudoku No Pop-up Ads — ad-free Sudoku puzzle app icon for iPhone and iPad" class="game-detail-icon" loading="lazy">
                     <div>
                         <h1>Sudoku No Ads</h1>
                         <div class="game-rating">
@@ -131,29 +207,44 @@
                     <span class="feature-tag">4 Difficulty Levels</span>
                 </div>
 
-                <a href="https://apps.apple.com/us/app/sudoku-no-ads/id1624437334" class="app-store-button" rel="noopener" target="_blank">
-                    <img src="/Images/common/app-store-badge.png" alt="Download Sudoku No Ads on the App Store" loading="lazy">
+                <a href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" class="app-store-button" rel="noopener" target="_blank">
+                    <img src="/Images/common/app-store-badge.png" alt="Download Sudoku No Pop-up Ads on the App Store" loading="lazy">
                 </a>
 
                 <div class="game-detail-description">
-                    <h2>About Sudoku No Ads</h2>
-                    <p>Sudoku No Ads is a clean, beautifully designed Sudoku puzzle game for iPhone and iPad that lets you play without intrusive pop-up advertisements. Originally known as Number Place, Sudoku is the world's most popular logic-based number-placement puzzle. Fill the 9x9 grid so that each column, row, and 3x3 block contains every number from 1 to 9 exactly once.</p>
-                    <p>Whether you are a complete beginner learning the basics or an expert looking for a serious challenge, Sudoku No Ads offers four carefully tuned difficulty levels: Easy, Medium, Hard, and Expert. Each level is designed to progressively test your logical thinking and pattern recognition skills.</p>
+                    <h2>About Sudoku No Pop-up Ads</h2>
+                    <p>Sudoku No Pop-up Ads is a free Sudoku puzzle game for iPhone and iPad with <strong>no pop-up ads, no interstitial ads, and no required in-app purchases</strong>. It works fully offline, ships with four difficulty levels — Easy, Medium, Hard, and Expert — and includes smart hints, fast notes, and unlimited undo.</p>
+                    <p>Originally known as Number Place, Sudoku is the world's most popular logic-based number-placement puzzle. Fill the 9x9 grid so that each column, row, and 3x3 block contains every number from 1 to 9 exactly once.</p>
+                    <p>Whether you are a complete beginner learning the basics or an expert looking for a serious challenge, the four difficulty levels are designed to progressively test your logical thinking and pattern recognition skills.</p>
 
                     <h2>Key Features</h2>
                     <ul>
-                        <li>No intrusive pop-up ads during gameplay</li>
+                        <li>No pop-up ads, no interstitials, no banner ads during gameplay</li>
+                        <li>No required in-app purchases — every difficulty level is free</li>
                         <li>Four difficulty levels: Easy, Medium, Hard, and Expert</li>
-                        <li>Smart hints to help you learn solving techniques</li>
+                        <li>Smart hints that teach solving techniques rather than just revealing answers</li>
                         <li>Fast Notes mode for quick pencil marks</li>
                         <li>Unlimited undo to experiment with strategies</li>
-                        <li>Clean, modern interface with smooth animations</li>
-                        <li>Works offline - no Wi-Fi required</li>
-                        <li>Free to download and play</li>
+                        <li>Works offline — no Wi-Fi or mobile data required</li>
+                        <li>Free to download and play on iPhone, iPad, and iPod touch</li>
                     </ul>
 
-                    <h2>Why Players Love Sudoku No Ads</h2>
-                    <p>With a 4.7-star rating from over 5,400 players on the App Store, Sudoku No Ads has earned its reputation as one of the best ad-free Sudoku apps available. Players appreciate the distraction-free experience, the intelligent hint system that actually teaches solving strategies, and the polished interface that makes every session enjoyable.</p>
+                    <h2>Why Players Love Sudoku No Pop-up Ads</h2>
+                    <p>With a 4.7-star rating from over 6,800 players on the App Store, Sudoku No Pop-up Ads has earned its reputation as one of the best ad-free Sudoku apps available. Players appreciate the distraction-free experience, the intelligent hint system that actually teaches solving strategies, and the polished interface that makes every session enjoyable.</p>
+
+                    <h2>Frequently Asked Questions</h2>
+                    <h3>Is Sudoku No Pop-up Ads really free?</h3>
+                    <p>Yes. The game is free to download and play. There are no required in-app purchases to access any of the four difficulty levels or core features.</p>
+                    <h3>Are there pop-up ads during gameplay?</h3>
+                    <p>No. There are no pop-up ads, no interstitial ads, and no full-screen ads interrupting your puzzles. That is the entire reason the app exists.</p>
+                    <h3>Does Sudoku No Pop-up Ads work without an internet connection?</h3>
+                    <p>Yes. The game is fully playable offline. No Wi-Fi or mobile data is required to start a new puzzle or continue an existing one.</p>
+                    <h3>What difficulty levels are available?</h3>
+                    <p>Four: Easy, Medium, Hard, and Expert. Each level uses different puzzle generation rules so the difficulty progression is consistent rather than random.</p>
+                    <h3>Does the game include hints?</h3>
+                    <p>Yes. Smart hints highlight the next logical step using actual Sudoku solving techniques rather than just revealing the answer, so they help you learn rather than skip the puzzle.</p>
+                    <h3>Is Sudoku No Pop-up Ads available on Android?</h3>
+                    <p>Currently iOS only — iPhone, iPad, and iPod touch. There is no Android version at this time.</p>
                 </div>
 
                 <div class="game-slider" data-game="sudoku">
@@ -163,8 +254,8 @@
                 <div class="game-detail-cta">
                     <h2>Download Sudoku No Ads Free</h2>
                     <p>Available on iPhone, iPad, and iPod touch.</p>
-                    <a href="https://apps.apple.com/us/app/sudoku-no-ads/id1624437334" class="app-store-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/app-store-badge.png" alt="Download Sudoku No Ads on the App Store" loading="lazy">
+                    <a href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" class="app-store-button" rel="noopener" target="_blank">
+                        <img src="/Images/common/app-store-badge.png" alt="Download Sudoku No Pop-up Ads on the App Store" loading="lazy">
                     </a>
                 </div>
 
@@ -182,6 +273,10 @@
                         <a href="/sudoku-blocks/" class="more-game-item">
                             <img src="/Images/sudoku-blocks/icon.png" alt="Sudoku Blocks" class="more-game-icon" loading="lazy">
                             <span>Sudoku Blocks</span>
+                        </a>
+                        <a href="/solitaire/" class="more-game-item">
+                            <img src="/Images/solitaire/icon.png" alt="Solitaire Classics" class="more-game-icon" loading="lazy">
+                            <span>Solitaire</span>
                         </a>
                     </div>
                 </div>

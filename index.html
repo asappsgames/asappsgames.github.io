@@ -35,15 +35,111 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "ASApps Games",
-        "url": "https://asappsgames.com",
-        "description": "Developer of ad-free puzzle games for iPhone and iPad.",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "a.s.a.pps.games@gmail.com",
-            "contactType": "customer support"
-        }
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://asappsgames.com/#organization",
+                "name": "ASApps Games",
+                "alternateName": "AS Apps Games",
+                "url": "https://asappsgames.com/",
+                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
+                "description": "Independent iOS game studio publishing ad-free puzzle games. No pop-up ads, no banners, no required in-app purchases. Five titles on iPhone and iPad: Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks, and Solitaire Classics.",
+                "founder": { "@id": "https://asappsgames.com/#developer" },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "a.s.a.pps.games@gmail.com",
+                    "contactType": "customer support"
+                },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://asappsgames.com/#developer",
+                "name": "Faraj Ebrahimi",
+                "jobTitle": "Indie iOS Game Developer",
+                "worksFor": { "@id": "https://asappsgames.com/#organization" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://asappsgames.com/#website",
+                "url": "https://asappsgames.com/",
+                "name": "ASApps Games",
+                "publisher": { "@id": "https://asappsgames.com/#organization" },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "ItemList",
+                "name": "Ad-Free iOS Puzzle Games by ASApps Games",
+                "description": "All five iOS games published by ASApps Games. Each is free to download with no pop-up ads, no banner ads, and no required in-app purchases.",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Color Blocks - Block Match", "url": "https://asappsgames.com/color-blocks/" },
+                    { "@type": "ListItem", "position": 2, "name": "Sudoku No Pop-up Ads", "url": "https://asappsgames.com/sudoku/" },
+                    { "@type": "ListItem", "position": 3, "name": "Solitaire Classics Card Games", "url": "https://asappsgames.com/solitaire/" },
+                    { "@type": "ListItem", "position": 4, "name": "Block Blast Puzzle Jewel", "url": "https://asappsgames.com/blocks/" },
+                    { "@type": "ListItem", "position": 5, "name": "Sudoku Blocks, Tetra", "url": "https://asappsgames.com/sudoku-blocks/" }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is ASApps Games?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ASApps Games is an independent iOS game studio run by developer Faraj Ebrahimi. It publishes five free puzzle and card games for iPhone and iPad — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks Tetra, and Solitaire Classics — all of which run without pop-up ads, banner ads, or required in-app purchases."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are ASApps Games really ad-free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay in any ASApps Games title. Every core feature is available without any required purchase."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are the games free to download?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. All five games are free to download and play on the App Store. There are no required in-app purchases."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are ASApps Games available on Android?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Currently iOS only. The games are built for iPhone, iPad, and iPod touch."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do the games work offline?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. All ASApps Games titles are fully playable offline — no Wi-Fi or mobile data is required."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Who develops ASApps Games?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ASApps Games is developed and published by Faraj Ebrahimi, an independent iOS developer. All games are listed under the same App Store developer account."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -67,8 +163,8 @@
 
     <main>
         <section class="hero">
-            <h1>Welcome to ASApps Games</h1>
-            <p>Discover our collection of engaging mobile games</p>
+            <h1>Ad-Free Puzzle Games for iPhone &amp; iPad</h1>
+            <p>ASApps Games publishes five free iOS puzzle and card games — Sudoku, Color Blocks, Blocks, Sudoku Blocks, and Solitaire — with <strong>no pop-up ads, no banner ads, and no required in-app purchases</strong>. All five work fully offline.</p>
             <div class="hero-stats">
                 <div class="hero-stat">
                     <span class="stat-number" data-target="5">0</span>
@@ -123,7 +219,7 @@
                             Match 3 or more blocks of the same color in this addictive puzzle game. Drag and drop multi-color blocks to clear the board and unlock new colors for more challenging gameplay.
                         </p>
                         <a href="/color-blocks/" class="game-learn-more">Learn more about Color Blocks &rarr;</a>
-                        <a href="https://apps.apple.com/us/app/color-blocks-wooduko/id1476903896" class="app-store-button">
+                        <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="app-store-button">
                             <img src="Images/common/app-store-badge.png" alt="Download on App Store" loading="lazy">
                         </a>
                     </div>
@@ -162,7 +258,7 @@
                             Originally called Number Place, Sudoku is a logic-based classical combinatorial number-placement puzzle in which the goal is to fill a 9x9 grid with numbers. Each column, row, and 3x3 block must contain the numbers 1 to 9. Choose from four difficulty levels - Easy, Medium, Hard, and Expert - each offering a unique challenge to test your logic skills.
                         </p>
                         <a href="/sudoku/" class="game-learn-more">Learn more about Sudoku &rarr;</a>
-                        <a href="https://apps.apple.com/us/app/sudoku-no-ads/id1624437334" class="app-store-button">
+                        <a href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" class="app-store-button">
                             <img src="Images/common/app-store-badge.png" alt="Download on App Store" loading="lazy">
                         </a>
                     </div>
@@ -177,9 +273,9 @@
                     </div>
                     <div class="game-content">
                         <div class="game-title-row">
-                            <img src="Images/solitaire/icon.png" alt="Solitaire icon" class="game-icon" loading="lazy">
+                            <img src="Images/solitaire/icon.png" alt="Solitaire Classics icon" class="game-icon" loading="lazy">
                             <div>
-                                <h2 class="game-title">Solitaire</h2>
+                                <h2 class="game-title"><a href="/solitaire/">Solitaire</a></h2>
                                 <div class="game-rating">
                                     <div class="stars" data-rating="4.4">
                                         <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg>
@@ -200,7 +296,8 @@
                         <p class="game-description">
                             Experience the Timeless Classic of Solitaire on Your Mobile! Play the renowned Klondike variation with our beautifully crafted, ad-free game. Challenge yourself to reach high scores and refine your strategy. With zero interruptions from ads, immerse yourself in a sleek, visually stunning interface with smooth animations for the ultimate Solitaire experience.
                         </p>
-                        <a href="https://apps.apple.com/us/app/solitaire-card-games-no-wifi/id6449511944" class="app-store-button">
+                        <a href="/solitaire/" class="game-learn-more">Learn more about Solitaire &rarr;</a>
+                        <a href="https://apps.apple.com/us/app/solitaire-classics-card-games/id6758364119" class="app-store-button">
                             <img src="Images/common/app-store-badge.png" alt="Download on App Store" loading="lazy">
                         </a>
                     </div>
@@ -239,7 +336,7 @@
                             Match the blocks to fill up the Rows and Columns and clean up the board. It is very easy to play, just drag and drop the blocks on the board. Clear multiple Rows or Columns and get bonus points by making Combos. Log in Daily to play the game and collect rewards to unlock beautiful new colours and customise the game to suit your liking.
                         </p>
                         <a href="/blocks/" class="game-learn-more">Learn more about Blocks &rarr;</a>
-                        <a href="https://apps.apple.com/us/app/block-puzzle-jewel/id1509841214" class="app-store-button">
+                        <a href="https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214" class="app-store-button">
                             <img src="Images/common/app-store-badge.png" alt="Download on App Store" loading="lazy">
                         </a>
                     </div>

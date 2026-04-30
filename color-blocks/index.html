@@ -33,56 +33,132 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Color Blocks",
-        "description": "An addictive color-matching block puzzle game for iOS. Match 3+ blocks of the same color, create combos, and unlock new colors. No pop-up ads.",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "ratingCount": "423",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "screenshot": [
-            "https://asappsgames.com/Images/color-blocks/screenshot1.png",
-            "https://asappsgames.com/Images/color-blocks/screenshot2.png",
-            "https://asappsgames.com/Images/color-blocks/screenshot3.png",
-            "https://asappsgames.com/Images/color-blocks/screenshot4.png",
-            "https://asappsgames.com/Images/color-blocks/screenshot5.png",
-            "https://asappsgames.com/Images/color-blocks/screenshot6.png"
-        ],
-        "image": "https://asappsgames.com/Images/color-blocks/icon.png",
-        "url": "https://asappsgames.com/color-blocks/",
-        "installUrl": "https://apps.apple.com/us/app/color-blocks-wooduko/id1476903896",
-        "author": {
-            "@type": "Organization",
-            "name": "ASApps Games"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://asappsgames.com/"
+                "@type": "VideoGame",
+                "@id": "https://asappsgames.com/color-blocks/#game",
+                "name": "Color Blocks - Block Match",
+                "alternateName": ["Color Blocks", "Color Blocks Wooduko"],
+                "description": "Free color-matching block puzzle game for iPhone and iPad with no pop-up ads, no banner ads, and no required in-app purchases. Drag and drop multi-color blocks, match three or more blocks of the same color to clear them, create combos, and unlock new colors as you score higher. Works offline.",
+                "applicationCategory": "GameApplication",
+                "applicationSubCategory": "Puzzle",
+                "genre": ["Puzzle", "Color Match", "Casual"],
+                "gamePlatform": ["iOS", "iPhone", "iPad"],
+                "operatingSystem": "iOS 13.0 or later",
+                "inLanguage": "en",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.7",
+                    "ratingCount": "429",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "screenshot": [
+                    "https://asappsgames.com/Images/color-blocks/screenshot1.png",
+                    "https://asappsgames.com/Images/color-blocks/screenshot2.png",
+                    "https://asappsgames.com/Images/color-blocks/screenshot3.png",
+                    "https://asappsgames.com/Images/color-blocks/screenshot4.png",
+                    "https://asappsgames.com/Images/color-blocks/screenshot5.png",
+                    "https://asappsgames.com/Images/color-blocks/screenshot6.png"
+                ],
+                "image": "https://asappsgames.com/Images/color-blocks/icon.png",
+                "url": "https://asappsgames.com/color-blocks/",
+                "installUrl": "https://apps.apple.com/us/app/color-blocks-block-match/id1476903896",
+                "downloadUrl": "https://apps.apple.com/us/app/color-blocks-block-match/id1476903896",
+                "sameAs": "https://apps.apple.com/us/app/color-blocks-block-match/id1476903896",
+                "author": { "@id": "https://asappsgames.com/#organization" },
+                "publisher": { "@id": "https://asappsgames.com/#organization" }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Color Blocks",
-                "item": "https://asappsgames.com/color-blocks/"
+                "@type": "Organization",
+                "@id": "https://asappsgames.com/#organization",
+                "name": "ASApps Games",
+                "alternateName": "AS Apps Games",
+                "url": "https://asappsgames.com/",
+                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
+                "description": "Independent iOS game studio publishing ad-free puzzle games. No pop-up ads, no banners, no required in-app purchases.",
+                "founder": { "@id": "https://asappsgames.com/#developer" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://asappsgames.com/#developer",
+                "name": "Faraj Ebrahimi",
+                "jobTitle": "Indie iOS Game Developer",
+                "worksFor": { "@id": "https://asappsgames.com/#organization" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Color Blocks free to play?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is free to download and play. There are no required in-app purchases — every feature is available from the start."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are there pop-up ads in Color Blocks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do you play Color Blocks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Drag and drop multi-color blocks onto the board and match three or more blocks of the same color to clear them. As your score increases, new colors unlock, adding more strategy. Match blocks vertically or horizontally to trigger combo bonuses."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Color Blocks work offline?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is fully playable offline — no Wi-Fi or mobile data required."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Color Blocks have leaderboards?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Color Blocks integrates with Apple Game Center for leaderboards and achievements."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Color Blocks available on Android?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Currently iOS only — iPhone, iPad, and iPod touch."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asappsgames.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Color Blocks", "item": "https://asappsgames.com/color-blocks/" }
+                ]
             }
         ]
     }
@@ -109,7 +185,7 @@
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
                 <div class="game-detail-header">
-                    <img src="/Images/color-blocks/icon.png" alt="Color Blocks app icon" class="game-detail-icon" loading="lazy">
+                    <img src="/Images/color-blocks/icon.png" alt="Color Blocks - Block Match — ad-free color-matching puzzle app icon for iPhone and iPad" class="game-detail-icon" loading="lazy">
                     <div>
                         <h1>Color Blocks</h1>
                         <div class="game-rating">
@@ -131,18 +207,19 @@
                     <span class="feature-tag">Unique Gameplay</span>
                 </div>
 
-                <a href="https://apps.apple.com/us/app/color-blocks-wooduko/id1476903896" class="app-store-button" rel="noopener" target="_blank">
+                <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="app-store-button" rel="noopener" target="_blank">
                     <img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
                 </a>
 
                 <div class="game-detail-description">
                     <h2>About Color Blocks</h2>
-                    <p>Color Blocks is an addictive color-matching puzzle game where you drag and drop multi-colored blocks onto the board and match three or more blocks of the same color to clear them. As your score increases, new colors unlock, adding layers of strategy and challenge to every round.</p>
-                    <p>Create combos by matching blocks vertically or horizontally for bonus points. Use boosters and the hammer tool strategically to overcome tough spots. With its progressive color-unlocking system, every game session feels fresh and rewarding.</p>
+                    <p>Color Blocks is a free color-matching block puzzle game for iPhone and iPad with <strong>no pop-up ads, no interstitials, and no required in-app purchases</strong>. Drag and drop multi-color blocks onto the board, match three or more blocks of the same color to clear them, create combos for bonus points, and unlock new colors as your score grows. Works fully offline.</p>
+                    <p>As your score increases, new colors unlock, adding layers of strategy and challenge to every round. Use boosters and the hammer tool strategically to overcome tough spots. With its progressive color-unlocking system, every game session feels fresh and rewarding.</p>
 
                     <h2>Key Features</h2>
                     <ul>
-                        <li>No pop-up ads during gameplay</li>
+                        <li>No pop-up ads, no interstitials, no banner ads during gameplay</li>
+                        <li>No required in-app purchases — every feature unlocked from the start</li>
                         <li>Intuitive drag-and-drop controls</li>
                         <li>Match 3 or more same-color blocks to clear</li>
                         <li>Progressive color unlocking as you score higher</li>
@@ -150,11 +227,25 @@
                         <li>Boosters and hammer tools for extra help</li>
                         <li>Game Center leaderboards and achievements</li>
                         <li>Beautiful, colorful visuals</li>
-                        <li>Free to download and play</li>
+                        <li>Works offline — no Wi-Fi required</li>
                     </ul>
 
                     <h2>Why Players Love Color Blocks</h2>
                     <p>Rated 4.7 stars by over 420 players, Color Blocks stands out for its unique twist on the block puzzle genre. Instead of traditional shape-matching, the color-based gameplay creates a fresh, visually satisfying experience. Players especially appreciate the no-ads policy and the satisfying feeling of clearing the board with a well-planned combo.</p>
+
+                    <h2>Frequently Asked Questions</h2>
+                    <h3>Is Color Blocks free to play?</h3>
+                    <p>Yes. The game is free to download and play. There are no required in-app purchases — every feature is available from the start.</p>
+                    <h3>Are there pop-up ads in Color Blocks?</h3>
+                    <p>No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay.</p>
+                    <h3>How do you play Color Blocks?</h3>
+                    <p>Drag and drop multi-color blocks onto the board and match three or more blocks of the same color to clear them. As your score increases, new colors unlock, adding more strategy. Match blocks vertically or horizontally to trigger combo bonuses.</p>
+                    <h3>Does Color Blocks work offline?</h3>
+                    <p>Yes. The game is fully playable offline — no Wi-Fi or mobile data required.</p>
+                    <h3>Does Color Blocks have leaderboards?</h3>
+                    <p>Yes. Color Blocks integrates with Apple Game Center for leaderboards and achievements.</p>
+                    <h3>Is Color Blocks available on Android?</h3>
+                    <p>Currently iOS only — iPhone, iPad, and iPod touch.</p>
                 </div>
 
                 <div class="game-slider" data-game="color-blocks">
@@ -164,7 +255,7 @@
                 <div class="game-detail-cta">
                     <h2>Download Color Blocks Free</h2>
                     <p>Available on iPhone, iPad, and iPod touch.</p>
-                    <a href="https://apps.apple.com/us/app/color-blocks-wooduko/id1476903896" class="app-store-button" rel="noopener" target="_blank">
+                    <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="app-store-button" rel="noopener" target="_blank">
                         <img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
                     </a>
                 </div>
@@ -173,7 +264,7 @@
                     <h2>More Games from ASApps</h2>
                     <div class="more-games-grid">
                         <a href="/sudoku/" class="more-game-item">
-                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Ads" class="more-game-icon" loading="lazy">
+                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Pop-up Ads" class="more-game-icon" loading="lazy">
                             <span>Sudoku</span>
                         </a>
                         <a href="/blocks/" class="more-game-item">
@@ -183,6 +274,10 @@
                         <a href="/sudoku-blocks/" class="more-game-item">
                             <img src="/Images/sudoku-blocks/icon.png" alt="Sudoku Blocks" class="more-game-icon" loading="lazy">
                             <span>Sudoku Blocks</span>
+                        </a>
+                        <a href="/solitaire/" class="more-game-item">
+                            <img src="/Images/solitaire/icon.png" alt="Solitaire Classics" class="more-game-icon" loading="lazy">
+                            <span>Solitaire</span>
                         </a>
                     </div>
                 </div>

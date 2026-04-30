@@ -33,56 +33,131 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Sudoku Blocks, Tetra",
-        "alternateName": "Sudoku Blocks",
-        "description": "A Sudoku-style block puzzle game for iOS. Fill rows, columns, and 3x3 squares with 20+ block designs. Dark mode, combo bonuses, and no pop-up ads.",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "315",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "screenshot": [
-            "https://asappsgames.com/Images/sudoku-blocks/screenshot1.png",
-            "https://asappsgames.com/Images/sudoku-blocks/screenshot2.png",
-            "https://asappsgames.com/Images/sudoku-blocks/screenshot3.png",
-            "https://asappsgames.com/Images/sudoku-blocks/screenshot4.png",
-            "https://asappsgames.com/Images/sudoku-blocks/screenshot5.png"
-        ],
-        "image": "https://asappsgames.com/Images/sudoku-blocks/icon.png",
-        "url": "https://asappsgames.com/sudoku-blocks/",
-        "installUrl": "https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521",
-        "author": {
-            "@type": "Organization",
-            "name": "ASApps Games"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://asappsgames.com/"
+                "@type": "VideoGame",
+                "@id": "https://asappsgames.com/sudoku-blocks/#game",
+                "name": "Sudoku Blocks, Tetra",
+                "alternateName": "Sudoku Blocks",
+                "description": "Free Sudoku-style block puzzle game for iPhone and iPad with no pop-up ads, no banner ads, and no required in-app purchases. Drag and drop blocks to fill rows, columns, and 3x3 squares on a 9x9 grid. Includes 20+ block designs, dark mode, daily rewards, combo bonuses, and a Block Pop mini game. Works offline.",
+                "applicationCategory": "GameApplication",
+                "applicationSubCategory": "Puzzle",
+                "genre": ["Puzzle", "Block Puzzle", "Sudoku"],
+                "gamePlatform": ["iOS", "iPhone", "iPad"],
+                "operatingSystem": "iOS 13.0 or later",
+                "inLanguage": "en",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "317",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "screenshot": [
+                    "https://asappsgames.com/Images/sudoku-blocks/screenshot1.png",
+                    "https://asappsgames.com/Images/sudoku-blocks/screenshot2.png",
+                    "https://asappsgames.com/Images/sudoku-blocks/screenshot3.png",
+                    "https://asappsgames.com/Images/sudoku-blocks/screenshot4.png",
+                    "https://asappsgames.com/Images/sudoku-blocks/screenshot5.png"
+                ],
+                "image": "https://asappsgames.com/Images/sudoku-blocks/icon.png",
+                "url": "https://asappsgames.com/sudoku-blocks/",
+                "installUrl": "https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521",
+                "downloadUrl": "https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521",
+                "sameAs": "https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521",
+                "author": { "@id": "https://asappsgames.com/#organization" },
+                "publisher": { "@id": "https://asappsgames.com/#organization" }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Sudoku Blocks",
-                "item": "https://asappsgames.com/sudoku-blocks/"
+                "@type": "Organization",
+                "@id": "https://asappsgames.com/#organization",
+                "name": "ASApps Games",
+                "alternateName": "AS Apps Games",
+                "url": "https://asappsgames.com/",
+                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
+                "description": "Independent iOS game studio publishing ad-free puzzle games. No pop-up ads, no banners, no required in-app purchases.",
+                "founder": { "@id": "https://asappsgames.com/#developer" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://asappsgames.com/#developer",
+                "name": "Faraj Ebrahimi",
+                "jobTitle": "Indie iOS Game Developer",
+                "worksFor": { "@id": "https://asappsgames.com/#organization" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How is Sudoku Blocks different from regular Sudoku?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Instead of placing numbers, you drag and drop block shapes onto a 9x9 grid to fill rows, columns, and 3x3 squares. It combines block puzzle gameplay with Sudoku's grid logic — there are no numbers involved."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Sudoku Blocks free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is free to download and play with no required in-app purchases."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are there pop-up ads in Sudoku Blocks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Sudoku Blocks have a dark mode?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. A dark mode is included for comfortable play at night."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How many block designs does Sudoku Blocks have?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Over 20 unique block designs, all unlockable through gameplay and daily rewards."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Sudoku Blocks work offline?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is fully playable offline — no Wi-Fi or mobile data required."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asappsgames.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Sudoku Blocks", "item": "https://asappsgames.com/sudoku-blocks/" }
+                ]
             }
         ]
     }
@@ -109,7 +184,7 @@
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
                 <div class="game-detail-header">
-                    <img src="/Images/sudoku-blocks/icon.png" alt="Sudoku Blocks app icon" class="game-detail-icon" loading="lazy">
+                    <img src="/Images/sudoku-blocks/icon.png" alt="Sudoku Blocks, Tetra — ad-free Sudoku-style block puzzle app icon for iPhone and iPad" class="game-detail-icon" loading="lazy">
                     <div>
                         <h1>Sudoku Blocks</h1>
                         <div class="game-rating">
@@ -137,12 +212,13 @@
 
                 <div class="game-detail-description">
                     <h2>About Sudoku Blocks</h2>
-                    <p>Sudoku Blocks combines the strategic depth of Sudoku with the satisfying gameplay of block puzzles. Drag and drop blocks to fill rows, columns, and 3x3 squares on the board. When a row, column, or square is complete, it clears from the board and earns you points. The Sudoku-style grid adds a layer of spatial reasoning that sets this game apart from ordinary block puzzles.</p>
-                    <p>Choose from over 20 unique block designs and two distinct game modes. Clear multiple lines or squares simultaneously to trigger combo bonuses and rack up high scores. Log in daily to earn rewards and unlock beautiful new color themes and visual customizations, including a dark mode for comfortable play at night.</p>
+                    <p>Sudoku Blocks (Tetra) is a free puzzle game for iPhone and iPad that combines the strategic depth of Sudoku with the satisfying gameplay of block puzzles. <strong>No pop-up ads, no interstitials, and no required in-app purchases</strong>. Drag and drop blocks onto a 9x9 grid to fill rows, columns, and 3x3 squares — when one is complete, it clears and earns points. Includes 20+ block designs, dark mode, daily rewards, and a Block Pop mini game. Works offline.</p>
+                    <p>The Sudoku-style grid adds a layer of spatial reasoning that sets this game apart from ordinary block puzzles. Choose from over 20 unique block designs and two distinct game modes. Clear multiple lines or squares simultaneously to trigger combo bonuses and rack up high scores. Log in daily to earn rewards and unlock beautiful new color themes and visual customizations.</p>
 
                     <h2>Key Features</h2>
                     <ul>
-                        <li>No pop-up ads during gameplay</li>
+                        <li>No pop-up ads, no interstitials, no banner ads during gameplay</li>
+                        <li>No required in-app purchases — every feature unlocked from the start</li>
                         <li>Sudoku-inspired 9x9 grid with rows, columns, and 3x3 squares</li>
                         <li>20+ unique block designs</li>
                         <li>Two game modes for varied challenges</li>
@@ -152,10 +228,25 @@
                         <li>Mini game: Block Pop</li>
                         <li>Multiple mega puzzles</li>
                         <li>Game Center leaderboards</li>
+                        <li>Works offline — no Wi-Fi required</li>
                     </ul>
 
                     <h2>Why Players Love Sudoku Blocks</h2>
                     <p>Rated 4.8 stars by over 310 players, Sudoku Blocks is praised for its creative fusion of two beloved puzzle genres. Players enjoy the extra layer of challenge that the Sudoku-style squares add to the classic block puzzle formula, and the wide variety of block shapes and customization options keep the game feeling fresh after hundreds of sessions.</p>
+
+                    <h2>Frequently Asked Questions</h2>
+                    <h3>How is Sudoku Blocks different from regular Sudoku?</h3>
+                    <p>Instead of placing numbers, you drag and drop block shapes onto a 9x9 grid to fill rows, columns, and 3x3 squares. It combines block puzzle gameplay with Sudoku's grid logic — there are no numbers involved.</p>
+                    <h3>Is Sudoku Blocks free?</h3>
+                    <p>Yes. The game is free to download and play with no required in-app purchases.</p>
+                    <h3>Are there pop-up ads in Sudoku Blocks?</h3>
+                    <p>No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay.</p>
+                    <h3>Does Sudoku Blocks have a dark mode?</h3>
+                    <p>Yes. A dark mode is included for comfortable play at night.</p>
+                    <h3>How many block designs does Sudoku Blocks have?</h3>
+                    <p>Over 20 unique block designs, all unlockable through gameplay and daily rewards.</p>
+                    <h3>Does Sudoku Blocks work offline?</h3>
+                    <p>Yes. The game is fully playable offline — no Wi-Fi or mobile data required.</p>
                 </div>
 
                 <div class="game-slider" data-game="sudoku-blocks">
@@ -174,7 +265,7 @@
                     <h2>More Games from ASApps</h2>
                     <div class="more-games-grid">
                         <a href="/sudoku/" class="more-game-item">
-                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Ads" class="more-game-icon" loading="lazy">
+                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Pop-up Ads" class="more-game-icon" loading="lazy">
                             <span>Sudoku</span>
                         </a>
                         <a href="/color-blocks/" class="more-game-item">
@@ -184,6 +275,10 @@
                         <a href="/blocks/" class="more-game-item">
                             <img src="/Images/blocks/icon.png" alt="Blocks" class="more-game-icon" loading="lazy">
                             <span>Blocks</span>
+                        </a>
+                        <a href="/solitaire/" class="more-game-item">
+                            <img src="/Images/solitaire/icon.png" alt="Solitaire Classics" class="more-game-icon" loading="lazy">
+                            <span>Solitaire</span>
                         </a>
                     </div>
                 </div>

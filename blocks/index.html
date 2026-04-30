@@ -33,56 +33,131 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Block Blast Puzzle Jewel",
-        "alternateName": "Blocks",
-        "description": "A classic block puzzle game for iOS. Drag and drop blocks to fill rows and columns, create combos, and customize your board. No pop-up ads.",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "434",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "screenshot": [
-            "https://asappsgames.com/Images/blocks/screenshot1.png",
-            "https://asappsgames.com/Images/blocks/screenshot2.png",
-            "https://asappsgames.com/Images/blocks/screenshot3.png",
-            "https://asappsgames.com/Images/blocks/screenshot4.png",
-            "https://asappsgames.com/Images/blocks/screenshot5.png"
-        ],
-        "image": "https://asappsgames.com/Images/blocks/icon.png",
-        "url": "https://asappsgames.com/blocks/",
-        "installUrl": "https://apps.apple.com/us/app/block-puzzle-jewel/id1509841214",
-        "author": {
-            "@type": "Organization",
-            "name": "ASApps Games"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://asappsgames.com/"
+                "@type": "VideoGame",
+                "@id": "https://asappsgames.com/blocks/#game",
+                "name": "Block Blast Puzzle Jewel",
+                "alternateName": "Blocks",
+                "description": "Free block puzzle game for iPhone and iPad with no pop-up ads, no banner ads, and no required in-app purchases. Drag and drop blocks to fill rows and columns, score combo bonuses, earn daily rewards, and customize your board. Works offline.",
+                "applicationCategory": "GameApplication",
+                "applicationSubCategory": "Puzzle",
+                "genre": ["Puzzle", "Block Puzzle", "Casual"],
+                "gamePlatform": ["iOS", "iPhone", "iPad"],
+                "operatingSystem": "iOS 13.0 or later",
+                "inLanguage": "en",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "437",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "screenshot": [
+                    "https://asappsgames.com/Images/blocks/screenshot1.png",
+                    "https://asappsgames.com/Images/blocks/screenshot2.png",
+                    "https://asappsgames.com/Images/blocks/screenshot3.png",
+                    "https://asappsgames.com/Images/blocks/screenshot4.png",
+                    "https://asappsgames.com/Images/blocks/screenshot5.png"
+                ],
+                "image": "https://asappsgames.com/Images/blocks/icon.png",
+                "url": "https://asappsgames.com/blocks/",
+                "installUrl": "https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214",
+                "downloadUrl": "https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214",
+                "sameAs": "https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214",
+                "author": { "@id": "https://asappsgames.com/#organization" },
+                "publisher": { "@id": "https://asappsgames.com/#organization" }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blocks",
-                "item": "https://asappsgames.com/blocks/"
+                "@type": "Organization",
+                "@id": "https://asappsgames.com/#organization",
+                "name": "ASApps Games",
+                "alternateName": "AS Apps Games",
+                "url": "https://asappsgames.com/",
+                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
+                "description": "Independent iOS game studio publishing ad-free puzzle games. No pop-up ads, no banners, no required in-app purchases.",
+                "founder": { "@id": "https://asappsgames.com/#developer" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://asappsgames.com/#developer",
+                "name": "Faraj Ebrahimi",
+                "jobTitle": "Indie iOS Game Developer",
+                "worksFor": { "@id": "https://asappsgames.com/#organization" },
+                "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://github.com/asappsgames"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Block Blast Puzzle Jewel free to play?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game is free to download and play. There are no required in-app purchases — every core feature is unlocked from the start."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are there pop-up ads in Blocks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do you score points in Blocks?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Drag and drop blocks onto the board to fill complete rows or columns, which then clear. Clearing multiple rows or columns in a single move triggers a combo bonus for extra points. Strikes (consecutive clears) award additional bonuses."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Blocks have daily rewards?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Logging in each day awards rewards that can be used to unlock new color themes and customize your board."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Blocks work offline?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. The game works fully offline. No Wi-Fi or mobile data is required."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Blocks available on Android?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Currently iOS only — iPhone, iPad, and iPod touch."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asappsgames.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Blocks", "item": "https://asappsgames.com/blocks/" }
+                ]
             }
         ]
     }
@@ -109,7 +184,7 @@
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
                 <div class="game-detail-header">
-                    <img src="/Images/blocks/icon.png" alt="Block Puzzle app icon" class="game-detail-icon" loading="lazy">
+                    <img src="/Images/blocks/icon.png" alt="Block Blast Puzzle Jewel — ad-free block puzzle app icon for iPhone and iPad" class="game-detail-icon" loading="lazy">
                     <div>
                         <h1>Blocks</h1>
                         <div class="game-rating">
@@ -131,31 +206,46 @@
                     <span class="feature-tag">Endless Fun</span>
                 </div>
 
-                <a href="https://apps.apple.com/us/app/block-puzzle-jewel/id1509841214" class="app-store-button" rel="noopener" target="_blank">
+                <a href="https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214" class="app-store-button" rel="noopener" target="_blank">
                     <img src="/Images/common/app-store-badge.png" alt="Download Blocks on the App Store" loading="lazy">
                 </a>
 
                 <div class="game-detail-description">
-                    <h2>About Block Puzzle</h2>
-                    <p>Blocks is a classic block puzzle game that challenges you to fill rows and columns by dragging and dropping blocks onto the board. Clear completed rows and columns to earn points and keep the board from filling up. It is easy to learn but endlessly engaging, making it the perfect puzzle game for quick sessions or extended play.</p>
-                    <p>Clear multiple rows or columns at once to earn combo bonuses and rack up high scores. Log in daily to collect rewards and unlock beautiful new color themes to customize your game board. With its clean interface and no pop-up ads, every session is pure, uninterrupted puzzle fun.</p>
+                    <h2>About Block Blast Puzzle Jewel</h2>
+                    <p>Blocks (also known as Block Blast Puzzle Jewel) is a free block puzzle game for iPhone and iPad with <strong>no pop-up ads, no interstitials, and no required in-app purchases</strong>. Drag and drop blocks to fill complete rows and columns, score combo bonuses for clearing multiple lines at once, earn daily rewards, and customize your board. Works fully offline.</p>
+                    <p>It is easy to learn but endlessly engaging, making it the perfect puzzle game for quick sessions or extended play. Log in daily to collect rewards and unlock beautiful new color themes to customize your game board.</p>
 
                     <h2>Key Features</h2>
                     <ul>
-                        <li>No pop-up ads during gameplay</li>
+                        <li>No pop-up ads, no interstitials, no banner ads during gameplay</li>
+                        <li>No required in-app purchases — every feature unlocked from the start</li>
                         <li>Simple drag-and-drop block placement</li>
                         <li>Clear rows and columns to score points</li>
-                        <li>Combo and strike bonuses for clearing multiple lines</li>
+                        <li>Combo and strike bonuses for clearing multiple lines at once</li>
                         <li>Daily login rewards</li>
                         <li>Customizable board colors and themes</li>
                         <li>Mega puzzle challenges</li>
                         <li>Game Center leaderboards</li>
-                        <li>Works offline without Wi-Fi</li>
+                        <li>Works offline — no Wi-Fi or mobile data required</li>
                         <li>Smooth animations and polished interface</li>
                     </ul>
 
                     <h2>Why Players Love Blocks</h2>
                     <p>With a 4.8-star rating from over 430 players, Blocks has earned praise for its addictive simplicity and polished execution. Players love the satisfying feeling of clearing multiple rows at once, the daily reward system that keeps them coming back, and the complete absence of annoying pop-up ads that plague similar games.</p>
+
+                    <h2>Frequently Asked Questions</h2>
+                    <h3>Is Block Blast Puzzle Jewel free to play?</h3>
+                    <p>Yes. The game is free to download and play. There are no required in-app purchases — every core feature is unlocked from the start.</p>
+                    <h3>Are there pop-up ads in Blocks?</h3>
+                    <p>No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay.</p>
+                    <h3>How do you score points in Blocks?</h3>
+                    <p>Drag and drop blocks onto the board to fill complete rows or columns, which then clear. Clearing multiple rows or columns in a single move triggers a combo bonus for extra points. Strikes (consecutive clears) award additional bonuses.</p>
+                    <h3>Does Blocks have daily rewards?</h3>
+                    <p>Yes. Logging in each day awards rewards that can be used to unlock new color themes and customize your board.</p>
+                    <h3>Does Blocks work offline?</h3>
+                    <p>Yes. The game works fully offline. No Wi-Fi or mobile data is required.</p>
+                    <h3>Is Blocks available on Android?</h3>
+                    <p>Currently iOS only — iPhone, iPad, and iPod touch.</p>
                 </div>
 
                 <div class="game-slider" data-game="blocks">
@@ -165,7 +255,7 @@
                 <div class="game-detail-cta">
                     <h2>Download Blocks Free</h2>
                     <p>Available on iPhone, iPad, and iPod touch.</p>
-                    <a href="https://apps.apple.com/us/app/block-puzzle-jewel/id1509841214" class="app-store-button" rel="noopener" target="_blank">
+                    <a href="https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214" class="app-store-button" rel="noopener" target="_blank">
                         <img src="/Images/common/app-store-badge.png" alt="Download Blocks on the App Store" loading="lazy">
                     </a>
                 </div>
@@ -174,7 +264,7 @@
                     <h2>More Games from ASApps</h2>
                     <div class="more-games-grid">
                         <a href="/sudoku/" class="more-game-item">
-                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Ads" class="more-game-icon" loading="lazy">
+                            <img src="/Images/sudoku/icon.png" alt="Sudoku No Pop-up Ads" class="more-game-icon" loading="lazy">
                             <span>Sudoku</span>
                         </a>
                         <a href="/color-blocks/" class="more-game-item">
@@ -184,6 +274,10 @@
                         <a href="/sudoku-blocks/" class="more-game-item">
                             <img src="/Images/sudoku-blocks/icon.png" alt="Sudoku Blocks" class="more-game-icon" loading="lazy">
                             <span>Sudoku Blocks</span>
+                        </a>
+                        <a href="/solitaire/" class="more-game-item">
+                            <img src="/Images/solitaire/icon.png" alt="Solitaire Classics" class="more-game-icon" loading="lazy">
+                            <span>Solitaire</span>
                         </a>
                     </div>
                 </div>
