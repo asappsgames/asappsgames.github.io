@@ -25,11 +25,11 @@
     <meta name="twitter:title" content="Color Blocks - Addictive Color Match Puzzle Game">
     <meta name="twitter:description" content="Drag and drop multi-color blocks and match 3 or more of the same color. No pop-up ads.">
     <meta name="twitter:image" content="https://asappsgames.com/Images/color-blocks/screenshot1.png">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a1a2e'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%230066ff'>A</text></svg>">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
+    <link rel="stylesheet" href="../game.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -39,7 +39,7 @@
                 "@id": "https://asappsgames.com/color-blocks/#game",
                 "name": "Color Blocks - Block Match",
                 "alternateName": ["Color Blocks", "Color Blocks Wooduko"],
-                "description": "Free color-matching block puzzle game for iPhone and iPad with no pop-up ads, no banner ads, and no required in-app purchases. Drag and drop multi-color blocks, match three or more blocks of the same color to clear them, create combos, and unlock new colors as you score higher. Works offline.",
+                "description": "Free color-matching block puzzle game for iPhone and iPad with no pop-up ads, no full-screen interruptions, and no required in-app purchases. Drag and drop multi-color blocks, match three or more blocks of the same color to clear them, create combos, and unlock new colors as you score higher. Works offline.",
                 "applicationCategory": "GameApplication",
                 "applicationSubCategory": "Puzzle",
                 "genre": ["Puzzle", "Color Match", "Casual"],
@@ -82,21 +82,8 @@
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
                 "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent iOS game studio publishing ad-free puzzle games. No pop-up ads, no banners, no required in-app purchases.",
-                "founder": { "@id": "https://asappsgames.com/#developer" },
+                "description": "Independent iOS game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases.",
                 "sameAs": [
-                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
-                    "https://github.com/asappsgames"
-                ]
-            },
-            {
-                "@type": "Person",
-                "@id": "https://asappsgames.com/#developer",
-                "name": "Faraj Ebrahimi",
-                "jobTitle": "Indie iOS Game Developer",
-                "worksFor": { "@id": "https://asappsgames.com/#organization" },
-                "sameAs": [
-                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
                     "https://github.com/asappsgames"
                 ]
             },
@@ -116,7 +103,7 @@
                         "name": "Are there pop-up ads in Color Blocks?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay."
+                            "text": "No. There are no pop-up ads, and nothing forces an ad on you — any short ad is optional, only when you choose."
                         }
                     },
                     {
@@ -164,7 +151,7 @@
     }
     </script>
 </head>
-<body class="page-transition-in">
+<body data-accent="color-blocks">
     <header>
         <nav>
             <a href="/" class="logo">ASApps Games</a>
@@ -185,19 +172,10 @@
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
                 <div class="game-detail-header">
-                    <img src="/Images/color-blocks/icon.png" alt="Color Blocks - Block Match — ad-free color-matching puzzle app icon for iPhone and iPad" class="game-detail-icon" loading="lazy">
+                    <img src="/Images/color-blocks/icon.png" alt="Color Blocks - Block Match — color-matching puzzle app icon for iPhone and iPad" class="game-detail-icon" loading="lazy">
                     <div>
                         <h1>Color Blocks</h1>
-                        <div class="game-rating">
-                            <div class="stars" data-rating="4.7">
-                                <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg>
-                                <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg>
-                                <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg>
-                                <svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg>
-                                <svg viewBox="0 0 20 20" class="star-partial"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg>
-                            </div>
-                            <span class="rating-text">4.7 stars</span>
-                        </div>
+                        <div class="game-rating"><span class="starbar" style="--pct:94%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.33L10 13.27l-4.77 2.51.91-5.33L2.27 6.62l5.34-.78z"/></svg></span></span><span class="rating-text">4.7 stars</span></div>
                     </div>
                 </div>
 
@@ -211,14 +189,18 @@
                     <img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
                 </a>
 
+                <div class="game-slider" data-game="color-blocks">
+                    <div class="slider-nav"></div>
+                </div>
+
                 <div class="game-detail-description">
                     <h2>About Color Blocks</h2>
-                    <p>Color Blocks is a free color-matching block puzzle game for iPhone and iPad with <strong>no pop-up ads, no interstitials, and no required in-app purchases</strong>. Drag and drop multi-color blocks onto the board, match three or more blocks of the same color to clear them, create combos for bonus points, and unlock new colors as your score grows. Works fully offline.</p>
+                    <p>Color Blocks is a free color-matching block puzzle game for iPhone and iPad with <strong>no pop-up ads and no required in-app purchases</strong>. Drag and drop multi-color blocks onto the board, match three or more blocks of the same color to clear them, create combos for bonus points, and unlock new colors as your score grows. Works fully offline.</p>
                     <p>As your score increases, new colors unlock, adding layers of strategy and challenge to every round. Use boosters and the hammer tool strategically to overcome tough spots. With its progressive color-unlocking system, every game session feels fresh and rewarding.</p>
 
                     <h2>Key Features</h2>
                     <ul>
-                        <li>No pop-up ads, no interstitials, no banner ads during gameplay</li>
+                        <li>No pop-up ads and no surprise full-screen ads — any short ad is optional, only when you choose</li>
                         <li>No required in-app purchases — every feature unlocked from the start</li>
                         <li>Intuitive drag-and-drop controls</li>
                         <li>Match 3 or more same-color blocks to clear</li>
@@ -237,7 +219,7 @@
                     <h3>Is Color Blocks free to play?</h3>
                     <p>Yes. The game is free to download and play. There are no required in-app purchases — every feature is available from the start.</p>
                     <h3>Are there pop-up ads in Color Blocks?</h3>
-                    <p>No. There are no pop-up ads, no full-screen interstitials, and no forced ad breaks during gameplay.</p>
+                    <p>No. There are no pop-up ads, and nothing forces an ad on you — any short ad is optional, only when you choose.</p>
                     <h3>How do you play Color Blocks?</h3>
                     <p>Drag and drop multi-color blocks onto the board and match three or more blocks of the same color to clear them. As your score increases, new colors unlock, adding more strategy. Match blocks vertically or horizontally to trigger combo bonuses.</p>
                     <h3>Does Color Blocks work offline?</h3>
@@ -248,9 +230,6 @@
                     <p>Currently iOS only — iPhone, iPad, and iPod touch.</p>
                 </div>
 
-                <div class="game-slider" data-game="color-blocks">
-                    <div class="slider-nav"></div>
-                </div>
 
                 <div class="game-detail-cta">
                     <h2>Download Color Blocks Free</h2>
@@ -297,6 +276,6 @@
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../game.js"></script>
 </body>
 </html>

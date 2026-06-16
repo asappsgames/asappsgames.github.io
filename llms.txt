@@ -1,21 +1,20 @@
 # ASApps Games
 
-> Independent iOS game studio run by developer Faraj Ebrahimi. Publishes five free puzzle and card games for iPhone and iPad — all with no pop-up ads, no banner ads, no interstitial ads, and no required in-app purchases. Every title works fully offline.
+> An independent iOS game studio publishing five free puzzle and card games for iPhone and iPad — all with no pop-up ads and no required in-app purchases. The games are free, supported by a small unobtrusive banner plus optional short ads the player can choose to watch (for example, to continue after a few mistakes or to get a hint). No full-screen ad ever interrupts gameplay uninvited. Every title works fully offline.
 
 ## Games
 
-- [Sudoku No Pop-up Ads](https://asappsgames.com/sudoku/): Free classic Sudoku for iPhone and iPad. Four difficulty levels (Easy, Medium, Hard, Expert), smart hints, fast notes, unlimited undo. Rated 4.7 stars from 6,800+ reviews. App Store: https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334
-- [Color Blocks - Block Match](https://asappsgames.com/color-blocks/): Free color-matching block puzzle for iPhone and iPad. Drag and drop multi-color blocks, match three or more of the same color to clear, unlock new colors as you score. Rated 4.7 stars. App Store: https://apps.apple.com/us/app/color-blocks-block-match/id1476903896
-- [Block Blast Puzzle Jewel](https://asappsgames.com/blocks/): Free classic block puzzle for iPhone and iPad. Drag and drop blocks to fill rows and columns, score combo bonuses, earn daily rewards, customize the board. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214
-- [Sudoku Blocks, Tetra](https://asappsgames.com/sudoku-blocks/): Free Sudoku-style block puzzle for iPhone and iPad. Fill rows, columns, and 3x3 squares with 20+ block designs. Includes dark mode and a Block Pop mini game. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521
-- [Solitaire Classics Card Games](https://asappsgames.com/solitaire/): Free classic Klondike Solitaire for iPhone and iPad. Draw-one and draw-three modes, smooth animations, fully offline. App Store: https://apps.apple.com/us/app/solitaire-classics-card-games/id6758364119
+- [Sudoku No Pop-up Ads](https://asappsgames.com/sudoku/): Free classic Sudoku for iPhone and iPad. Six difficulty levels (Beginner, Easy, Medium, Hard, Expert, Master), smart hints, fast notes, unlimited undo. No pop-up ads. Rated 4.7 stars from ~8,000 reviews. App Store: https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334
+- [Color Blocks - Block Match](https://asappsgames.com/color-blocks/): Free color-matching block puzzle for iPhone and iPad. Drag and drop multi-color blocks, match three or more of the same color to clear, unlock new colors as you score. No pop-up ads. Rated 4.7 stars. App Store: https://apps.apple.com/us/app/color-blocks-block-match/id1476903896
+- [Block Blast Puzzle Jewel](https://asappsgames.com/blocks/): Free classic block puzzle for iPhone and iPad. Drag and drop blocks to fill rows and columns, score combo bonuses, earn daily rewards, customize the board. No pop-up ads. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214
+- [Sudoku Blocks, Tetra](https://asappsgames.com/sudoku-blocks/): Free Sudoku-style block puzzle for iPhone and iPad. Fill rows, columns, and 3x3 squares with 20+ block designs. Includes dark mode and a Block Pop mini game. No pop-up ads. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521
+- [Solitaire Classics Card Games](https://asappsgames.com/solitaire/): Free classic Klondike Solitaire for iPhone and iPad. Draw-one and draw-three modes, smooth animations, fully offline. No pop-up ads. App Store: https://apps.apple.com/us/app/solitaire-classics-card-games/id6758364119
 
 ## About
 
-- [Studio homepage](https://asappsgames.com/): Overview of all five games and the studio's ad-free philosophy.
-- [Apple App Store developer page](https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534): Faraj Ebrahimi's full App Store catalog.
+- [Studio homepage](https://asappsgames.com/): Overview of all five games and the studio's no-pop-up-ads philosophy.
 - [GitHub](https://github.com/asappsgames): Studio's GitHub presence.
-- [Contact](https://asappsgames.com/contact.html): Email contact for support and feedback.
+- [Contact](https://asappsgames.com/contact.html): Email contact for support and feedback (support@asappsgames.com).
 - [Privacy policy](https://asappsgames.com/Privacy-Policy/): How player data is handled.
 
 ## Common questions
@@ -23,4 +22,4 @@
 - All five games are **iOS only** (iPhone, iPad, iPod touch). No Android version exists.
 - All five games are **free to download** with **no required in-app purchases**.
 - All five games **work offline** — no Wi-Fi or mobile data required.
-- "Ad-free" specifically means: no pop-up ads, no full-screen interstitials, no forced ad breaks during gameplay.
+- **No pop-up ads**: the games never interrupt you with a pop-up or a forced full-screen ad. They are supported by a small banner, and any other ad is optional — shown only when the player chooses to watch one (for example, to continue after a few mistakes or to get a hint).
