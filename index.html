@@ -11,6 +11,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=1624437334">
+    <link rel="preload" as="image" href="Images/sudoku/screenshot1.webp" fetchpriority="high">
     <meta name="google-site-verification" content="fRBxRKZFsAS5mQhSz_xLAbIeAymrdOOZXCcoSzE9fDw" />
     <title>ASApps Games - Puzzle Games with No Pop-up Ads for iPhone &amp; iPad</title>
     <meta name="description" content="Play puzzle games with no pop-up ads on iPhone &amp; iPad. Sudoku, Solitaire, Color Blocks &amp; more from ASApps Games. Rated 4.7+ stars on the App Store. Free download.">
@@ -208,7 +210,7 @@
 
     .shot{position:relative;z-index:1;border-radius:28px;background:#08080b;padding:7px;box-shadow:0 24px 50px -22px #000, inset 0 0 0 1px rgba(255,255,255,.06);width:100%}
     .shot::before{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:50px;height:5px;border-radius:3px;background:rgba(255,255,255,.22);z-index:2}
-    .shot img{display:block;width:100%;border-radius:22px}
+    .shot img{display:block;width:100%;height:auto;border-radius:22px}
 
     .rating{display:flex;align-items:center;gap:8px}
     .stars{display:inline-flex;gap:2px}
@@ -242,6 +244,8 @@
     .tile-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
     .tile-icon{width:46px;height:46px;border-radius:12px;box-shadow:0 5px 14px -4px #000,0 0 0 1px rgba(255,255,255,.06);flex-shrink:0}
     .tile-head h3{font-size:17px;font-weight:600;letter-spacing:-.01em}
+    .tile,.featured{cursor:pointer}
+    .tile-head h3 a,.featured h3 a{color:inherit;text-decoration:none}
     .tile-head .rating{margin-top:3px}
     .chips{display:flex;gap:6px;flex-wrap:wrap;margin:2px 0 16px}
     .chip{font-size:11px;font-weight:600;padding:4px 9px;border-radius:999px;background:color-mix(in srgb,var(--c) 14%,transparent);
@@ -326,15 +330,15 @@
             </div>
 
             <!-- Featured: Sudoku (most popular) -->
-            <article class="featured reveal" style="--c:var(--c-sudoku)">
+            <article class="featured reveal" data-href="/sudoku/" style="--c:var(--c-sudoku)">
                 <div class="glow-shot">
-                    <div class="shot"><img src="Images/sudoku/screenshot1.png" alt="Sudoku gameplay screenshot" loading="lazy" width="300"></div>
+                    <div class="shot"><img fetchpriority="high" width="640" height="1385" src="Images/sudoku/screenshot1.webp" alt="Sudoku gameplay screenshot"></div>
                 </div>
                 <div>
                     <span class="badge-pill">★ Most popular</span>
                     <div class="frow" style="gap:14px">
-                        <img src="Images/sudoku/icon.png" alt="Sudoku app icon" style="width:52px;height:52px;border-radius:14px;box-shadow:0 6px 16px -4px #000" loading="lazy">
-                        <h3>Sudoku</h3>
+                        <img width="240" height="240" src="Images/sudoku/icon.webp" alt="Sudoku app icon" style="width:52px;height:52px;border-radius:14px;box-shadow:0 6px 16px -4px #000" loading="lazy">
+                        <h3><a href="/sudoku/">Sudoku</a></h3>
                     </div>
                     <p class="fdesc">Fill the 9×9 grid so every row, column, and box holds 1 to 9. Six difficulty levels from Beginner to Master, smart hints, and unlimited undo — with no pop-up ad ever breaking your focus.</p>
                     <div class="fmeta">
@@ -350,12 +354,12 @@
             </article>
 
             <div class="tiles">
-                <article class="tile reveal" style="--c:var(--c-colorblocks)">
-                    <div class="glow-shot"><div class="shot"><img src="Images/color-blocks/screenshot1.png" alt="Color Blocks gameplay screenshot" loading="lazy"></div></div>
+                <article class="tile reveal" data-href="/color-blocks/" style="--c:var(--c-colorblocks)">
+                    <div class="glow-shot"><div class="shot"><img width="640" height="1385" src="Images/color-blocks/screenshot1.webp" alt="Color Blocks gameplay screenshot" loading="lazy"></div></div>
                     <div class="tile-head">
-                        <img src="Images/color-blocks/icon.png" alt="Color Blocks app icon" class="tile-icon" loading="lazy">
+                        <img width="240" height="240" src="Images/color-blocks/icon.webp" alt="Color Blocks app icon" class="tile-icon" loading="lazy">
                         <div>
-                            <h3>Color Blocks</h3>
+                            <h3><a href="/color-blocks/">Color Blocks</a></h3>
                             <span class="rating"><span class="starbar" style="--pct:94%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.7</span></span>
                         </div>
                     </div>
@@ -363,12 +367,12 @@
                     <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
                 </article>
 
-                <article class="tile reveal" style="--c:var(--c-solitaire)">
-                    <div class="glow-shot"><div class="shot"><img src="Images/solitaire/screenshot1.png" alt="Solitaire gameplay screenshot" loading="lazy"></div></div>
+                <article class="tile reveal" data-href="/solitaire/" style="--c:var(--c-solitaire)">
+                    <div class="glow-shot"><div class="shot"><img width="640" height="1391" src="Images/solitaire/screenshot1.webp" alt="Solitaire gameplay screenshot" loading="lazy"></div></div>
                     <div class="tile-head">
-                        <img src="Images/solitaire/icon.png" alt="Solitaire app icon" class="tile-icon" loading="lazy">
+                        <img width="240" height="240" src="Images/solitaire/icon.webp" alt="Solitaire app icon" class="tile-icon" loading="lazy">
                         <div>
-                            <h3>Solitaire</h3>
+                            <h3><a href="/solitaire/">Solitaire</a></h3>
                             <span class="tag-new" style="margin-top:5px;display:inline-block">New</span>
                         </div>
                     </div>
@@ -376,12 +380,12 @@
                     <a href="https://apps.apple.com/us/app/solitaire-classics-card-games/id6758364119" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
                 </article>
 
-                <article class="tile reveal" style="--c:var(--c-blocks)">
-                    <div class="glow-shot"><div class="shot"><img src="Images/blocks/screenshot1.png" alt="Block Blast gameplay screenshot" loading="lazy"></div></div>
+                <article class="tile reveal" data-href="/blocks/" style="--c:var(--c-blocks)">
+                    <div class="glow-shot"><div class="shot"><img width="640" height="1385" src="Images/blocks/screenshot1.webp" alt="Block Blast gameplay screenshot" loading="lazy"></div></div>
                     <div class="tile-head">
-                        <img src="Images/blocks/icon.png" alt="Block Blast app icon" class="tile-icon" loading="lazy">
+                        <img width="240" height="240" src="Images/blocks/icon.webp" alt="Block Blast app icon" class="tile-icon" loading="lazy">
                         <div>
-                            <h3>Block Blast</h3>
+                            <h3><a href="/blocks/">Block Blast</a></h3>
                             <span class="rating"><span class="starbar" style="--pct:96%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.8</span></span>
                         </div>
                     </div>
@@ -389,12 +393,12 @@
                     <a href="https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
                 </article>
 
-                <article class="tile reveal" style="--c:var(--c-sudokublocks)">
-                    <div class="glow-shot"><div class="shot"><img src="Images/sudoku-blocks/screenshot1.png" alt="Sudoku Blocks gameplay screenshot" loading="lazy"></div></div>
+                <article class="tile reveal" data-href="/sudoku-blocks/" style="--c:var(--c-sudokublocks)">
+                    <div class="glow-shot"><div class="shot"><img width="640" height="1385" src="Images/sudoku-blocks/screenshot1.webp" alt="Sudoku Blocks gameplay screenshot" loading="lazy"></div></div>
                     <div class="tile-head">
-                        <img src="Images/sudoku-blocks/icon.png" alt="Sudoku Blocks app icon" class="tile-icon" loading="lazy">
+                        <img width="240" height="240" src="Images/sudoku-blocks/icon.webp" alt="Sudoku Blocks app icon" class="tile-icon" loading="lazy">
                         <div>
-                            <h3>Sudoku Blocks</h3>
+                            <h3><a href="/sudoku-blocks/">Sudoku Blocks</a></h3>
                             <span class="rating"><span class="starbar" style="--pct:96%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.8</span></span>
                         </div>
                     </div>
@@ -426,7 +430,7 @@
             <a href="/Privacy-Policy">Privacy Policy</a>
             <a href="/contact.html">Contact</a>
         </div>
-        <div>&copy; 2025 ASApps Games. All rights reserved.</div>
+        <div>&copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span></div>
     </footer>
 
     <script>
@@ -445,6 +449,10 @@
         var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
         document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
     }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+    document.querySelectorAll('.tile, .featured').forEach(function(card){
+        var href=card.getAttribute('data-href'); if(!href) return;
+        card.addEventListener('click', function(e){ if(e.target.closest('a, button')) return; window.location.href=href; });
+    });
     </script>
 </body>
 </html>

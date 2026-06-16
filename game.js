@@ -16,13 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
             img.alt = folder.replace('-', ' ') + ' gameplay screenshot';
             img.className = 'game-screenshot';
             img.loading = 'lazy';
+            img.width = 640;
+            img.height = folder === 'solitaire' ? 1391 : 1385;
             container.appendChild(img);
             if (nav) slider.insertBefore(container, nav); else slider.appendChild(container);
         }
 
         function probe() {
             var test = new Image();
-            var path = '../Images/' + folder + '/screenshot' + index + '.png';
+            var path = '../Images/' + folder + '/screenshot' + index + '.webp';
             test.onload = function () { add(path); index++; probe(); };
             test.onerror = function () { /* stop at first missing */ };
             test.src = path;

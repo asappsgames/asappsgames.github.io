@@ -76,14 +76,14 @@ html.reveal-on .animate-on-scroll.is-visible{opacity:1;transform:none;transition
 .app-store-button:active{transform:scale(.97)}
 
 /* SCREENSHOT GALLERY */
-.game-slider{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 2px 26px;margin:4px -4px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.game-slider{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 2px 26px;margin:4px -4px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none;min-height:560px}
 .game-slider::-webkit-scrollbar{display:none}
 .screenshot-container{position:relative;flex:0 0 auto;width:248px;scroll-snap-align:center;border-radius:30px;background:#08080b;padding:8px;
     box-shadow:0 26px 56px -24px #000,inset 0 0 0 1px rgba(255,255,255,.06);transition:transform .25s ease}
 .screenshot-container::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:52px;height:5px;border-radius:3px;background:rgba(255,255,255,.22);z-index:2}
 .screenshot-container::after{content:"";position:absolute;inset:-8%;z-index:-1;border-radius:36px;background:var(--c);opacity:.22;filter:blur(34px)}
 .screenshot-container:hover{transform:translateY(-6px)}
-.game-screenshot{display:block;width:100%;border-radius:22px}
+.game-screenshot{display:block;width:100%;height:auto;border-radius:22px}
 .slider-nav{display:none}
 
 /* LONG-FORM CONTENT */
