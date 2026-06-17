@@ -166,3 +166,13 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding:32px 24px;text-a
 .privacy-content ul{list-style:none;margin:6px 0 14px;padding:0}
 .privacy-content li{position:relative;padding-left:24px;margin-bottom:8px;color:var(--muted);font-size:15px}
 .privacy-content li::before{content:"";position:absolute;left:3px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--c)}
+
+/* ===== Reviews / testimonials ===== */
+.reviews-section{max-width:1000px;margin:56px auto 0;text-align:center}
+.reviews-section>h2{font-size:clamp(24px,3.4vw,32px);font-weight:700;letter-spacing:-.02em}
+.reviews-sub{color:var(--muted);margin:6px 0 26px;font-size:15px}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;text-align:left}
+.review{background:linear-gradient(180deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:18px;padding:22px;margin:0}
+.review .stars5{color:var(--star);font-size:15px;letter-spacing:2px;margin-bottom:10px}
+.review p{color:var(--ink);font-size:15px;margin:0 0 12px;line-height:1.55}
+.review cite{color:var(--muted);font-style:normal;font-weight:600;font-size:13.5px}
