@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://asappsgames.com/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://asappsgames.com/Images/color-blocks/screenshot1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://asappsgames.com/sudoku/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://asappsgames.com/Images/sudoku/screenshot1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://asappsgames.com/color-blocks/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://asappsgames.com/Images/color-blocks/screenshot1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://asappsgames.com/blocks/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://asappsgames.com/Images/blocks/screenshot1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://asappsgames.com/sudoku-blocks/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://asappsgames.com/Images/sudoku-blocks/screenshot1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://asappsgames.com/solitaire/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://asappsgames.com/Images/solitaire/screenshot1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://asappsgames.com/sudoku-com-alternative/</loc>

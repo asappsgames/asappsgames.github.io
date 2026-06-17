@@ -176,3 +176,9 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding:32px 24px;text-a
 .review .stars5{color:var(--star);font-size:15px;letter-spacing:2px;margin-bottom:10px}
 .review p{color:var(--ink);font-size:15px;margin:0 0 12px;line-height:1.55}
 .review cite{color:var(--muted);font-style:normal;font-weight:600;font-size:13.5px}
+
+/* breadcrumbs */
+.crumbs{font-size:13px;color:var(--muted);margin-bottom:8px}
+.crumbs a{color:var(--muted)}
+.crumbs a:hover{color:var(--ink)}
+.crumbs strong{color:var(--ink);font-weight:600}
