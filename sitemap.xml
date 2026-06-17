@@ -79,6 +79,36 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://asappsgames.com/guides/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://asappsgames.com/sudoku-tips-and-strategy/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://asappsgames.com/klondike-solitaire-strategy/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://asappsgames.com/freecell-strategy/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://asappsgames.com/spider-solitaire-strategy/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://asappsgames.com/contact.html</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>yearly</changefreq>
