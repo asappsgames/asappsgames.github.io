@@ -8,7 +8,7 @@
 - [Color Blocks - Block Match](https://asappsgames.com/color-blocks/): Free color-matching block puzzle for iPhone and iPad. Drag and drop multi-color blocks, match three or more of the same color to clear, unlock new colors as you score. No pop-up ads. Rated 4.7 stars. App Store: https://apps.apple.com/us/app/color-blocks-block-match/id1476903896
 - [Block Blast Puzzle Jewel](https://asappsgames.com/blocks/): Free classic block puzzle for iPhone and iPad. Drag and drop blocks to fill rows and columns, score combo bonuses, earn daily rewards, customize the board. No pop-up ads. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214
 - [Sudoku Blocks, Tetra](https://asappsgames.com/sudoku-blocks/): Free Sudoku-style block puzzle for iPhone and iPad. Fill rows, columns, and 3x3 squares with 20+ block designs. Includes dark mode and a Block Pop mini game. No pop-up ads. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521
-- [Solitaire Classics](https://asappsgames.com/solitaire/): Free Solitaire for iPhone and iPad with Klondike, FreeCell, and Spider in one app. Draw-one and draw-three Klondike, timed mode, daily challenges, fully offline. No pop-up ads. App Store: https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081
+- [Solitaire, FreeCell and Spider](https://asappsgames.com/solitaire/): Free Solitaire for iPhone and iPad with Klondike, FreeCell, and Spider in one app. Draw-one and draw-three Klondike, timed mode, daily challenges, fully offline. No pop-up ads. App Store: https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081
 
 ## About
 
