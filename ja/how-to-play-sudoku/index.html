@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0XQKTCJYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J0XQKTCJYG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0C0B11">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="/Images/common/apple-touch-icon.png">
+    <meta name="apple-itunes-app" content="app-id=1624437334">
+    <title>数独の遊び方 — 初心者向けガイド | ASApps Games</title>
+    <meta name="description" content="数独の遊び方を解説：ルール、手順を追ったプレイ方法、初心者向けのコツ、よくある失敗まで — iPhone・iPad で楽しめるかんたんガイド。">
+    <link rel="canonical" href="https://asappsgames.com/ja/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="en" href="https://asappsgames.com/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="es" href="https://asappsgames.com/es/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="de" href="https://asappsgames.com/de/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="fr" href="https://asappsgames.com/fr/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://asappsgames.com/zh/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="ja" href="https://asappsgames.com/ja/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="ko" href="https://asappsgames.com/ko/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="x-default" href="https://asappsgames.com/how-to-play-sudoku/">
+    <meta property="og:title" content="数独の遊び方">
+    <meta property="og:description" content="数独の遊び方を解説：ルール、手順を追ったプレイ方法、初心者向けのコツ、よくある失敗まで — iPhone・iPad で楽しめるかんたんガイド。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://asappsgames.com/ja/how-to-play-sudoku/">
+    <meta property="og:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta property="og:site_name" content="ASApps Games">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="数独の遊び方">
+    <meta name="twitter:description" content="数独の遊び方を解説：ルール、手順を追ったプレイ方法、初心者向けのコツ、よくある失敗まで — iPhone・iPad で楽しめるかんたんガイド。">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
+    <link rel="stylesheet" href="/game.css">
+    <link rel="stylesheet" href="/fonts/poppins.css">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "HowTo",
+            "name": "数独の遊び方",
+            "step": [
+                {
+                    "@type": "HowToStep",
+                    "name": "たった一つのルールを覚える",
+                    "text": "すべての行、すべての列、そしてすべての 3x3 ブロックには、1 から 9 までの数字がそれぞれちょうど一度ずつ入らなければなりません。同じ行・列・ブロックの中で、数字が重複することは決してありません。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "簡単に埋まるマスを探す",
+                    "text": "たとえば「5」と一つの数字を決めて、すでに 5 が入っている行・列・ブロックを見渡します。まだ 5 が必要なブロックでは、既存の 5 が多くのマスを「ふさいで」くれます。5 を置けるマスが一つしか残っていなければ、そこに 5 を置きましょう。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "裸のシングルを見つける",
+                    "text": "ある一つの空きマスに注目し、その行・列・ブロックにすでにある数字をすべて除外します。残った数字が一つだけなら、そのマスにはその数字しか入りません。迷わず書き込みましょう。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "隠れたシングルを見つける",
+                    "text": "一つの行・列・ブロックの中で、ある特定の数字が入れる場所を調べます。そのグループ内でその数字を置けるマスが一つしかなければ、たとえそのマスに他の数字も入りうるとしても、必ずそこに入ります。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "残りはメモ（候補）を使う",
+                    "text": "ひと目で埋められるマスがなくなったら、それぞれの空きマスに、まだ入る可能性のある数字を小さくメモ（候補）として書き込みます。このメモがあれば、すべてを頭の中で覚えておかなくても、パターンが見えやすくなり、選択肢を絞り込めます。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "メモを更新して繰り返す",
+                    "text": "数字を一つ置くたびに、同じ行・列・ブロックのメモからその数字を消します。こうすることで、新たな裸のシングルや隠れたシングルが浮かび上がってくることがよくあります。盤面が埋まるまで、見渡し・シングル探し・メモの更新を繰り返しましょう。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "完成した盤面を確認する",
+                    "text": "すべてのマスが埋まったら、各行・列・ブロックに 1 から 9 までが重複なく入っているか確認します。どこかで数字が重複していれば、それより前の手のどこかが間違っています。さかのぼって、自分の論理を見直しましょう。"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "どの数独も、当て推量なしで解けるのですか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "はい。きちんと作られた数独には、純粋な論理だけで必ずたどり着ける正解がただ一つあります。当て推量せざるを得ないと感じたときは、たいてい、まだ気づいていない置ける場所が残っているということです。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "数独には数字とマスがいくつあるのですか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "盤面は 9x9 の正方形に並んだ 81 マスからなり、使う数字は 1 から 9 までだけです。この9つの数字は、完成した盤面全体でそれぞれ合計9回ずつ — 各行・各列・各 3x3 ブロックに一度ずつ — 現れます。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "プレイするには計算が得意でないとダメですか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "いいえ。数字を使いますが、数独に計算はありません。足し算も引き算も、計算は一切しません。数字は9種類の記号にすぎず、このパズルは完全に論理と配置だけで成り立っています。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "初心者にとって数独のいちばん難しいところは？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "もっとも難しい瞬間は、ひと目で埋められるマスがなくなり、メモや隠れたシングルといったテクニックに頼らざるを得なくなったときです。「一つのマスに何が入るか」ではなく「ある数字がここにしか入れない場所はどこか」を見抜けるようになることが、この壁を越えるカギとなるスキルです。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "小さな数字（メモ・候補）は何を意味するのですか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "それは候補です。その空きマスに、行・列・ブロックの状況からまだ入る可能性のある数字を表します。あくまで記憶の補助であり、解答そのものではありません。どの数字が入るか証明できたら、一つの最終的な答えに置き換えます。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "難易度によって実際に何が変わるのですか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "難しい問題ほど、最初のヒントの数が少なく、より高度なテクニックや長い推理の連鎖が必要になります。ルール自体は変わりません。変わるのは、各マスを見つけるためにどれだけ論理を使う必要があるか、という点だけです。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "行・列・ブロックの中で数字が重複することはありますか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "決してありません。数独の唯一のルールは、1 から 9 までの各数字が、すべての行に一度、すべての列に一度、すべての 3x3 ブロックに一度ずつ現れることです。重複があれば、それはどこかにミスがあるということです。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "数独を1問解くのにどれくらい時間がかかりますか？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "難易度や経験によって変わります。やさしい問題ならほんの数分で解けることもあり、上級の盤面ならずっと時間がかかることもあります。テクニックが自然と身につくにつれ、解くスピードは練習とともに上がっていきます。"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "ホーム",
+                    "item": "https://asappsgames.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "数独の遊び方",
+                    "item": "https://asappsgames.com/ja/how-to-play-sudoku/"
+                }
+            ]
+        }
+    ]
+}
+    </script>
+    <style>
+    .lede{font-size:18px;color:var(--ink);max-width:760px;margin:0 auto 8px}
+    .game-detail-description .steps{counter-reset:s;list-style:none;margin:10px 0 20px;padding:0}
+    .game-detail-description .steps li{position:relative;padding-left:48px;margin-bottom:16px;color:var(--muted)}
+    .game-detail-description .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#0c0b11;background:var(--c)}
+    .game-detail-description .steps li strong{color:var(--ink);display:block;margin-bottom:2px}
+    .guide-cta-btn{display:inline-block;background:var(--c);color:#0c0b11;font-weight:700;padding:14px 24px;border-radius:14px;transition:transform .15s ease}
+    .guide-cta-btn:hover{transform:translateY(-2px)}
+    </style>
+    <script src="/game.js"></script>
+</head>
+<body data-accent="sudoku">
+    <header>
+        <nav>
+            <a href="/" class="logo">ASApps Games</a>
+            <div class="nav-links">
+                <a href="/">ゲーム</a>
+                <a href="/sudoku/">数独</a>
+                <a href="/guides/">ガイド</a>
+                <a href="/contact.html">お問い合わせ</a>
+            </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="game-detail-section">
+            <div class="game-detail-container animate-on-scroll">
+                <nav class="crumbs" aria-label="Breadcrumb"><a href="https://asappsgames.com/">ホーム</a> <span style="opacity:.5">&rsaquo;</span> <strong>数独の遊び方</strong></nav>
+                <h1>数独の遊び方</h1>
+                <p class="lede">数独（ナンプレ）は、世界でもっとも人気のあるロジックパズルです。9x9 のマスに 1 から 9 までの数字を埋めていきます。数字を使うので計算パズルのように見えますが、足し算や計算は一切しません。純粋な論理だけで解けるパズルで、どの問題も推理だけで答えにたどり着けます。いくつかの簡単なテクニックを覚えれば、最初から最後まで自分の力で解けるようになります。</p>
+                <div class="game-detail-description">
+                    <h2>ゲームの目的</h2>
+                    <p>目標は、すべての空きマスを埋めて、9つの行・9つの列・9つの 3x3 ブロックのそれぞれに 1 から 9 までの数字がすべて入り、しかもどの行・列・ブロックの中でも同じ数字が重複しないようにすることです。盤面がすべて埋まり、この「1 から 9 まで、重複なし」というルールがあらゆる場所で同時に成り立ったとき、その問題はクリアです。よくできた問題には、推理だけでたどり着ける正解がただ一つだけあり、当て推量をする必要はありません。</p>
+                    <h2>盤面のセットアップ</h2>
+                    <p>盤面は 81 マスからなる 9x9 のグリッドで、太い線によって 9つの 3x3 ブロックに区切られています。いくつかのマスには最初から数字が入っており、これらは「ヒント」や「手がかり」と呼ばれ、ゲーム中ずっと変わりません。残りのマスは空欄から始まり、そこを埋めていくのがプレイヤーの役目です。やさしい問題ほどヒントの数が多く、難しい問題ほど少ない状態から始まります。</p>
+                    <h2>遊び方をステップごとに解説</h2>
+                    <ol class="steps">
+                        <li><strong>たった一つのルールを覚える</strong>すべての行、すべての列、そしてすべての 3x3 ブロックには、1 から 9 までの数字がそれぞれちょうど一度ずつ入らなければなりません。同じ行・列・ブロックの中で、数字が重複することは決してありません。</li>
+                        <li><strong>簡単に埋まるマスを探す</strong>たとえば「5」と一つの数字を決めて、すでに 5 が入っている行・列・ブロックを見渡します。まだ 5 が必要なブロックでは、既存の 5 が多くのマスを「ふさいで」くれます。5 を置けるマスが一つしか残っていなければ、そこに 5 を置きましょう。</li>
+                        <li><strong>裸のシングルを見つける</strong>ある一つの空きマスに注目し、その行・列・ブロックにすでにある数字をすべて除外します。残った数字が一つだけなら、そのマスにはその数字しか入りません。迷わず書き込みましょう。</li>
+                        <li><strong>隠れたシングルを見つける</strong>一つの行・列・ブロックの中で、ある特定の数字が入れる場所を調べます。そのグループ内でその数字を置けるマスが一つしかなければ、たとえそのマスに他の数字も入りうるとしても、必ずそこに入ります。</li>
+                        <li><strong>残りはメモ（候補）を使う</strong>ひと目で埋められるマスがなくなったら、それぞれの空きマスに、まだ入る可能性のある数字を小さくメモ（候補）として書き込みます。このメモがあれば、すべてを頭の中で覚えておかなくても、パターンが見えやすくなり、選択肢を絞り込めます。</li>
+                        <li><strong>メモを更新して繰り返す</strong>数字を一つ置くたびに、同じ行・列・ブロックのメモからその数字を消します。こうすることで、新たな裸のシングルや隠れたシングルが浮かび上がってくることがよくあります。盤面が埋まるまで、見渡し・シングル探し・メモの更新を繰り返しましょう。</li>
+                        <li><strong>完成した盤面を確認する</strong>すべてのマスが埋まったら、各行・列・ブロックに 1 から 9 までが重複なく入っているか確認します。どこかで数字が重複していれば、それより前の手のどこかが間違っています。さかのぼって、自分の論理を見直しましょう。</li>
+                    </ol>
+                    <h2>初心者向けのコツ</h2>
+                    <ul>
+                        <li>すでに多く出ている数字やブロックから手をつけましょう。手がかりが多いほど、序盤でテンポよくマスを埋められます。</li>
+                        <li>メモに頼る前に、ひと目で埋まるマスを先に埋め切りましょう。初心者向けの問題の多くは、見渡しとシングル探しだけで解き切れます。</li>
+                        <li>メモは正確に、常に最新の状態に保ちましょう。古いメモは、誤った手につながるもっとも多い原因です。</li>
+                        <li>短く集中したパスで進めましょう。やみくもに動き回るのではなく、1、次に 2、次に 3、というように順番に見ていきます。</li>
+                        <li>行き詰まったら、「このマスに何が入るか」から「この数字はこのブロックのどこに入れるか」へ視点を切り替えましょう。隠れたシングルは、案外目の前に潜んでいます。</li>
+                        <li>まずは初級または初心者向けの難易度から始め、その段階に慣れてから次へ進みましょう。難易度が上がっても、求められるのは同じテクニックをより多く使うことだけです。</li>
+                    </ul>
+                    <h2>やりがちな失敗と回避法</h2>
+                    <ul>
+                        <li>行き詰まったときに当てずっぽうで置くこと。数独は論理だけで解けるパズルであり、当て推量を一度すると、後で盤面全体が崩れる道に迷い込むことがあります。</li>
+                        <li>3つのグループすべてを確認せずに数字を置くこと。数字はその行、その列、そしてそのブロックすべてで成立していなければなりません。初心者は一つか二つだけ確認して、衝突を見落としがちです。</li>
+                        <li>数字を置いた後にメモを更新し忘れ、古い候補が残ったまま誤った手につながること。</li>
+                        <li>勢いでマスを埋めすぎること。「たぶん正しい」数字を確定したかのように書き込むと、後からたどりにくいミスの原因になります。</li>
+                        <li>行や列全体を無視してブロックばかりに注目すること。同じ見渡しの論理は縦・横・ブロックの3方向すべてで使え、そうしないと置けるマスを見逃します。</li>
+                        <li>早すぎる段階で高い難易度に挑むこと。基本テクニックがまだ身についていないうちに挑むと、すぐに行き詰まってしまいます。</li>
+                    </ul>
+                    <h2>よくある質問</h2>
+                    <h3>どの数独も、当て推量なしで解けるのですか？</h3>
+                    <p>はい。きちんと作られた数独には、純粋な論理だけで必ずたどり着ける正解がただ一つあります。当て推量せざるを得ないと感じたときは、たいてい、まだ気づいていない置ける場所が残っているということです。</p>
+                    <h3>数独には数字とマスがいくつあるのですか？</h3>
+                    <p>盤面は 9x9 の正方形に並んだ 81 マスからなり、使う数字は 1 から 9 までだけです。この9つの数字は、完成した盤面全体でそれぞれ合計9回ずつ — 各行・各列・各 3x3 ブロックに一度ずつ — 現れます。</p>
+                    <h3>プレイするには計算が得意でないとダメですか？</h3>
+                    <p>いいえ。数字を使いますが、数独に計算はありません。足し算も引き算も、計算は一切しません。数字は9種類の記号にすぎず、このパズルは完全に論理と配置だけで成り立っています。</p>
+                    <h3>初心者にとって数独のいちばん難しいところは？</h3>
+                    <p>もっとも難しい瞬間は、ひと目で埋められるマスがなくなり、メモや隠れたシングルといったテクニックに頼らざるを得なくなったときです。「一つのマスに何が入るか」ではなく「ある数字がここにしか入れない場所はどこか」を見抜けるようになることが、この壁を越えるカギとなるスキルです。</p>
+                    <h3>小さな数字（メモ・候補）は何を意味するのですか？</h3>
+                    <p>それは候補です。その空きマスに、行・列・ブロックの状況からまだ入る可能性のある数字を表します。あくまで記憶の補助であり、解答そのものではありません。どの数字が入るか証明できたら、一つの最終的な答えに置き換えます。</p>
+                    <h3>難易度によって実際に何が変わるのですか？</h3>
+                    <p>難しい問題ほど、最初のヒントの数が少なく、より高度なテクニックや長い推理の連鎖が必要になります。ルール自体は変わりません。変わるのは、各マスを見つけるためにどれだけ論理を使う必要があるか、という点だけです。</p>
+                    <h3>行・列・ブロックの中で数字が重複することはありますか？</h3>
+                    <p>決してありません。数独の唯一のルールは、1 から 9 までの各数字が、すべての行に一度、すべての列に一度、すべての 3x3 ブロックに一度ずつ現れることです。重複があれば、それはどこかにミスがあるということです。</p>
+                    <h3>数独を1問解くのにどれくらい時間がかかりますか？</h3>
+                    <p>難易度や経験によって変わります。やさしい問題ならほんの数分で解けることもあり、上級の盤面ならずっと時間がかかることもあります。テクニックが自然と身につくにつれ、解くスピードは練習とともに上がっていきます。</p>
+                </div>
+                <div class="game-detail-cta">
+                    <h2>プレイの準備はできましたか？</h2>
+                    <p>「Sudoku No Pop-up Ads」で練習しよう — 無料、難易度6段階、ポップアップ広告なし。</p>
+                    <a href="/sudoku/" class="guide-cta-btn">開く 数独 →</a>
+                </div>
+                <div class="more-games">
+                    <h2>ASApps のその他のゲーム</h2>
+                    <div class="more-games-grid">
+                        <a href="/sudoku/" class="more-game-item"><img src="/Images/sudoku/icon.webp" alt="Sudoku" class="more-game-icon" width="58" height="58" loading="lazy"><span>Sudoku</span></a>
+                        <a href="/solitaire/" class="more-game-item"><img src="/Images/solitaire/icon.webp" alt="Solitaire" class="more-game-icon" width="58" height="58" loading="lazy"><span>Solitaire</span></a>
+                        <a href="/color-blocks/" class="more-game-item"><img src="/Images/color-blocks/icon.webp" alt="Color Blocks" class="more-game-icon" width="58" height="58" loading="lazy"><span>Color Blocks</span></a>
+                        <a href="/blocks/" class="more-game-item"><img src="/Images/blocks/icon.webp" alt="Block Blast" class="more-game-icon" width="58" height="58" loading="lazy"><span>Block Blast</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/about/">概要</a>
+                <a href="/guides/">ガイド</a>
+                <a href="/Privacy-Policy">プライバシーポリシー</a>
+                <a href="/contact.html">お問い合わせ</a>
+            </div>
+            <div class="copyright">&copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">最終更新：2026年6月</span></div>
+        </div>
+    </footer>
+</body>
+</html>

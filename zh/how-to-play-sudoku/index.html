@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0XQKTCJYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J0XQKTCJYG');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0C0B11">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="/Images/common/apple-touch-icon.png">
+    <meta name="apple-itunes-app" content="app-id=1624437334">
+    <title>数独怎么玩——新手入门指南 | ASApps Games</title>
+    <meta name="description" content="学习数独怎么玩：规则、分步玩法、新手技巧和常见错误——一份为 iPhone 和 iPad 准备的简明指南。">
+    <link rel="canonical" href="https://asappsgames.com/zh/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="en" href="https://asappsgames.com/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="es" href="https://asappsgames.com/es/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="de" href="https://asappsgames.com/de/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="fr" href="https://asappsgames.com/fr/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://asappsgames.com/zh/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="ja" href="https://asappsgames.com/ja/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="ko" href="https://asappsgames.com/ko/how-to-play-sudoku/">
+    <link rel="alternate" hreflang="x-default" href="https://asappsgames.com/how-to-play-sudoku/">
+    <meta property="og:title" content="数独怎么玩">
+    <meta property="og:description" content="学习数独怎么玩：规则、分步玩法、新手技巧和常见错误——一份为 iPhone 和 iPad 准备的简明指南。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://asappsgames.com/zh/how-to-play-sudoku/">
+    <meta property="og:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta property="og:site_name" content="ASApps Games">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="数独怎么玩">
+    <meta name="twitter:description" content="学习数独怎么玩：规则、分步玩法、新手技巧和常见错误——一份为 iPhone 和 iPad 准备的简明指南。">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
+    <link rel="stylesheet" href="/game.css">
+    <link rel="stylesheet" href="/fonts/poppins.css">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "HowTo",
+            "name": "数独怎么玩",
+            "step": [
+                {
+                    "@type": "HowToStep",
+                    "name": "牢记唯一的规则",
+                    "text": "每一行、每一列以及每一个 3x3 宫格都必须包含 1 到 9 的每个数字，且各只出现一次。同一行、同一列或同一宫内，数字绝不能重复。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "扫描容易确定的位置",
+                    "text": "挑一个数字，比如 5，看看哪些行、列、宫里已经出现了 5。在一个还缺 5 的宫格中，这些已有的 5 会「挡住」大部分格子——如果只剩一个空格能合法地放 5，就把它填在那里。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "寻找「唯一候选数」",
+                    "text": "盯住某个空格，把它所在行、列、宫里已经出现的数字逐一排除。如果只剩下一个数字，那么这个格子就只能填这个数字，直接写进去。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "寻找「隐性唯一数」",
+                    "text": "在某一行、一列或一宫内，看看某个特定数字可以放在哪些位置。如果在这个组里只有一个格子能放下这个数字，那它就必须放在那里——即使这个格子本身也能放下其他数字。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "其余位置用候选标记",
+                    "text": "当一眼看上去再也没有格子能确定时，就在每个空格里写下小小的标记（候选数），列出该格仍然允许填入的所有数字。这些标记能帮你看出规律、缩小选择，而不必把所有信息都记在脑子里。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "更新标记，循环往复",
+                    "text": "每填入一个数字，就把同一行、同一列、同一宫中相应的候选标记擦掉。这往往会显现出新的「唯一候选数」或「隐性唯一数」。不断在扫描、寻找唯一数、更新标记之间循环，直到方格填满。"
+                },
+                {
+                    "@type": "HowToStep",
+                    "name": "检查完成的方格",
+                    "text": "当每个格子都填好后，确认每一行、每一列、每一宫都包含 1 到 9 且无重复。如果出现重复，说明前面某一步填错了——退回去重新检查你的推理。"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "每一道数独都能不靠猜测解出吗？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "是的。一道设计规范的数独只有唯一一个解，而且总能通过纯逻辑推出。如果你觉得不得不去猜，那通常说明还有一个你没发现的可确定位置。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "数独里有多少个数字和格子？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "方格共有 81 个格子，排成一个 9x9 的正方形，你只会用到 1 到 9 的数字。在完成的棋盘上，这九个数字每个都各出现九次——在每一行、每一列和每一个 3x3 宫格中各出现一次。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "玩数独需要数学好吗？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "不需要。尽管用到数字，数独却不涉及任何算术——你从不需要做加法、减法或任何计算。这些数字只是九个符号，谜题完全关乎逻辑和位置安排。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "对新手来说，数独最难的部分是什么？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "最难的时刻是当一眼看上去没有任何格子能确定，你必须依靠候选标记以及「隐性唯一数」之类的技巧。学会发现某个数字「只能放在哪里」——而不是某个格子能放什么——才是帮你度过这一关的关键本领。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "那些小数字（候选标记）是什么意思？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "它们是候选数：根据某个空格所在的行、列、宫，目前仍允许填入该格的数字。它们是一种记忆辅助，并不是答案的一部分——一旦你能证明哪个数字属于该格，就用这个最终答案替换掉它们。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "难度实际上改变了什么？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "较难的题目一开始给出的线索更少，需要更高级的技巧和更长的推理链条。规则从不改变——改变的只是你需要运用多少逻辑才能确定每个数字。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "数字可以在一行、一列或一宫里重复吗？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "绝不可以。数独唯一的规则就是：1 到 9 的每个数字在每一行、每一列和每一个 3x3 宫格中都恰好出现一次。出现任何重复，都意味着哪里出错了。"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "解一道数独要花多长时间？",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "这取决于难度和经验。简单的题目可能只要几分钟，而专家级的棋盘则可能要花上更久。随着技巧逐渐变得自动化，速度会随练习自然提升。"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "首页",
+                    "item": "https://asappsgames.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "数独怎么玩",
+                    "item": "https://asappsgames.com/zh/how-to-play-sudoku/"
+                }
+            ]
+        }
+    ]
+}
+    </script>
+    <style>
+    .lede{font-size:18px;color:var(--ink);max-width:760px;margin:0 auto 8px}
+    .game-detail-description .steps{counter-reset:s;list-style:none;margin:10px 0 20px;padding:0}
+    .game-detail-description .steps li{position:relative;padding-left:48px;margin-bottom:16px;color:var(--muted)}
+    .game-detail-description .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#0c0b11;background:var(--c)}
+    .game-detail-description .steps li strong{color:var(--ink);display:block;margin-bottom:2px}
+    .guide-cta-btn{display:inline-block;background:var(--c);color:#0c0b11;font-weight:700;padding:14px 24px;border-radius:14px;transition:transform .15s ease}
+    .guide-cta-btn:hover{transform:translateY(-2px)}
+    </style>
+    <script src="/game.js"></script>
+</head>
+<body data-accent="sudoku">
+    <header>
+        <nav>
+            <a href="/" class="logo">ASApps Games</a>
+            <div class="nav-links">
+                <a href="/">游戏</a>
+                <a href="/sudoku/">数独</a>
+                <a href="/guides/">攻略</a>
+                <a href="/contact.html">联系我们</a>
+            </div>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="game-detail-section">
+            <div class="game-detail-container animate-on-scroll">
+                <nav class="crumbs" aria-label="Breadcrumb"><a href="https://asappsgames.com/">首页</a> <span style="opacity:.5">&rsaquo;</span> <strong>数独怎么玩</strong></nav>
+                <h1>数独怎么玩</h1>
+                <p class="lede">数独是全世界最受欢迎的逻辑谜题：一个 9x9 的方格，你需要在其中填入 1 到 9 的数字。它看起来像一道数学题，但你从不需要做任何加法或计算——它纯粹靠逻辑，每一道题都能仅凭推理求解。只要掌握几个简单的技巧，你就能从头到尾完整地解开整盘谜题。</p>
+                <div class="game-detail-description">
+                    <h2>游戏目标</h2>
+                    <p>你的目标是填满每一个空格，使得九行中的每一行、九列中的每一列，以及九个 3x3 宫格中的每一个，都恰好包含 1 到 9 的数字，并且在任何一行、一列或一宫中都不出现重复的数字。当整个方格全部填满，且「1 到 9、不重复」这条规则在每个位置同时成立时，谜题就解开了。一道设计精良的题目只有唯一一个正确答案，并且可以完全靠逻辑推出，无需任何猜测。</p>
+                    <h2>如何摆放牌局</h2>
+                    <p>棋盘是一个由 81 个格子组成的 9x9 方格，用较粗的线条划分成九个 3x3 宫格。有些格子里已经填好了数字——它们被称为「给定数」或「线索」，在整局游戏中固定不变。其余的格子一开始是空的，需要你来填入。简单的题目一开始给出的线索更多，而较难的题目则线索更少。</p>
+                    <h2>玩法分步详解</h2>
+                    <ol class="steps">
+                        <li><strong>牢记唯一的规则</strong>每一行、每一列以及每一个 3x3 宫格都必须包含 1 到 9 的每个数字，且各只出现一次。同一行、同一列或同一宫内，数字绝不能重复。</li>
+                        <li><strong>扫描容易确定的位置</strong>挑一个数字，比如 5，看看哪些行、列、宫里已经出现了 5。在一个还缺 5 的宫格中，这些已有的 5 会「挡住」大部分格子——如果只剩一个空格能合法地放 5，就把它填在那里。</li>
+                        <li><strong>寻找「唯一候选数」</strong>盯住某个空格，把它所在行、列、宫里已经出现的数字逐一排除。如果只剩下一个数字，那么这个格子就只能填这个数字，直接写进去。</li>
+                        <li><strong>寻找「隐性唯一数」</strong>在某一行、一列或一宫内，看看某个特定数字可以放在哪些位置。如果在这个组里只有一个格子能放下这个数字，那它就必须放在那里——即使这个格子本身也能放下其他数字。</li>
+                        <li><strong>其余位置用候选标记</strong>当一眼看上去再也没有格子能确定时，就在每个空格里写下小小的标记（候选数），列出该格仍然允许填入的所有数字。这些标记能帮你看出规律、缩小选择，而不必把所有信息都记在脑子里。</li>
+                        <li><strong>更新标记，循环往复</strong>每填入一个数字，就把同一行、同一列、同一宫中相应的候选标记擦掉。这往往会显现出新的「唯一候选数」或「隐性唯一数」。不断在扫描、寻找唯一数、更新标记之间循环，直到方格填满。</li>
+                        <li><strong>检查完成的方格</strong>当每个格子都填好后，确认每一行、每一列、每一宫都包含 1 到 9 且无重复。如果出现重复，说明前面某一步填错了——退回去重新检查你的推理。</li>
+                    </ol>
+                    <h2>新手技巧</h2>
+                    <ul>
+                        <li>先从已经出现次数最多的数字和宫格入手——它们给你的线索最多，也最容易在开局快速得分。</li>
+                        <li>在动用候选标记之前，先把所有一眼能确定的位置全部填完；很多新手题目仅靠扫描和寻找唯一数就能完成。</li>
+                        <li>保持候选标记准确、及时更新——过时的标记是导致走错步的最常见原因。</li>
+                        <li>用简短而专注的回合来推进：先把 1 全部排查一遍，再排查 2，再排查 3，依此类推，而不要东一榔头西一棒子。</li>
+                        <li>如果卡住了，就把思路从「这个格子该填什么」切换到「这个数字在这个宫里能放哪」——隐性唯一数常常就藏在明处。</li>
+                        <li>从「入门」或「简单」难度开始，等到某个级别玩得得心应手了再往上升；每升一级，无非是更多地用到这些同样的技巧。</li>
+                    </ul>
+                    <h2>常见错误须避免</h2>
+                    <ul>
+                        <li>卡住时去猜。数独完全可以靠逻辑解出，而一个错误的猜测可能让你走上一条岔路，到后面把整盘棋都搞坏。</li>
+                        <li>没检查全部三个组就落子。一个数字必须在它所在的行、列「以及」宫中都合法——新手常常只检查了一两个，漏掉了冲突。</li>
+                        <li>每次落子后忘记更新候选标记，留下过时的候选数，从而导致走错步。</li>
+                        <li>填格子太心急。把一个「大概对」的数字当成确定无疑的填上去，会造成难以回溯的错误。</li>
+                        <li>忽视整行整列，只盯着宫格看——同样的扫描逻辑在三个方向上都适用，否则你会漏掉可以确定的位置。</li>
+                        <li>过早跳到较高难度，结果因为基础技巧还没成为本能而感到卡壳。</li>
+                    </ul>
+                    <h2>常见问题</h2>
+                    <h3>每一道数独都能不靠猜测解出吗？</h3>
+                    <p>是的。一道设计规范的数独只有唯一一个解，而且总能通过纯逻辑推出。如果你觉得不得不去猜，那通常说明还有一个你没发现的可确定位置。</p>
+                    <h3>数独里有多少个数字和格子？</h3>
+                    <p>方格共有 81 个格子，排成一个 9x9 的正方形，你只会用到 1 到 9 的数字。在完成的棋盘上，这九个数字每个都各出现九次——在每一行、每一列和每一个 3x3 宫格中各出现一次。</p>
+                    <h3>玩数独需要数学好吗？</h3>
+                    <p>不需要。尽管用到数字，数独却不涉及任何算术——你从不需要做加法、减法或任何计算。这些数字只是九个符号，谜题完全关乎逻辑和位置安排。</p>
+                    <h3>对新手来说，数独最难的部分是什么？</h3>
+                    <p>最难的时刻是当一眼看上去没有任何格子能确定，你必须依靠候选标记以及「隐性唯一数」之类的技巧。学会发现某个数字「只能放在哪里」——而不是某个格子能放什么——才是帮你度过这一关的关键本领。</p>
+                    <h3>那些小数字（候选标记）是什么意思？</h3>
+                    <p>它们是候选数：根据某个空格所在的行、列、宫，目前仍允许填入该格的数字。它们是一种记忆辅助，并不是答案的一部分——一旦你能证明哪个数字属于该格，就用这个最终答案替换掉它们。</p>
+                    <h3>难度实际上改变了什么？</h3>
+                    <p>较难的题目一开始给出的线索更少，需要更高级的技巧和更长的推理链条。规则从不改变——改变的只是你需要运用多少逻辑才能确定每个数字。</p>
+                    <h3>数字可以在一行、一列或一宫里重复吗？</h3>
+                    <p>绝不可以。数独唯一的规则就是：1 到 9 的每个数字在每一行、每一列和每一个 3x3 宫格中都恰好出现一次。出现任何重复，都意味着哪里出错了。</p>
+                    <h3>解一道数独要花多长时间？</h3>
+                    <p>这取决于难度和经验。简单的题目可能只要几分钟，而专家级的棋盘则可能要花上更久。随着技巧逐渐变得自动化，速度会随练习自然提升。</p>
+                </div>
+                <div class="game-detail-cta">
+                    <h2>准备好开始了吗？</h2>
+                    <p>在「Sudoku No Pop-up Ads」中练习吧——免费、六种难度、没有弹窗广告。</p>
+                    <a href="/sudoku/" class="guide-cta-btn">打开 数独 →</a>
+                </div>
+                <div class="more-games">
+                    <h2>ASApps 的更多游戏</h2>
+                    <div class="more-games-grid">
+                        <a href="/sudoku/" class="more-game-item"><img src="/Images/sudoku/icon.webp" alt="Sudoku" class="more-game-icon" width="58" height="58" loading="lazy"><span>Sudoku</span></a>
+                        <a href="/solitaire/" class="more-game-item"><img src="/Images/solitaire/icon.webp" alt="Solitaire" class="more-game-icon" width="58" height="58" loading="lazy"><span>Solitaire</span></a>
+                        <a href="/color-blocks/" class="more-game-item"><img src="/Images/color-blocks/icon.webp" alt="Color Blocks" class="more-game-icon" width="58" height="58" loading="lazy"><span>Color Blocks</span></a>
+                        <a href="/blocks/" class="more-game-item"><img src="/Images/blocks/icon.webp" alt="Block Blast" class="more-game-icon" width="58" height="58" loading="lazy"><span>Block Blast</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/about/">关于我们</a>
+                <a href="/guides/">攻略</a>
+                <a href="/Privacy-Policy">隐私政策</a>
+                <a href="/contact.html">联系我们</a>
+            </div>
+            <div class="copyright">&copy; 2025 ASApps Games. 保留所有权利。<br><span style="opacity:.6;font-size:12px">最后更新于 2026 年 6 月</span></div>
+        </div>
+    </footer>
+</body>
+</html>
