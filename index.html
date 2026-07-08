@@ -44,7 +44,7 @@
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
                 "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent iOS game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases. Five titles on iPhone and iPad: Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks, and Solitaire, FreeCell and Spider.",
+                "description": "Independent mobile game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases. Five titles on iPhone and iPad — with Solitaire, FreeCell and Spider also on Android via Google Play: Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks, and Solitaire, FreeCell and Spider.",
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "email": "support@asappsgames.com",
@@ -65,8 +65,8 @@
             },
             {
                 "@type": "ItemList",
-                "name": "iOS Puzzle Games with No Pop-up Ads by ASApps Games",
-                "description": "All five iOS games published by ASApps Games. Each is free to download with no pop-up ads, no full-screen interruptions, and no required in-app purchases.",
+                "name": "Puzzle & Card Games with No Pop-up Ads by ASApps Games",
+                "description": "Five games published by ASApps Games, free to download with no pop-up ads, no full-screen interruptions, and no required in-app purchases. All on the App Store for iPhone and iPad; Solitaire, FreeCell and Spider is also on Google Play for Android.",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "Color Blocks - Block Match", "url": "https://asappsgames.com/color-blocks/" },
                     { "@type": "ListItem", "position": 2, "name": "Sudoku No Pop-up Ads", "url": "https://asappsgames.com/sudoku/" },
@@ -83,7 +83,7 @@
                         "name": "What is ASApps Games?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "ASApps Games is an independent iOS game studio. It publishes five free puzzle and card games for iPhone and iPad — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks Tetra, and Solitaire, FreeCell and Spider — all of which run without pop-up ads, full-screen interruptions, or required in-app purchases."
+                            "text": "ASApps Games is an independent mobile game studio. It publishes five free puzzle and card games for iPhone and iPad — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks Tetra, and Solitaire, FreeCell and Spider (which is also on Android via Google Play) — all of which run without pop-up ads, full-screen interruptions, or required in-app purchases."
                         }
                     },
                     {
@@ -107,7 +107,7 @@
                         "name": "Are ASApps Games available on Android?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Currently iOS only. The games are built for iPhone, iPad, and iPod touch."
+                            "text": "Solitaire, FreeCell and Spider is available on Android via Google Play. The other four games — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra — are currently iOS only (iPhone, iPad, and iPod touch)."
                         }
                     },
                     {
@@ -123,7 +123,7 @@
                         "name": "Who develops ASApps Games?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "ASApps Games is an independent iOS game studio. All five games are published under a single App Store developer account."
+                            "text": "ASApps Games is an independent mobile game studio. Its games are published under a single App Store developer account, with Solitaire, FreeCell and Spider also on Google Play for Android."
                         }
                     }
                 ]
@@ -378,8 +378,9 @@
                             <span class="tag-new" style="margin-top:5px;display:inline-block">New</span>
                         </div>
                     </div>
-                    <div class="chips"><span class="chip">Klondike</span><span class="chip">One-tap</span></div>
+                    <div class="chips"><span class="chip">Klondike</span><span class="chip">One-tap</span><span class="chip">iOS + Android</span></div>
                     <a href="https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" rel="noopener" target="_blank" style="display:block;text-align:center;margin-top:9px;font-size:12.5px;font-weight:600;color:var(--muted)">Also on Google Play →</a>
                 </article>
 
                 <article class="tile reveal" data-href="/blocks/" style="--c:var(--c-blocks)">
@@ -458,5 +459,7 @@
         card.addEventListener('click', function(e){ if(e.target.closest('a, button')) return; window.location.href=href; });
     });
     </script>
+    <script src="/app-banner.js" defer></script>
+
 </body>
 </html>

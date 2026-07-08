@@ -74,6 +74,8 @@ html.reveal-on .animate-on-scroll.is-visible{opacity:1;transform:none;transition
 .app-store-button img{height:54px;display:block;border-radius:12px}
 .app-store-button:hover{transform:translateY(-2px);filter:drop-shadow(0 12px 22px rgba(0,0,0,.5))}
 .app-store-button:active{transform:scale(.97)}
+.store-badges{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.google-play-button img{height:78px;border-radius:0}
 
 /* SCREENSHOT GALLERY */
 .game-slider{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 2px 26px;margin:4px -4px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none;min-height:560px}
