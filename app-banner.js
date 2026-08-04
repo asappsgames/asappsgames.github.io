@@ -1,11 +1,21 @@
 /* ASApps Games — Android "Get it on Google Play" smart banner.
    Android-only, dismissible (remembered), self-contained (injects its own CSS).
    iOS uses Apple's native Smart App Banner (apple-itunes-app meta), so this stays hidden there.
-   The only ASApps app on Google Play is Solitaire, FreeCell & Spider, so it always points there. */
+
+   This is a single site-wide "featured Android app" promo. It currently points to
+   Solitaire, FreeCell & Spider on every Android page. When Sudoku launches on Google Play,
+   switch the featured app by editing the APP object below (id / name / icon) — nothing else. */
 (function () {
     'use strict';
 
-    var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire';
+    // The featured Android app promoted across the whole site (see note above).
+    var APP = {
+        id: 'com.ASAppsGamesAU.solitaire',
+        name: 'Solitaire, FreeCell & Spider',
+        icon: '/Images/solitaire/icon.webp'
+    };
+
+    var PLAY_URL = 'https://play.google.com/store/apps/details?id=' + APP.id;
     var STORAGE_KEY = 'asapps_gp_banner_dismissed';
 
     // Android phones/tablets only — never iOS (native banner) or desktop.
@@ -45,7 +55,7 @@
         var bar = document.createElement('div');
         bar.id = 'gp-smart-banner';
         bar.setAttribute('role', 'complementary');
-        bar.setAttribute('aria-label', 'Get Solitaire on Google Play');
+        bar.setAttribute('aria-label', 'Get ' + APP.name + ' on Google Play');
 
         var close = document.createElement('button');
         close.className = 'gp-close';
@@ -59,7 +69,7 @@
 
         var icon = document.createElement('img');
         icon.className = 'gp-icon';
-        icon.src = '/Images/solitaire/icon.webp';
+        icon.src = APP.icon;
         icon.alt = '';
         icon.width = 44;
         icon.height = 44;
@@ -69,7 +79,7 @@
         text.className = 'gp-text';
         var title = document.createElement('div');
         title.className = 'gp-title';
-        title.textContent = 'Solitaire, FreeCell & Spider';
+        title.textContent = APP.name;
         var sub = document.createElement('div');
         sub.className = 'gp-sub';
         sub.textContent = 'Free on Google Play';

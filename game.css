@@ -71,7 +71,7 @@ html.reveal-on .animate-on-scroll.is-visible{opacity:1;transform:none;transition
     border:1px solid color-mix(in srgb,var(--c) 28%,transparent)}
 
 .app-store-button{display:inline-block;transition:transform .16s ease,filter .16s ease;border-radius:13px}
-.app-store-button img{height:54px;display:block;border-radius:12px}
+.app-store-button img{height:54px;display:block;border-radius:0}
 .app-store-button:hover{transform:translateY(-2px);filter:drop-shadow(0 12px 22px rgba(0,0,0,.5))}
 .app-store-button:active{transform:scale(.97)}
 .store-badges{display:flex;flex-wrap:wrap;align-items:center;gap:12px}

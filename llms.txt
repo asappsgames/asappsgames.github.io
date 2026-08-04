@@ -1,11 +1,11 @@
 # ASApps Games
 
-> An independent mobile game studio publishing five free puzzle and card games for iPhone and iPad — with Solitaire, FreeCell and Spider also available on Android via Google Play — all with no pop-up ads and no required in-app purchases. The games are free, supported by a small unobtrusive banner plus optional short ads the player can choose to watch (for example, to continue after a few mistakes or to get a hint). No full-screen ad ever interrupts gameplay uninvited. Every title works fully offline.
+> An independent mobile game studio publishing five free puzzle and card games for iPhone and iPad — with Solitaire, FreeCell and Spider and Color Blocks also available on Android via Google Play — all with no pop-up ads and no required in-app purchases. The games are free, supported by a small unobtrusive banner plus optional short ads the player can choose to watch (for example, to continue after a few mistakes or to get a hint). No full-screen ad ever interrupts gameplay uninvited. Every title works fully offline.
 
 ## Games
 
 - [Sudoku No Pop-up Ads](https://asappsgames.com/sudoku/): Free classic Sudoku for iPhone and iPad. Six difficulty levels (Beginner, Easy, Medium, Hard, Expert, Master), smart hints, fast notes, unlimited undo. No pop-up ads. Rated 4.7 stars from ~8,000 reviews. App Store: https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334
-- [Color Blocks - Block Match](https://asappsgames.com/color-blocks/): Free color-matching block puzzle for iPhone and iPad. Drag and drop multi-color blocks, match three or more of the same color to clear, unlock new colors as you score. No pop-up ads. Rated 4.7 stars. App Store: https://apps.apple.com/us/app/color-blocks-block-match/id1476903896
+- [Color Blocks - Block Match](https://asappsgames.com/color-blocks/): Free color-matching block puzzle for iPhone, iPad, and Android. Drag and drop multi-color blocks, match three or more of the same color to clear, unlock new colors as you score. No pop-up ads. Rated 4.7 stars. App Store: https://apps.apple.com/us/app/color-blocks-block-match/id1476903896 — Google Play: https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.colorBlocks
 - [Block Blast Puzzle Jewel](https://asappsgames.com/blocks/): Free classic block puzzle for iPhone and iPad. Drag and drop blocks to fill rows and columns, score combo bonuses, earn daily rewards, customize the board. No pop-up ads. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214
 - [Sudoku Blocks, Tetra](https://asappsgames.com/sudoku-blocks/): Free Sudoku-style block puzzle for iPhone and iPad. Fill rows, columns, and 3x3 squares with 20+ block designs. Includes dark mode and a Block Pop mini game. No pop-up ads. Rated 4.8 stars. App Store: https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521
 - [Solitaire, FreeCell and Spider](https://asappsgames.com/solitaire/): Free Solitaire for iPhone, iPad, and Android with Klondike, FreeCell, and Spider in one app. Draw-one and draw-three Klondike, timed mode, daily challenges, fully offline. No pop-up ads. App Store: https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081 — Google Play: https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire
@@ -19,8 +19,8 @@
 
 ## Common questions
 
-- **Solitaire, FreeCell and Spider** is available on both **iOS** (iPhone, iPad, iPod touch) and **Android** via Google Play: https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire
-- The other four games — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra — are **iOS only** (iPhone, iPad, iPod touch). No Android version of those four exists yet.
+- Two games are available on both **iOS** (iPhone, iPad, iPod touch) and **Android** (Google Play): **Solitaire, FreeCell and Spider** (https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire) and **Color Blocks** (https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.colorBlocks).
+- The other three games — Sudoku No Pop-up Ads, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra — are **iOS only** (iPhone, iPad, iPod touch). No Android version of those three exists yet.
 - All five games are **free to download** with **no required in-app purchases**.
 - All five games **work offline** — no Wi-Fi or mobile data required.
 - **No pop-up ads**: the games never interrupt you with a pop-up or a forced full-screen ad. They are supported by a small banner, and any other ad is optional — shown only when the player chooses to watch one (for example, to continue after a few mistakes or to get a hint).
