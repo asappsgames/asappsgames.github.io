@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
             img.className = 'game-screenshot';
             img.loading = 'lazy';
             img.width = 640;
-            img.height = folder === 'solitaire' ? 1391 : 1385;
+            img.height = (folder === 'solitaire' || folder === 'blocks') ? 1391 : 1385;
             container.appendChild(img);
             if (nav) slider.insertBefore(container, nav); else slider.appendChild(container);
         }
 
         function probe() {
             var test = new Image();
-            var path = '../Images/' + folder + '/screenshot' + index + '.webp';
+            var path = '../Images/' + folder + '/screenshot' + index + '.webp?v=2';
             test.onload = function () { add(path); index++; probe(); };
             test.onerror = function () { /* stop at first missing */ };
             test.src = path;
@@ -58,6 +58,62 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', close); });
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
     }
+
+
+    /* --- Mobile bottom bar: install bar on game pages, tab bar elsewhere --- */
+    (function () {
+        if (document.querySelector('.tabs,.installbar')) return;
+        var accent = document.body.getAttribute('data-accent');
+        var badges = document.querySelector('.store-badges a, .app-store-button');
+        var titleEl = document.querySelector('.game-detail-header h1');
+
+        if (accent && badges && titleEl) {
+            // game detail page -> sticky install bar for THIS game
+            var icon = document.querySelector('.game-detail-icon');
+            var bar = document.createElement('div');
+            bar.className = 'installbar';
+            var img = document.createElement('img');
+            img.src = icon ? icon.getAttribute('src') : '/Images/common/icon-192.png';
+            img.alt = '';
+            img.width = 42; img.height = 42; img.loading = 'eager';
+            var t = document.createElement('div');
+            t.className = 't';
+            var b = document.createElement('b');
+            b.textContent = titleEl.textContent.trim();
+            var sp = document.createElement('span');
+            sp.textContent = 'Free · No pop-up ads';
+            t.appendChild(b); t.appendChild(sp);
+            var get = document.createElement('a');
+            get.className = 'get';
+            get.textContent = 'GET';
+            get.href = badges.getAttribute('href');
+            get.rel = 'noopener'; get.target = '_blank';
+            bar.appendChild(img); bar.appendChild(t); bar.appendChild(get);
+            document.body.appendChild(bar);
+            document.body.classList.add('has-installbar');
+        } else {
+            // every other page -> persistent tab bar
+            var items = [
+                { i: '\uD83E\uDDE9', l: 'Games', h: '/' },
+                { i: '\uD83D\uDCD6', l: 'Guides', h: '/guides/' },
+                { i: '\u2139\uFE0F', l: 'About', h: '/about/' },
+                { i: '\u2709\uFE0F', l: 'Contact', h: '/contact.html' }
+            ];
+            var nav = document.createElement('nav');
+            nav.className = 'tabs';
+            nav.setAttribute('aria-label', 'Primary');
+            var here = location.pathname.replace(/\/$/, '') || '/';
+            items.forEach(function (it) {
+                var a = document.createElement('a');
+                a.className = 'tab' + (here === it.h.replace(/\/$/, '') ? ' on' : '');
+                a.href = it.h;
+                var ic = document.createElement('i'); ic.textContent = it.i;
+                a.appendChild(ic); a.appendChild(document.createTextNode(it.l));
+                nav.appendChild(a);
+            });
+            document.body.appendChild(nav);
+        }
+    })();
 
     /* --- Scroll reveal (reduced-motion aware, no-JS safe) --- */
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

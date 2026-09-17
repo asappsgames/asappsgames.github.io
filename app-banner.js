@@ -3,16 +3,16 @@
    iOS uses Apple's native Smart App Banner (apple-itunes-app meta), so this stays hidden there.
 
    This is a single site-wide "featured Android app" promo. It currently points to
-   Solitaire, FreeCell & Spider on every Android page. When Sudoku launches on Google Play,
-   switch the featured app by editing the APP object below (id / name / icon) — nothing else. */
+   Sudoku No Pop-up Ads on every Android page. To feature a different app, edit the
+   APP object below (id / name / icon) — nothing else. */
 (function () {
     'use strict';
 
     // The featured Android app promoted across the whole site (see note above).
     var APP = {
-        id: 'com.ASAppsGamesAU.solitaire',
-        name: 'Solitaire, FreeCell & Spider',
-        icon: '/Images/solitaire/icon.webp'
+        id: 'com.ASAppsGamesAU.sudoku',
+        name: 'Sudoku No Pop-up Ads',
+        icon: '/Images/sudoku/icon.webp?v=2'
     };
 
     var PLAY_URL = 'https://play.google.com/store/apps/details?id=' + APP.id;
@@ -21,6 +21,9 @@
     // Android phones/tablets only — never iOS (native banner) or desktop.
     var ua = navigator.userAgent || '';
     if (!/Android/i.test(ua)) return;
+
+    // Game detail pages have their own sticky GET bar at the bottom — don't double up.
+    if (document.querySelector('.ghero')) return;
 
     try { if (localStorage.getItem(STORAGE_KEY) === '1') return; } catch (e) { /* private mode: show anyway */ }
 

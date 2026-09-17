@@ -11,11 +11,10 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0C0B11">
+    <meta name="theme-color" content="#FFFFFF">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="apple-touch-icon" href="/Images/common/apple-touch-icon.png">
-    <meta name="apple-itunes-app" content="app-id=1624437334">
-    <link rel="preload" as="image" href="Images/sudoku/screenshot1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="Images/sudoku/screenshot1.webp?v=2" fetchpriority="high">
     <meta name="google-site-verification" content="fRBxRKZFsAS5mQhSz_xLAbIeAymrdOOZXCcoSzE9fDw" />
     <title>Puzzle Games With No Pop-up Ads — iPhone | ASApps Games</title>
     <meta name="description" content="Play puzzle games with no pop-up ads on iPhone &amp; iPad. Sudoku, Solitaire, Color Blocks &amp; more from ASApps Games. Rated 4.7+ stars on the App Store. Free download.">
@@ -44,7 +43,7 @@
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
                 "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent mobile game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases. Five titles on iPhone and iPad — with Solitaire, FreeCell and Spider and Color Blocks also on Android via Google Play: Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks, and Solitaire, FreeCell and Spider.",
+                "description": "Independent mobile game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases. Five titles on iPhone and iPad — with Sudoku, Solitaire, FreeCell and Spider, and Color Blocks also on Android via Google Play: Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks, and Solitaire, FreeCell and Spider.",
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "email": "support@asappsgames.com",
@@ -66,7 +65,7 @@
             {
                 "@type": "ItemList",
                 "name": "Puzzle & Card Games with No Pop-up Ads by ASApps Games",
-                "description": "Five games published by ASApps Games, free to download with no pop-up ads, no full-screen interruptions, and no required in-app purchases. All on the App Store for iPhone and iPad; Solitaire, FreeCell and Spider and Color Blocks are also on Google Play for Android.",
+                "description": "Five games published by ASApps Games, free to download with no pop-up ads, no full-screen interruptions, and no required in-app purchases. All on the App Store for iPhone and iPad; Sudoku, Solitaire, FreeCell and Spider, and Color Blocks are also on Google Play for Android.",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "Color Blocks - Block Match", "url": "https://asappsgames.com/color-blocks/" },
                     { "@type": "ListItem", "position": 2, "name": "Sudoku No Pop-up Ads", "url": "https://asappsgames.com/sudoku/" },
@@ -83,7 +82,7 @@
                         "name": "What is ASApps Games?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "ASApps Games is an independent mobile game studio. It publishes five free puzzle and card games for iPhone and iPad — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks Tetra, and Solitaire, FreeCell and Spider — all of which run without pop-up ads, full-screen interruptions, or required in-app purchases. Color Blocks and Solitaire, FreeCell and Spider are also available on Android via Google Play."
+                            "text": "ASApps Games is an independent mobile game studio. It publishes five free puzzle and card games for iPhone and iPad — Sudoku No Pop-up Ads, Color Blocks, Block Blast Puzzle Jewel, Sudoku Blocks Tetra, and Solitaire, FreeCell and Spider — all of which run without pop-up ads, full-screen interruptions, or required in-app purchases. Sudoku No Pop-up Ads, Color Blocks, and Solitaire, FreeCell and Spider are also available on Android via Google Play."
                         }
                     },
                     {
@@ -107,7 +106,7 @@
                         "name": "Are ASApps Games available on Android?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Two games are available on Android via Google Play: Solitaire, FreeCell and Spider, and Color Blocks. The other three — Sudoku No Pop-up Ads, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra — are currently iOS only (iPhone, iPad, and iPod touch)."
+                            "text": "Three games are available on Android via Google Play: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, and Color Blocks. The other two — Block Blast Puzzle Jewel and Sudoku Blocks, Tetra — are currently iOS only (iPhone, iPad, and iPod touch)."
                         }
                     },
                     {
@@ -123,7 +122,7 @@
                         "name": "Who develops ASApps Games?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "ASApps Games is an independent mobile game studio. Its games are published under a single App Store developer account, with Solitaire, FreeCell and Spider and Color Blocks also on Google Play for Android."
+                            "text": "ASApps Games is an independent mobile game studio. Its games are published under a single App Store developer account, with Sudoku, Solitaire, FreeCell and Spider, and Color Blocks also on Google Play for Android."
                         }
                     }
                 ]
@@ -132,169 +131,181 @@
     }
     </script>
     <style>
-    :root{
-        --bg:#0C0B11;--bg2:#100E16;--surface:#17151F;--surface2:#1E1B28;
-        --line:rgba(255,255,255,.09);--ink:#F5F2FA;--muted:#A7A1B6;--warm:#FFB23E;
-        --c-colorblocks:#FF5A45;--c-sudoku:#6B7BFF;--c-solitaire:#2FD27D;--c-blocks:#2E9BFF;--c-sudokublocks:#B26BFF;
-        --star:#FFC24B;--r:24px;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:'Poppins',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-    body::after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
-        background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+:root{
+  --ink:#16121F;--muted:#6B6480;--line:#EDE9F5;--bg:#FFFFFF;--bg2:#F8F5FF;
+  --c-colorblocks:#FF5A45;--c-sudoku:#6B7BFF;--c-solitaire:#2FD27D;--c-blocks:#2E9BFF;--c-sudokublocks:#B26BFF;
+  --warm:#FFB23E;--star:#FFB23E;--r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);
+  line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 
-    /* NAV */
-    header{position:sticky;top:0;z-index:100}
-    nav{max-width:1180px;margin:14px auto 0;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;
-        background:rgba(18,16,24,.72);backdrop-filter:saturate(160%) blur(18px);-webkit-backdrop-filter:saturate(160%) blur(18px);
-        border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 34px -16px #000;position:relative}
-    .logo{font-weight:700;font-size:18px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
-    .logo .mark{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;
-        background:linear-gradient(135deg,var(--c-colorblocks),var(--warm));box-shadow:0 0 18px -4px var(--c-colorblocks)}
-    .nav-links{display:flex;gap:28px;font-size:14px;font-weight:500;color:var(--muted);align-items:center}
-    .nav-links a:hover{color:var(--ink)}
-    .nav-cta{background:linear-gradient(135deg,var(--c-colorblocks),var(--warm))!important;color:#1a0f08!important;padding:10px 17px;border-radius:12px;
-        font-size:13px;font-weight:700;transition:transform .15s ease,box-shadow .2s}
-    .nav-cta:hover{transform:translateY(-1px);box-shadow:0 10px 26px -8px var(--c-colorblocks)}
-    .nav-cta:active{transform:scale(.97)}
-    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
-    .hamburger span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
-    .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .hamburger.open span:nth-child(2){opacity:0}
-    .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* NAV */
+header{position:sticky;top:0;z-index:100;padding:14px 0}
+header nav{max-width:1180px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:999px;
+  box-shadow:0 10px 30px -14px rgba(22,18,31,.25);display:flex;align-items:center;gap:8px;padding:9px 14px 9px 18px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
+.logo .mark{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px;
+  background:linear-gradient(135deg,var(--c-colorblocks),var(--warm))}
+.nav-links{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav-links a{padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted);transition:.16s}
+.nav-links a:hover{background:var(--bg2);color:var(--ink)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:var(--bg2);border:0;cursor:pointer;padding:9px;border-radius:11px;margin-left:auto}
+.hamburger span{width:20px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-    /* HERO */
-    .hero{position:relative;text-align:center;padding:96px 24px 70px;overflow:hidden}
-    .aurora{position:absolute;inset:-25% -15% auto;height:680px;z-index:-1;pointer-events:none;
-        background:radial-gradient(34% 50% at 18% 28%,rgba(255,90,69,.55) 0,transparent 60%),radial-gradient(32% 46% at 80% 22%,rgba(107,123,255,.55) 0,transparent 60%),radial-gradient(34% 50% at 62% 70%,rgba(178,107,255,.5) 0,transparent 62%),radial-gradient(30% 44% at 35% 78%,rgba(47,210,125,.42) 0,transparent 60%);
-        filter:blur(48px);opacity:.85;animation:drift 20s ease-in-out infinite alternate}
-    @keyframes drift{to{transform:translate3d(0,-22px,0) scale(1.08)}}
-    .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(120% 80% at 50% 0%,transparent 40%,var(--bg) 78%)}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
-        color:var(--warm);background:rgba(255,178,62,.1);border:1px solid rgba(255,178,62,.22);padding:8px 15px;border-radius:999px;margin-bottom:26px}
-    .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--c-solitaire);box-shadow:0 0 10px 1px var(--c-solitaire)}
-    h1{font-size:clamp(42px,7vw,82px);line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 auto 22px;max-width:16ch}
-    h1 .grad{background:linear-gradient(100deg,var(--c-colorblocks),var(--warm) 55%,var(--c-sudokublocks));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .sub{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:52ch;margin:0 auto 36px}
-    .sub strong{color:var(--ink);font-weight:600}
-    .cta-row{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap}
-    .btn-store{display:inline-flex;align-items:center;gap:11px;padding:16px 26px;border-radius:16px;font-weight:700;font-size:15px;color:#1a0f08;
-        background:linear-gradient(135deg,var(--c-colorblocks),var(--warm));box-shadow:0 16px 38px -12px var(--c-colorblocks);transition:transform .16s ease,box-shadow .16s ease}
-    .btn-store:hover{transform:translateY(-2px);box-shadow:0 22px 46px -12px var(--c-colorblocks)}
-    .btn-store:active{transform:scale(.975)}
-    .btn-store svg{width:22px;height:22px}
-    .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:16px 22px;border-radius:16px;font-weight:600;font-size:15px;color:var(--ink);
-        border:1px solid var(--line);background:rgba(255,255,255,.03);transition:transform .16s ease,border-color .16s,background .16s}
-    .btn-ghost:hover{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.06);transform:translateY(-2px)}
-    .reassure{margin-top:18px;font-size:13.5px;color:var(--muted);display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-    .reassure b{color:var(--ink);font-weight:600}
-    .reassure i{color:var(--c-solitaire);font-style:normal;font-weight:700}
+/* HERO */
+.hero{position:relative;text-align:center;color:#fff;padding:22px 24px 34px;overflow:hidden;
+  border-radius:0 0 50% 50%/0 0 38px 38px;background:linear-gradient(135deg,#6B7BFF,#B26BFF 55%,#FF5A45)}
+.heroIn{position:relative;z-index:3;max-width:1040px;margin:0 auto}
+.hero::after{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(120% 90% at 50% 0%,rgba(255,255,255,.18),transparent 60%)}
+.hero>*{position:relative;z-index:2}
+/* hero flank decoration — uses the SAME /Images/<game>/icon.webp as the cards,
+   so replacing an icon file updates the decoration automatically */
+.flanks{position:absolute;inset:0;z-index:1;pointer-events:none}
+.flanks img{position:absolute;height:auto;aspect-ratio:1;border-radius:23%;box-shadow:0 18px 32px -12px rgba(0,0,0,.5)}
+.fi1{left:3%;top:6%;width:104px;transform:rotate(-14deg);opacity:.9}
+.fi2{left:14%;top:52%;width:84px;transform:rotate(11deg);opacity:.75}
+.fi3{left:1.5%;top:66%;width:66px;transform:rotate(19deg);opacity:.55}
+.fi4{right:3%;top:8%;width:100px;transform:rotate(13deg);opacity:.9}
+.fi5{right:14.5%;top:50%;width:86px;transform:rotate(-12deg);opacity:.75}
+.fi6{right:1.5%;top:68%;width:64px;transform:rotate(-20deg);opacity:.55}
+@media(max-width:900px){.flanks{display:none}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.34);padding:6px 14px;border-radius:999px;margin-bottom:12px}
+h1{font-size:clamp(28px,4.2vw,50px);line-height:1.05;font-weight:800;letter-spacing:-.03em;margin-bottom:9px;text-shadow:0 4px 30px rgba(0,0,0,.25)}
+.sub{font-size:clamp(15px,1.7vw,17px);max-width:54ch;margin:0 auto 18px;color:rgba(255,255,255,.94)}
+.sub b{font-weight:700;color:#fff}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
+.hbadge{display:block;transition:transform .15s ease,filter .16s ease}
+.hbadge img{display:block;height:54px;width:auto}
+.hbadge.gp img{height:78px}
+.hbadge:hover{transform:translateY(-2px);filter:drop-shadow(0 12px 22px rgba(0,0,0,.4))}
+.hbadge:active{transform:scale(.97)}
+.browselink{display:inline-block;margin-top:4px;font-size:14px;font-weight:700;color:#fff;opacity:.95;
+  text-decoration:underline;text-underline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:14px;font-weight:700;font-size:14.5px;
+  transition:transform .15s ease,box-shadow .18s ease}
+.btn:active{transform:scale(.97)}
+.btn-store{background:#0F0C16;color:#fff;box-shadow:0 10px 26px -10px rgba(0,0,0,.55)}
+.btn-store:hover{transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--ink);box-shadow:0 10px 26px -10px rgba(0,0,0,.4)}
+.btn-light:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:0 0 auto}
+.btn small{display:block;font-size:9.5px;font-weight:600;opacity:.72;line-height:1;margin-bottom:2px;letter-spacing:.04em}
+.btn b{font-size:14px;font-weight:700;line-height:1.1}
+.reassure{margin-top:11px;font-size:13.5px;color:rgba(255,255,255,.9);display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.reassure i{font-style:normal;font-weight:800}
 
-    .section-head{text-align:center;margin:74px auto 34px;max-width:60ch}
-    .section-head h2{font-size:clamp(28px,3.6vw,40px);font-weight:700;letter-spacing:-.025em}
-    .section-head p{color:var(--muted);margin-top:8px;font-size:15.5px}
+/* SECTIONS */
+.sec{padding:44px 0 8px}
+.sechead{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.sechead h2{font-size:clamp(24px,3vw,33px);font-weight:800;letter-spacing:-.025em}
+.sechead span{color:var(--muted);font-size:14px;font-weight:500}
 
-    /* FEATURED */
-    .featured{--c:var(--c-colorblocks);position:relative;display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:34px;align-items:center;
-        background:linear-gradient(180deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:28px;padding:32px;overflow:hidden;
-        box-shadow:0 30px 60px -30px #000;margin-bottom:22px}
-    .featured::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
-    .featured::after{content:"";position:absolute;left:-60px;top:-40px;width:340px;height:340px;border-radius:50%;background:var(--c);opacity:.18;filter:blur(50px);pointer-events:none}
-    .glow-shot{position:relative}
-    .featured .glow-shot::after{content:"";position:absolute;inset:-8% -6%;z-index:0;border-radius:30px;background:var(--c);opacity:.4;filter:blur(46px)}
-    .badge-pill{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);
-        background:color-mix(in srgb,var(--c) 18%,transparent);border:1px solid color-mix(in srgb,var(--c) 35%,transparent);padding:5px 11px;border-radius:999px;margin-bottom:14px}
-    .featured h3{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
-    .featured .fdesc{color:var(--muted);margin:12px 0 20px;font-size:15px;max-width:46ch}
+/* CARDS */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{--c:var(--c-sudoku);background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  box-shadow:0 14px 34px -22px rgba(22,18,31,.4);display:flex;flex-direction:column;
+  transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(22,18,31,.45)}
+.card .thumb{position:relative;aspect-ratio:1/0.95;display:grid;place-items:end center;overflow:hidden;padding-bottom:14px;
+  background:linear-gradient(160deg,var(--c),color-mix(in srgb,var(--c) 55%,#ffffff))}
+.card .thumb img{width:70%;height:auto;aspect-ratio:1;border-radius:23%;
+  box-shadow:0 18px 34px -12px rgba(22,18,31,.55)}
+.card .pill{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.94);color:var(--ink);
+  font-size:10.5px;font-weight:800;padding:5px 9px;border-radius:999px;letter-spacing:.03em}
+.card .body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
+.card h3{font-size:15.5px;font-weight:700;letter-spacing:-.01em}
+.card .meta{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted);font-weight:600}
+.stars{color:var(--star);letter-spacing:-1px}
+.card .stores{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:auto}
+.store{display:block;transition:transform .15s ease,filter .16s ease}
+.store img{display:block;height:40px;width:auto}
+.store.gp img{height:58px}
+.store:hover{transform:translateY(-2px);filter:drop-shadow(0 8px 16px rgba(22,18,31,.28))}
+.store:active{transform:scale(.97)}
 
-    .shot{position:relative;z-index:1;border-radius:28px;background:#08080b;padding:7px;box-shadow:0 24px 50px -22px #000, inset 0 0 0 1px rgba(255,255,255,.06);width:100%}
-    .shot::before{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:50px;height:5px;border-radius:3px;background:rgba(255,255,255,.22);z-index:2}
-    .shot img{display:block;width:100%;height:auto;border-radius:22px}
+/* PROMISE */
+.promise{margin:48px 0 10px;background:linear-gradient(120deg,#FFF4E3,#F4ECFF);border-radius:26px;padding:38px 30px;text-align:center}
+.promise h2{font-size:clamp(22px,2.8vw,30px);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+.promise h2 em{font-style:normal;color:var(--c-colorblocks)}
+.promise .lead{color:var(--muted);max-width:52ch;margin:0 auto 20px;font-size:15px}
+.wont{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.wont span{background:#fff;border:1px solid var(--line);padding:11px 17px;border-radius:14px;font-size:14px;font-weight:600}
+.maker{display:flex;gap:18px;align-items:center;max-width:660px;margin:26px auto 0;padding:22px 26px;
+  background:#fff;border:1px solid var(--line);border-radius:20px;color:var(--muted);font-size:14.5px}
+.maker .avatar{width:50px;height:50px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;color:#fff;font-weight:800;
+  background:linear-gradient(135deg,var(--c-solitaire),var(--c-blocks))}
+.maker b{color:var(--ink);font-weight:700}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:32px 24px;text-align:center;color:var(--muted);font-size:13.5px}
+.footer-links{display:flex;gap:22px;justify-content:center;margin-bottom:10px;flex-wrap:wrap}
+.footer-links a{font-weight:600}
+.footer-links a:hover{color:var(--ink)}
+.reveal{opacity:0;transform:translateY(20px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
 
-    .rating{display:flex;align-items:center;gap:8px}
-    .stars{display:inline-flex;gap:2px}
-    .stars svg{width:15px;height:15px;fill:var(--star)}
-    .stars svg.empty{fill:rgba(255,255,255,.16)}
-    .starbar{position:relative;display:inline-block;line-height:0;height:15px;vertical-align:middle}.starbar .row{display:flex;gap:2px;width:max-content}.starbar svg{width:15px;height:15px;flex:0 0 auto}.starbar .base svg{fill:rgba(255,255,255,.18)}.starbar .full{position:absolute;left:0;top:0;height:100%;overflow:hidden;width:var(--pct,100%)}.starbar .full svg{fill:var(--star)}
-    .rating-num{font-size:13.5px;font-weight:600}
-    .rating-num span{color:var(--muted);font-weight:400}
-    .tag-new{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c-solitaire);
-        background:rgba(47,210,125,.14);border:1px solid rgba(47,210,125,.3);padding:4px 10px;border-radius:999px}
-
-    .btn-c{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:14px;padding:12px 18px;border-radius:13px;color:#0c0b11;
-        background:var(--c);transition:transform .15s ease,box-shadow .2s}
-    .btn-c:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px var(--c)}
-    .btn-c:active{transform:scale(.97)}
-    .btn-c svg{width:15px;height:15px;fill:currentColor}
-    .flink{font-size:13.5px;font-weight:600;color:var(--muted);margin-left:14px}
-    .flink:hover{color:var(--ink)}
-    .frow{display:flex;align-items:center;flex-wrap:wrap}
-    .fmeta{display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
-
-    /* TILES */
-    .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-    .tile{--c:var(--accent);position:relative;background:linear-gradient(180deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:var(--r);
-        padding:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 18px 40px -28px #000;transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s,border-color .22s}
-    .tile::after{content:"";position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;background:var(--c);opacity:.12;filter:blur(26px);pointer-events:none;transition:opacity .25s}
-    .tile:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--c) 45%,var(--line));box-shadow:0 30px 60px -28px #000,0 0 40px -18px var(--c)}
-    .tile:hover::after{opacity:.26}
-    .tile .glow-shot{margin-bottom:14px}
-    .tile .glow-shot::after{content:"";position:absolute;inset:-6%;z-index:0;border-radius:24px;background:var(--c);opacity:.32;filter:blur(30px)}
-    .tile-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
-    .tile-icon{width:46px;height:46px;border-radius:12px;box-shadow:0 5px 14px -4px #000,0 0 0 1px rgba(255,255,255,.06);flex-shrink:0}
-    .tile-head h3{font-size:17px;font-weight:600;letter-spacing:-.01em}
-    .tile,.featured{cursor:pointer}
-    .tile-head h3 a,.featured h3 a{color:inherit;text-decoration:none}
-    .tile-head .rating{margin-top:3px}
-    .chips{display:flex;gap:6px;flex-wrap:wrap;margin:2px 0 16px}
-    .chip{font-size:11px;font-weight:600;padding:4px 9px;border-radius:999px;background:color-mix(in srgb,var(--c) 14%,transparent);
-        color:color-mix(in srgb,var(--c) 60%,white);border:1px solid color-mix(in srgb,var(--c) 26%,transparent);white-space:nowrap}
-    .tile .btn-c{margin-top:auto;justify-content:center}
-
-    /* PROMISE */
-    .promise{margin:80px auto 0;position:relative;background:linear-gradient(160deg,#191622,#120F19);border:1px solid var(--line);border-radius:30px;padding:54px 40px;text-align:center;overflow:hidden}
-    .promise::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(40% 80% at 50% 0%,rgba(255,178,62,.16),transparent 70%)}
-    .promise>*{position:relative;z-index:1}
-    .promise h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;letter-spacing:-.02em;margin-bottom:10px}
-    .promise h2 em{font-style:normal;color:var(--warm)}
-    .promise .lead{color:var(--muted);max-width:50ch;margin:0 auto 30px;font-size:15.5px}
-    .wont{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-    .wont span{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.04);border:1px solid var(--line);padding:13px 19px;border-radius:14px;font-weight:500;font-size:14.5px}
-    .wont span svg{width:18px;height:18px;stroke:var(--c-colorblocks);stroke-width:2.4;fill:none}
-
-    /* MAKER */
-    .maker{display:flex;gap:18px;align-items:center;justify-content:center;text-align:left;max-width:660px;margin:30px auto 0;padding:22px 26px;
-        background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:20px;color:var(--muted);font-size:14.5px}
-    .maker .avatar{width:50px;height:50px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;color:#0c0b11;font-weight:700;background:linear-gradient(135deg,var(--c-solitaire),var(--c-blocks))}
-    .maker b{color:var(--ink);font-weight:600}
-
-    footer{margin-top:72px;border-top:1px solid var(--line);padding:32px 24px;text-align:center;color:var(--muted);font-size:13.5px}
-    .footer-links{display:flex;gap:22px;justify-content:center;margin-bottom:10px}
-    .footer-links a:hover{color:var(--ink)}
-
-    .reveal{opacity:0;transform:translateY(20px)}
-    .reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
-
-    @media(max-width:1000px){.tiles{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:760px){
-        .featured{grid-template-columns:1fr;text-align:center}
-        .featured .fmeta,.featured .frow{justify-content:center}
-        .featured .fdesc{margin-left:auto;margin-right:auto}
-        .tiles{grid-template-columns:1fr;max-width:380px;margin:0 auto}
-        .hamburger{display:flex}
-        .nav-links{position:absolute;top:calc(100% + 10px);right:0;left:0;flex-direction:column;align-items:stretch;gap:4px;padding:12px;
-            background:rgba(18,16,24,.96);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 50px -20px #000;
-            opacity:0;visibility:hidden;transform:translateY(-8px);transition:.22s}
-        .nav-links a{padding:11px 14px;border-radius:10px}
-        .nav-links a:hover{background:rgba(255,255,255,.06)}
-        .nav-links.open{opacity:1;visibility:visible;transform:none}
-        .nav-cta{text-align:center}
-    }
-    @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
-    </style>
+/* MOBILE TABS */
+.tabs{display:none}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){
+  header{padding:8px 0}
+  header nav{border-radius:16px;padding:7px 10px 7px 12px}
+  .logo{font-size:14.5px;gap:8px}
+  .logo .mark{width:27px;height:27px;border-radius:9px;font-size:13.5px}
+  .nav-links{display:none;position:absolute;top:calc(100% + 10px);right:0;left:0;flex-direction:column;align-items:stretch;gap:4px;padding:12px;
+    background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 50px -20px rgba(22,18,31,.35)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .hero{padding:20px 18px 28px;border-radius:0 0 30px 30px}
+  .eyebrow{margin-bottom:10px;font-size:9.5px;padding:5px 11px;letter-spacing:.1em}
+  h1{font-size:27px;line-height:1.1;margin-bottom:7px}
+  .sub{font-size:13.5px;line-height:1.45;margin-bottom:15px;max-width:32ch}
+  .cta{gap:8px;flex-wrap:nowrap}
+  .hbadge img{height:44px}
+  .hbadge.gp img{height:64px}
+  .browselink{font-size:13px}
+  .reassure{margin-top:12px;font-size:12px;gap:10px}
+  .wrap{padding:0 13px}
+  .sec{padding:16px 0 4px}
+  .sechead{margin-bottom:10px;gap:8px;align-items:center}
+  .sechead h2{font-size:20px}
+  .sechead span{font-size:12px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:11px}
+  .card{border-radius:18px}
+  .card .thumb{aspect-ratio:1/0.90;padding-bottom:10px}
+  .card .thumb img{width:66%;border-radius:22%}
+  .card .pill{font-size:9.5px;padding:4px 8px;top:8px;left:8px}
+  .card .meta .detail{display:none}
+  .card .body{padding:9px 10px 10px;gap:5px}
+  .card h3{font-size:13.5px}
+  .card .meta{font-size:11px;gap:4px;white-space:nowrap}
+  .card .stores{gap:2px}
+  .store img{height:30px}
+  .store.gp img{height:43px}
+  .promise{margin:26px 0 8px;padding:26px 18px;border-radius:20px}
+  .promise h2{font-size:21px}
+  .wont span{font-size:12.5px;padding:9px 13px}
+  .maker{padding:18px;font-size:13.5px;gap:14px;margin-top:18px}
+  footer{margin-top:32px;padding:24px 18px}
+  body{padding-bottom:76px}
+  .tabs{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:200;background:rgba(255,255,255,.97);
+    backdrop-filter:blur(16px);border-top:1px solid var(--line);
+    padding:7px 8px calc(7px + env(safe-area-inset-bottom));box-shadow:0 -8px 26px -14px rgba(22,18,31,.35)}
+  .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px;border-radius:13px;
+    font-size:10px;font-weight:700;color:var(--muted)}
+  .tab.on{color:var(--ink);background:var(--bg2)}
+  .tab:active{transform:scale(.95)}
+  .tab i{font-style:normal;font-size:16px;line-height:1}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
     <header>
@@ -303,9 +314,9 @@
             <div class="nav-links" id="navLinks">
                 <a href="#games">Games</a>
                 <a href="#promise">No Pop-up Ads</a>
+                <a href="/guides/">Guides</a>
                 <a href="/Privacy-Policy">Privacy</a>
                 <a href="/contact.html">Contact</a>
-                <a href="#games" class="nav-cta">Browse games</a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -315,110 +326,92 @@
 
     <main>
         <section class="hero">
-            <div class="aurora"></div>
-            <span class="eyebrow"><span class="dot"></span> Puzzle &amp; card games for iPhone &amp; iPad</span>
-            <h1>Puzzle Games with <span class="grad">No Pop-up Ads</span></h1>
-            <p class="sub">Sudoku, Solitaire, Color Blocks &amp; more — <strong>never interrupted by a full-screen ad</strong>, and free to play. All five work fully offline.</p>
-            <div class="cta-row">
-                <a href="#games" class="btn-store">Browse all five games</a>
+            <div class="flanks" aria-hidden="true">
+                <img class="fi1" src="Images/sudoku/icon.webp?v=2" alt="" width="240" height="240">
+                <img class="fi2" src="Images/blocks/icon.webp?v=2" alt="" width="240" height="240">
+                <img class="fi3" src="Images/sudoku-blocks/icon.webp?v=2" alt="" width="240" height="240">
+                <img class="fi4" src="Images/solitaire/icon.webp?v=2" alt="" width="240" height="240">
+                <img class="fi5" src="Images/color-blocks/icon.webp?v=2" alt="" width="240" height="240">
+                <img class="fi6" src="Images/sudoku/icon.webp?v=2" alt="" width="240" height="240">
             </div>
-            <p class="reassure"><b>Free to play</b> <span>·</span> <i>No pop-up ads</i> <span>·</span> <b>Works offline</b></p>
+            <div class="heroIn">
+            <span class="eyebrow">★ Most popular · Sudoku · 4.7 from 10,000 ratings</span>
+            <h1>Puzzle Games with No Pop-up Ads</h1>
+            <p class="sub">Sudoku, Solitaire, Color Blocks &amp; more — <b>never interrupted by a full-screen ad</b>, and free to play. All five work fully offline.</p>
+            <div class="cta">
+                <a class="hbadge" href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" rel="noopener" target="_blank"><img src="/Images/common/app-store-badge.png" alt="Download Sudoku on the App Store"></a>
+                <a class="hbadge gp" href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.sudoku" rel="noopener" target="_blank"><img src="/Images/common/google-play-badge.png" alt="Get Sudoku on Google Play"></a>
+            </div>
+            <a class="browselink" href="#games">Browse all five games ↓</a>
+            <p class="reassure"><span><i>✓</i> Free to play</span><span><i>✓</i> No pop-up ads</span><span><i>✓</i> Works offline</span></p>
+            </div>
         </section>
 
-        <section class="wrap" id="games">
-            <div class="section-head reveal">
-                <h2>Five games. Pick one and play.</h2>
-                <p>Each has its own world — and not a single pop-up ad in any of them.</p>
+        <div class="wrap">
+            <section class="sec" id="games">
+                <div class="sechead"><h2>Five games. Pick one and play.</h2><span>Free · no pop-up ads · works offline</span></div>
+                <div class="grid">
+        <article class="card reveal" style="--c:var(--c-sudoku)">
+          <a href="/sudoku/" class="thumb"><img width="240" height="240" src="Images/sudoku/icon.webp?v=2" alt="Sudoku app icon" loading="lazy"><span class="pill">★ Popular</span></a>
+          <div class="body">
+            <h3><a href="/sudoku/">Sudoku</a></h3>
+            <div class="meta"><span class="stars">★★★★★</span> 4.7<span class="detail"> · 10,000 ratings</span></div>
+            <div class="stores">
+              <a class="store" href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" rel="noopener" target="_blank"><img src="/Images/common/app-store-badge.png" alt="Download Sudoku on the App Store" loading="lazy"></a>
+              <a class="store gp" href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.sudoku" rel="noopener" target="_blank"><img src="/Images/common/google-play-badge.png" alt="Get Sudoku on Google Play" loading="lazy"></a>
             </div>
-
-            <!-- Featured: Sudoku (most popular) -->
-            <article class="featured reveal" data-href="/sudoku/" style="--c:var(--c-sudoku)">
-                <div class="glow-shot">
-                    <div class="shot"><img fetchpriority="high" width="640" height="1385" src="Images/sudoku/screenshot1.webp" alt="Sudoku gameplay screenshot"></div>
-                </div>
-                <div>
-                    <span class="badge-pill">★ Most popular</span>
-                    <div class="frow" style="gap:14px">
-                        <img width="240" height="240" src="Images/sudoku/icon.webp" alt="Sudoku app icon" style="width:52px;height:52px;border-radius:14px;box-shadow:0 6px 16px -4px #000" loading="lazy">
-                        <h3><a href="/sudoku/">Sudoku</a></h3>
-                    </div>
-                    <p class="fdesc">Fill the 9×9 grid so every row, column, and box holds 1 to 9. Six difficulty levels from Beginner to Master, smart hints, and unlimited undo — with no pop-up ad ever breaking your focus.</p>
-                    <div class="fmeta">
-                        <span class="rating"><span class="starbar" style="--pct:94%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.7 <span>App Store</span></span></span>
-                        <span class="chip" style="--c:var(--c-sudoku)">6 difficulty levels</span>
-                        <span class="chip" style="--c:var(--c-sudoku)">Offline</span>
-                    </div>
-                    <div class="frow">
-                        <a href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
-                        <a href="/sudoku/" class="flink">Details →</a>
-                    </div>
-                </div>
-            </article>
-
-            <div class="tiles">
-                <article class="tile reveal" data-href="/color-blocks/" style="--c:var(--c-colorblocks)">
-                    <div class="glow-shot"><div class="shot"><img width="640" height="1385" src="Images/color-blocks/screenshot1.webp" alt="Color Blocks gameplay screenshot" loading="lazy"></div></div>
-                    <div class="tile-head">
-                        <img width="240" height="240" src="Images/color-blocks/icon.webp" alt="Color Blocks app icon" class="tile-icon" loading="lazy">
-                        <div>
-                            <h3><a href="/color-blocks/">Color Blocks</a></h3>
-                            <span class="rating"><span class="starbar" style="--pct:94%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.7</span></span>
-                        </div>
-                    </div>
-                    <div class="chips"><span class="chip">Match 3</span><span class="chip">Easy</span><span class="chip">iOS + Android</span></div>
-                    <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.colorBlocks" rel="noopener" target="_blank" style="display:block;text-align:center;margin-top:9px;font-size:12.5px;font-weight:600;color:var(--muted)">Also on Google Play →</a>
-                </article>
-
-                <article class="tile reveal" data-href="/solitaire/" style="--c:var(--c-solitaire)">
-                    <div class="glow-shot"><div class="shot"><img width="640" height="1391" src="Images/solitaire/screenshot1.webp" alt="Solitaire gameplay screenshot" loading="lazy"></div></div>
-                    <div class="tile-head">
-                        <img width="240" height="240" src="Images/solitaire/icon.webp" alt="Solitaire app icon" class="tile-icon" loading="lazy">
-                        <div>
-                            <h3><a href="/solitaire/">Solitaire</a></h3>
-                            <span class="tag-new" style="margin-top:5px;display:inline-block">New</span>
-                        </div>
-                    </div>
-                    <div class="chips"><span class="chip">Klondike</span><span class="chip">One-tap</span><span class="chip">iOS + Android</span></div>
-                    <a href="https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" rel="noopener" target="_blank" style="display:block;text-align:center;margin-top:9px;font-size:12.5px;font-weight:600;color:var(--muted)">Also on Google Play →</a>
-                </article>
-
-                <article class="tile reveal" data-href="/blocks/" style="--c:var(--c-blocks)">
-                    <div class="glow-shot"><div class="shot"><img width="640" height="1385" src="Images/blocks/screenshot1.webp" alt="Block Blast gameplay screenshot" loading="lazy"></div></div>
-                    <div class="tile-head">
-                        <img width="240" height="240" src="Images/blocks/icon.webp" alt="Block Blast app icon" class="tile-icon" loading="lazy">
-                        <div>
-                            <h3><a href="/blocks/">Block Blast</a></h3>
-                            <span class="rating"><span class="starbar" style="--pct:96%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.8</span></span>
-                        </div>
-                    </div>
-                    <div class="chips"><span class="chip">Classic</span><span class="chip">Endless</span></div>
-                    <a href="https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
-                </article>
-
-                <article class="tile reveal" data-href="/sudoku-blocks/" style="--c:var(--c-sudokublocks)">
-                    <div class="glow-shot"><div class="shot"><img width="640" height="1385" src="Images/sudoku-blocks/screenshot1.webp" alt="Sudoku Blocks gameplay screenshot" loading="lazy"></div></div>
-                    <div class="tile-head">
-                        <img width="240" height="240" src="Images/sudoku-blocks/icon.webp" alt="Sudoku Blocks app icon" class="tile-icon" loading="lazy">
-                        <div>
-                            <h3><a href="/sudoku-blocks/">Sudoku Blocks</a></h3>
-                            <span class="rating"><span class="starbar" style="--pct:96%"><span class="row base"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span><span class="row full"><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.4 4.8 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.6l5.3-.8z"/></svg></span></span><span class="rating-num">4.8</span></span>
-                        </div>
-                    </div>
-                    <div class="chips"><span class="chip">20+ designs</span><span class="chip">Combos</span></div>
-                    <a href="https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521" class="btn-c" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1-.3 2-.9 2.8-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 .9-2.7.7-.8 1.8-1.4 2.7-1.4zM19.6 17c-.5 1.2-.8 1.7-1.4 2.7-.9 1.4-2.1 3.1-3.6 3.1-1.3 0-1.7-.9-3.5-.9s-2.2.8-3.5.9c-1.5.1-2.6-1.5-3.5-2.9C1.2 16.9.9 12.2 2.5 9.7c1-1.6 2.6-2.5 4.1-2.5 1.5 0 2.5.9 3.5.9 1 0 1.7-.9 3.5-.9 1.3 0 2.7.7 3.7 2-3.2 1.8-2.7 6.4.8 7.8z"/></svg> Get it free</a>
-                </article>
+          </div>
+        </article>
+<article class="card reveal" style="--c:var(--c-solitaire)">
+          <a href="/solitaire/" class="thumb"><img width="240" height="240" src="Images/solitaire/icon.webp?v=2" alt="Solitaire app icon" loading="lazy"><span class="pill">NEW</span></a>
+          <div class="body">
+            <h3><a href="/solitaire/">Solitaire</a></h3>
+            <div class="meta"><span class="stars">✦</span> New<span class="detail"> · 3 games in one</span></div>
+            <div class="stores">
+              <a class="store" href="https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081" rel="noopener" target="_blank"><img src="/Images/common/app-store-badge.png" alt="Download Solitaire on the App Store" loading="lazy"></a>
+              <a class="store gp" href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" rel="noopener" target="_blank"><img src="/Images/common/google-play-badge.png" alt="Get Solitaire on Google Play" loading="lazy"></a>
             </div>
+          </div>
+        </article>
+<article class="card reveal" style="--c:var(--c-colorblocks)">
+          <a href="/color-blocks/" class="thumb"><img width="240" height="240" src="Images/color-blocks/icon.webp?v=2" alt="Color Blocks app icon" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="/color-blocks/">Color Blocks</a></h3>
+            <div class="meta"><span class="stars">★★★★★</span> 4.7<span class="detail"> · 429 ratings</span></div>
+            <div class="stores">
+              <a class="store" href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" rel="noopener" target="_blank"><img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy"></a>
+              <a class="store gp" href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.colorBlocks" rel="noopener" target="_blank"><img src="/Images/common/google-play-badge.png" alt="Get Color Blocks on Google Play" loading="lazy"></a>
+            </div>
+          </div>
+        </article>
+<article class="card reveal" style="--c:var(--c-blocks)">
+          <a href="/blocks/" class="thumb"><img width="240" height="240" src="Images/blocks/icon.webp?v=2" alt="Block Blast app icon" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="/blocks/">Block Blast</a></h3>
+            <div class="meta"><span class="stars">★★★★★</span> 4.8<span class="detail"> · Classic</span></div>
+            <div class="stores">
+              <a class="store" href="https://apps.apple.com/us/app/block-blast-puzzle-jewel/id1509841214" rel="noopener" target="_blank"><img src="/Images/common/app-store-badge.png" alt="Download Block Blast on the App Store" loading="lazy"></a>
+            </div>
+          </div>
+        </article>
+<article class="card reveal" style="--c:var(--c-sudokublocks)">
+          <a href="/sudoku-blocks/" class="thumb"><img width="240" height="240" src="Images/sudoku-blocks/icon.webp?v=2" alt="Sudoku Blocks app icon" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="/sudoku-blocks/">Sudoku Blocks</a></h3>
+            <div class="meta"><span class="stars">★★★★★</span> 4.8<span class="detail"> · 20+ designs</span></div>
+            <div class="stores">
+              <a class="store" href="https://apps.apple.com/us/app/sudoku-blocks-tetra/id1518512521" rel="noopener" target="_blank"><img src="/Images/common/app-store-badge.png" alt="Download Sudoku Blocks on the App Store" loading="lazy"></a>
+            </div>
+          </div>
+        </article>
+                </div>
+            </section>
 
             <div class="promise reveal" id="promise">
                 <h2>No pop-up ads. <em>No interruptions.</em></h2>
                 <p class="lead">You'll see a small banner — that's how the games stay free — but the screen is yours. No full-screen ad ever stops your game.</p>
                 <div class="wont">
-                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg> Pop-up ads</span>
-                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg> Full-screen ad breaks</span>
-                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg> Mid-game interruptions</span>
-                    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg> Forced in-app purchases</span>
+                    <span>✕ Pop-up ads</span><span>✕ Full-screen ad breaks</span><span>✕ Mid-game interruptions</span><span>✕ Forced in-app purchases</span>
                 </div>
             </div>
 
@@ -426,41 +419,42 @@
                 <div class="avatar">A</div>
                 <p>Made by <b>ASApps Games</b> — a tiny independent studio that plays these games every day. Quietly built, frequently updated, and designed to respect your time on screen.</p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         <div class="footer-links">
             <a href="/about/">About</a>
-                <a href="/guides/">Guides</a>
-                <a href="/Privacy-Policy">Privacy Policy</a>
+            <a href="/guides/">Guides</a>
+            <a href="/Privacy-Policy">Privacy Policy</a>
             <a href="/contact.html">Contact</a>
         </div>
         <div>&copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span></div>
     </footer>
 
+    <nav class="tabs" aria-label="Primary">
+        <a class="tab on" href="/"><i>🧩</i>Games</a>
+        <a class="tab" href="/guides/"><i>📖</i>Guides</a>
+        <a class="tab" href="/about/"><i>ℹ️</i>About</a>
+        <a class="tab" href="/contact.html"><i>✉️</i>Contact</a>
+    </nav>
+
     <script>
-    // Mobile menu
     (function(){
         var h=document.getElementById('hamburger'),n=document.getElementById('navLinks');
         if(h&&n){
             h.addEventListener('click',function(){
                 var open=n.classList.toggle('open');h.classList.toggle('open',open);h.setAttribute('aria-expanded',open);
             });
-            n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');h.classList.remove('open');h.setAttribute('aria-expanded',false)})});
+            n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
+                n.classList.remove('open');h.classList.remove('open');h.setAttribute('aria-expanded',false);})});
         }
     })();
-    // Scroll reveal (reduced-motion aware)
     if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
         var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
         document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-    }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
-    document.querySelectorAll('.tile, .featured').forEach(function(card){
-        var href=card.getAttribute('data-href'); if(!href) return;
-        card.addEventListener('click', function(e){ if(e.target.closest('a, button')) return; window.location.href=href; });
-    });
+    } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
     </script>
-    <script src="/app-banner.js" defer></script>
 
 </body>
 </html>
