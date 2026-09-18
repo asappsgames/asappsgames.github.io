@@ -22,33 +22,33 @@
     <meta property="og:description" content="Block Puzzle Strategy &amp; Tips: a clear, practical guide with the rules, examples and tips. Free to read — no sign-up.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://asappsgames.com/block-puzzle-strategy/">
-    <meta property="og:image" content="https://asappsgames.com/Images/blocks/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-blocks.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Block Puzzle Strategy &amp; Tips">
     <meta name="twitter:description" content="Block Puzzle Strategy &amp; Tips: a clear, practical guide with the rules, examples and tips. Free to read — no sign-up.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/blocks/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-blocks.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@graph": [
         {
             "@type": "Article",
+            "datePublished": "2026-06-17",
+            "dateModified": "2026-09-18",
             "headline": "Block Puzzle Strategy & Tips",
             "description": "Block Puzzle Strategy & Tips: a clear, practical guide with the rules, examples and tips. Free to read — no sign-up.",
-            "author": {
-                "@type": "Organization",
-                "name": "ASApps Games",
-                "url": "https://asappsgames.com/"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "ASApps Games",
-                "url": "https://asappsgames.com/"
-            },
+            "author": { "@id": "https://asappsgames.com/#organization" },
+            "publisher": { "@id": "https://asappsgames.com/#organization" },
             "mainEntityOfPage": "https://asappsgames.com/block-puzzle-strategy/"
         },
         {
@@ -126,6 +126,43 @@
                     "item": "https://asappsgames.com/block-puzzle-strategy/"
                 }
             ]
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://asappsgames.com/#organization",
+            "name": "ASApps Games",
+            "alternateName": "AS Apps Games",
+            "url": "https://asappsgames.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://asappsgames.com/Images/common/icon-512.png",
+                "width": 512,
+                "height": 512
+            },
+            "image": "https://asappsgames.com/Images/common/og-studio.jpg",
+            "description": "Independent mobile game studio publishing five free puzzle and card games with no pop-up ads: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra. No full-screen interruptions, no required in-app purchases, no subscriptions, and every game works offline. All five are on the App Store for iPhone and iPad; Sudoku, Solitaire and Color Blocks are also on Google Play for Android.",
+            "foundingDate": "2016",
+            "knowsAbout": [
+                "Sudoku",
+                "Solitaire",
+                "Klondike",
+                "FreeCell",
+                "Spider Solitaire",
+                "Block puzzle games",
+                "Casual mobile puzzle games"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "support@asappsgames.com",
+                "contactType": "customer support",
+                "availableLanguage": "English"
+            },
+            "sameAs": [
+                "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                "https://play.google.com/store/apps/developer?id=ASAppsGamesAU",
+                "https://github.com/asappsgames",
+                "https://www.wikidata.org/wiki/Q140260149"
+            ]
         }
     ]
 }
@@ -135,9 +172,10 @@
     .guide-cta-btn{display:inline-block;background:var(--c);color:#0c0b11;font-weight:700;padding:14px 24px;border-radius:14px;transition:transform .15s ease}
     .guide-cta-btn:hover{transform:translateY(-2px)}
     </style>
-    <script src="../game.js"></script>
+    <script src="../game.js" defer></script>
 </head>
 <body data-accent="blocks">
+    <script src="/app-banner.js"></script>
     <header>
         <nav>
             <a href="/" class="logo">ASApps Games</a>
@@ -158,7 +196,7 @@
                 <nav class="crumbs" aria-label="Breadcrumb"><a href="https://asappsgames.com/">Home</a> <span style="opacity:.5">&rsaquo;</span> <a href="https://asappsgames.com/guides/">Guides</a> <span style="opacity:.5">&rsaquo;</span> <strong>Block Puzzle Strategy &amp; Tips</strong></nav>
                 <h1>Block Puzzle Strategy &amp; Tips</h1>
                 <p class="lede">Grid block puzzles look simple: drag pieces onto a grid, fill complete rows or columns, watch them clear. But the gap between a quick game-over and a marathon high score comes down to a handful of repeatable decisions. The single most important idea is this: you almost never get to choose which pieces arrive, so your only real control is the board you leave behind. Every placement is a bet on what you can still do next. This guide breaks down the habits that keep your board flexible, your clears efficient, and your runs long. None of these tactics require fast reflexes or memorization. They reward thinking one beat ahead and treating empty space as your most valuable resource. Read each section, try one idea per game, and your scores will climb on their own.</p>
-                <p style="margin:6px 0 0"><a href="/how-to-play-block-puzzle/" style="color:var(--c);font-weight:600">New here? Start with How to Play Block Puzzle →</a></p>
+                <p style="margin:6px 0 0"><a href="/how-to-play-block-puzzle/" style="color:var(--c-ink);font-weight:600">New here? Start with How to Play Block Puzzle →</a></p>
                 <div class="game-detail-description">
                     <h2>Empty space is your real score — protect it</h2>
                     <p>In a grid block puzzle, you lose the moment none of your current pieces fit anywhere. So the resource you are actually managing is not points — it is open space. Every turn, ask one question before placing: &#x27;Does this leave me more room or less?&#x27; A board that is 30% full can absorb almost any awkward piece the game throws at you; a board that is 70% full forces your hand and ends runs.
@@ -235,11 +273,10 @@ Concrete example: you&#x27;re about to place an L-piece, and one orientation fil
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
-    <script src="/app-banner.js" defer></script>
 
 </body>
 </html>

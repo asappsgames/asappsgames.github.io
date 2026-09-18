@@ -22,15 +22,21 @@
     <meta property="og:description" content="Free Solitaire for iPhone, iPad &amp; Android with no pop-up ads — Klondike, FreeCell &amp; Spider in one app.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://asappsgames.com/mobilityware-solitaire-alternative/">
-    <meta property="og:image" content="https://asappsgames.com/Images/solitaire/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-solitaire.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="A MobilityWare Solitaire Alternative — 3 Games in One, No Pop-up Ads">
     <meta name="twitter:description" content="Free Solitaire for iPhone, iPad &amp; Android with no pop-up ads — Klondike, FreeCell &amp; Spider in one.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/solitaire/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-solitaire.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -88,18 +94,19 @@
     table.cmp thead th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600}
     table.cmp tbody th{font-weight:600;color:var(--ink)}
     table.cmp .us{background:color-mix(in srgb,var(--c) 12%,transparent);color:var(--ink);font-weight:600}
-    table.cmp thead .us{color:var(--c);background:color-mix(in srgb,var(--c) 16%,transparent);border-top-left-radius:14px;border-top-right-radius:14px}
-    .yes{color:var(--c);font-weight:700}
+    table.cmp thead .us{color:var(--c-ink);background:color-mix(in srgb,var(--c) 16%,transparent);border-top-left-radius:14px;border-top-right-radius:14px}
+    .yes{color:var(--c-ink);font-weight:700}
     .cmp-note{max-width:760px;margin:14px auto 0;font-size:13.5px;color:var(--muted)}
     .perks{max-width:760px;margin:8px auto 0}
-    .pricepill{display:inline-block;font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 30%,transparent)}
+    .pricepill{display:inline-block;font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c-ink);border:1px solid color-mix(in srgb,var(--c) 30%,transparent)}
     .cell-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
     .cell-list li{position:relative;padding-left:18px;font-weight:500}
-    .cell-list li::before{content:"✓";position:absolute;left:0;color:var(--c);font-weight:700}
+    .cell-list li::before{content:"✓";position:absolute;left:0;color:var(--c-ink);font-weight:700}
     </style>
-    <script src="../game.js"></script>
+    <script src="../game.js" defer></script>
 </head>
 <body data-accent="solitaire">
+    <script src="/app-banner.js"></script>
     <header>
         <nav>
             <a href="/" class="logo">ASApps Games</a>
@@ -136,7 +143,7 @@
                         <img src="/Images/common/app-store-badge.png" alt="Download Solitaire, FreeCell and Spider on the App Store" width="120" height="40" loading="lazy">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
+                        <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
                     </a>
                 </div>
 
@@ -232,7 +239,7 @@
                             <img src="/Images/common/app-store-badge.png" alt="Download Solitaire, FreeCell and Spider on the App Store" width="120" height="40" loading="lazy">
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                            <img src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
+                            <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -271,11 +278,10 @@
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
-    <script src="/app-banner.js" defer></script>
 
 </body>
 </html>

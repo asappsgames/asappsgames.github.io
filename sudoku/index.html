@@ -23,21 +23,29 @@
     <meta property="og:description" content="Play classic Sudoku without pop-up ads on iPhone, iPad &amp; Android. 6 difficulty levels, smart hints, and offline play. Rated 4.7 stars.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asappsgames.com/sudoku/">
-    <meta property="og:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-sudoku.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sudoku No Pop-up Ads - Free Sudoku Puzzle Game">
     <meta name="twitter:description" content="Play classic Sudoku without pop-up ads on iPhone, iPad &amp; Android. 6 difficulty levels, smart hints, and offline play.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-sudoku.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "VideoGame",
+                "@type": ["VideoGame", "MobileApplication"],
+                "datePublished": "2026-02-09",
+                "dateModified": "2026-09-18",
                 "@id": "https://asappsgames.com/sudoku/#game",
                 "name": "Sudoku No Pop-up Ads",
                 "alternateName": "Sudoku No Pop-up Ads",
@@ -46,7 +54,7 @@
                 "applicationSubCategory": "Puzzle",
                 "genre": ["Puzzle", "Logic", "Number Puzzle"],
                 "gamePlatform": ["iOS", "iPhone", "iPad", "Android"],
-                "operatingSystem": "iOS 13.0 or later; Android",
+                "operatingSystem": "iOS, Android",
                 "inLanguage": "en",
                 "offers": {
                     "@type": "Offer",
@@ -86,9 +94,33 @@
                 "name": "ASApps Games",
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
-                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent mobile game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases.",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://asappsgames.com/Images/common/icon-512.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "image": "https://asappsgames.com/Images/common/og-studio.jpg",
+                "description": "Independent mobile game studio publishing five free puzzle and card games with no pop-up ads: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra. No full-screen interruptions, no required in-app purchases, no subscriptions, and every game works offline. All five are on the App Store for iPhone and iPad; Sudoku, Solitaire and Color Blocks are also on Google Play for Android.",
+                "foundingDate": "2016",
+                "knowsAbout": [
+                    "Sudoku",
+                    "Solitaire",
+                    "Klondike",
+                    "FreeCell",
+                    "Spider Solitaire",
+                    "Block puzzle games",
+                    "Casual mobile puzzle games"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "support@asappsgames.com",
+                    "contactType": "customer support",
+                    "availableLanguage": "English"
+                },
                 "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://play.google.com/store/apps/developer?id=ASAppsGamesAU",
                     "https://github.com/asappsgames",
                     "https://www.wikidata.org/wiki/Q140260149"
                 ]
@@ -194,17 +226,18 @@
 
                 <div class="store-badges">
                     <a href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" class="app-store-button" rel="noopener" target="_blank">
-                    <img src="/Images/common/app-store-badge.png" alt="Download Sudoku No Pop-up Ads on the App Store" loading="lazy">
+                    <img width="718" height="240" src="/Images/common/app-store-badge.png" alt="Download Sudoku No Pop-up Ads on the App Store">
                 </a>
                     <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.sudoku" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/google-play-badge.png" alt="Get Sudoku No Pop-up Ads on Google Play" loading="lazy">
+                        <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Sudoku No Pop-up Ads on Google Play">
                     </a>
                 </div>
             </div>
         </div>
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
-                <div class="game-slider" data-game="sudoku">
+                <div class="game-slider" data-game="sudoku" data-count="6">
+                    <div class="screenshot-container"><img src="/Images/sudoku/screenshot1.webp?v=2" alt="Sudoku No Pop-up Ads gameplay screenshot 1" class="game-screenshot" width="640" height="1385" fetchpriority="high" decoding="async"></div>
                     <div class="slider-nav"></div>
                 </div>
 
@@ -214,9 +247,9 @@
                     <p>Originally known as Number Place, Sudoku is the world's most popular logic-based number-placement puzzle. Fill the 9x9 grid so that each column, row, and 3x3 block contains every number from 1 to 9 exactly once.</p>
                     <p>Whether you are a complete beginner learning the basics or an expert looking for a serious challenge, the six difficulty levels are designed to progressively test your logical thinking and pattern recognition skills.</p>
 
-                    <p style="margin:18px 0"><a href="/sudoku-com-alternative/" style="color:var(--c);font-weight:600">→ See how Sudoku No Pop-up Ads compares to Sudoku.com</a></p>
-                    <p style="margin:18px 0"><a href="/free-printable-sudoku/" style="color:var(--c);font-weight:600">→ Free printable Sudoku puzzles (with answers)</a></p>
-                    <p style="margin:18px 0"><a href="/how-to-play-sudoku/" style="color:var(--c);font-weight:600">→ How to play Sudoku — a beginner's guide</a></p>
+                    <p style="margin:18px 0"><a href="/sudoku-com-alternative/" style="color:var(--c-ink);font-weight:600">→ See how Sudoku No Pop-up Ads compares to Sudoku.com</a></p>
+                    <p style="margin:18px 0"><a href="/free-printable-sudoku/" style="color:var(--c-ink);font-weight:600">→ Free printable Sudoku puzzles (with answers)</a></p>
+                    <p style="margin:18px 0"><a href="/how-to-play-sudoku/" style="color:var(--c-ink);font-weight:600">→ How to play Sudoku — a beginner's guide</a></p>
 
                     <h2>Key Features</h2>
                     <ul>
@@ -267,10 +300,10 @@
                     <p>Available on iPhone, iPad, and iPod touch via the App Store, and on Android via Google Play.</p>
                     <div class="store-badges">
                     <a href="https://apps.apple.com/us/app/sudoku-no-pop-up-ads/id1624437334" class="app-store-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/app-store-badge.png" alt="Download Sudoku No Pop-up Ads on the App Store" loading="lazy">
+                        <img width="718" height="240" src="/Images/common/app-store-badge.png" alt="Download Sudoku No Pop-up Ads on the App Store" loading="lazy">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.sudoku" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/google-play-badge.png" alt="Get Sudoku No Pop-up Ads on Google Play" loading="lazy">
+                        <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Sudoku No Pop-up Ads on Google Play" loading="lazy">
                     </a>
                 </div>
                 </div>
@@ -309,13 +342,12 @@
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
 
-    <script src="../game.js"></script>
-    <script src="/app-banner.js" defer></script>
+    <script src="../game.js" defer></script>
 
 </body>
 </html>

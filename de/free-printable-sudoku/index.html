@@ -30,22 +30,30 @@
     <meta property="og:description" content="Kostenlose Sudoku-Rätsel zum Ausdrucken – 9x9-Gitter in Leicht, Mittel und Schwer mit Lösungsschlüsseln. Sofort drucken oder herunterladen, ohne Anmeldung. Jedes Rätsel hat eine eindeutige Lösung.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asappsgames.com/de/free-printable-sudoku/">
-    <meta property="og:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-sudoku.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta property="og:locale" content="de_DE">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kostenlose Sudoku zum Ausdrucken">
     <meta name="twitter:description" content="Kostenlose Sudoku-Rätsel zum Ausdrucken – 9x9-Gitter in Leicht, Mittel und Schwer mit Lösungsschlüsseln. Sofort drucken oder herunterladen, ohne Anmeldung. Jedes Rätsel hat eine eindeutige Lösung.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-sudoku.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="/game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@graph": [
         {
             "@type": "WebPage",
+            "datePublished": "2026-06-19",
+            "dateModified": "2026-09-18",
             "url": "https://asappsgames.com/de/free-printable-sudoku/",
             "name": "Kostenlose Sudoku zum Ausdrucken"
         },
@@ -111,9 +119,10 @@
     details.solutions{margin-top:40px} details.solutions>summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--ink)}
     @media print{body{background:#fff!important;color:#000!important}body::before,body::after{display:none!important}header,footer,.no-print,.game-detail-cta{display:none!important}.puzzle{page-break-inside:avoid;margin-bottom:8mm}.puzzle-grid{display:block}.sudoku{width:80mm}details.solutions{page-break-before:always}details.solutions>summary{display:none}.sudoku.sol{width:52mm}}
     </style>
-    <script src="/game.js"></script>
+    <script src="/game.js" defer></script>
 </head>
 <body data-accent="sudoku">
+    <script src="/app-banner.js"></script>
     <header>
         <nav>
             <a href="/" class="logo">ASApps Games</a>
@@ -146,10 +155,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links"><a href="/about/">Über uns</a><a href="/guides/">Anleitungen</a><a href="/Privacy-Policy">Datenschutzerklärung</a><a href="/contact.html">Kontakt</a></div>
-            <div class="copyright">&copy; 2025 ASApps Games. Alle Rechte vorbehalten.<br><span style="opacity:.6;font-size:12px">Zuletzt aktualisiert im Juni 2026</span></div>
+            <div class="copyright">&copy; 2026 ASApps Games. Alle Rechte vorbehalten.<br><span class="updated">Zuletzt aktualisiert am <time datetime="2026-09-18">18. September 2026</time></span></div>
         </div>
     </footer>
-    <script src="/app-banner.js" defer></script>
 
 </body>
 </html>

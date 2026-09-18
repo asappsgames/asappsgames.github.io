@@ -23,18 +23,24 @@
     <meta property="og:description" content="Three classic card games in one free app for iPhone, iPad &amp; Android — Klondike (draw 1 &amp; 3), FreeCell, and Spider (1, 2 &amp; 4 suit). No pop-up ads. Works offline.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asappsgames.com/solitaire/">
-    <meta property="og:image" content="https://asappsgames.com/Images/solitaire/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-solitaire.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Solitaire, FreeCell and Spider — 3 Card Games, No Pop-up Ads">
     <meta name="twitter:description" content="Klondike, FreeCell &amp; Spider in one free app — no pop-up ads, works offline.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/solitaire/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-solitaire.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <style>
     .toc{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 6px;list-style:none;padding:0}
-    .toc a{display:inline-block;padding:8px 16px;border-radius:999px;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 32%,transparent);font-weight:600;font-size:14px;transition:transform .15s ease}
+    .toc a{display:inline-block;padding:8px 16px;border-radius:999px;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c-ink);border:1px solid color-mix(in srgb,var(--c) 32%,transparent);font-weight:600;font-size:14px;transition:transform .15s ease}
     .toc a:hover{transform:translateY(-2px)}
     .variant-h2{scroll-margin-top:90px}
     .variant-guide{margin-top:6px;font-size:14.5px}
@@ -44,7 +50,9 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "VideoGame",
+                "@type": ["VideoGame", "MobileApplication"],
+                "datePublished": "2026-04-30",
+                "dateModified": "2026-09-18",
                 "@id": "https://asappsgames.com/solitaire/#game",
                 "name": "Solitaire, FreeCell and Spider",
                 "alternateName": ["Solitaire", "Solitaire Collection", "Klondike Solitaire", "Classic Solitaire", "FreeCell", "FreeCell Solitaire", "Spider Solitaire", "Patience"],
@@ -53,7 +61,7 @@
                 "applicationSubCategory": "Card",
                 "genre": ["Card", "Solitaire", "Klondike", "FreeCell", "Spider", "Patience", "Casual"],
                 "gamePlatform": ["iOS", "iPhone", "iPad", "Android"],
-                "operatingSystem": "iOS 13.0 or later; Android",
+                "operatingSystem": "iOS, Android",
                 "inLanguage": "en",
                 "offers": {
                     "@type": "Offer",
@@ -86,9 +94,33 @@
                 "name": "ASApps Games",
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
-                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent mobile game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases.",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://asappsgames.com/Images/common/icon-512.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "image": "https://asappsgames.com/Images/common/og-studio.jpg",
+                "description": "Independent mobile game studio publishing five free puzzle and card games with no pop-up ads: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra. No full-screen interruptions, no required in-app purchases, no subscriptions, and every game works offline. All five are on the App Store for iPhone and iPad; Sudoku, Solitaire and Color Blocks are also on Google Play for Android.",
+                "foundingDate": "2016",
+                "knowsAbout": [
+                    "Sudoku",
+                    "Solitaire",
+                    "Klondike",
+                    "FreeCell",
+                    "Spider Solitaire",
+                    "Block puzzle games",
+                    "Casual mobile puzzle games"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "support@asappsgames.com",
+                    "contactType": "customer support",
+                    "availableLanguage": "English"
+                },
                 "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://play.google.com/store/apps/developer?id=ASAppsGamesAU",
                     "https://github.com/asappsgames",
                     "https://www.wikidata.org/wiki/Q140260149"
                 ]
@@ -209,17 +241,18 @@
 
                 <div class="store-badges">
                     <a href="https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081" class="app-store-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/app-store-badge.png" alt="Download Solitaire, FreeCell and Spider on the App Store" loading="lazy">
+                        <img width="718" height="240" src="/Images/common/app-store-badge.png" alt="Download Solitaire, FreeCell and Spider on the App Store">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
+                        <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play">
                     </a>
                 </div>
             </div>
         </div>
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
-                <div class="game-slider" data-game="solitaire">
+                <div class="game-slider" data-game="solitaire" data-count="6">
+                    <div class="screenshot-container"><img src="/Images/solitaire/screenshot1.webp?v=2" alt="Solitaire, FreeCell and Spider gameplay screenshot 1" class="game-screenshot" width="640" height="1391" fetchpriority="high" decoding="async"></div>
                     <div class="slider-nav"></div>
                 </div>
 
@@ -234,19 +267,19 @@
                         <li><a href="#spider">Spider</a></li>
                     </ul>
 
-                    <p style="margin:18px 0"><a href="/mobilityware-solitaire-alternative/" style="color:var(--c);font-weight:600">→ See how Solitaire, FreeCell and Spider compares to MobilityWare Solitaire</a></p>
+                    <p style="margin:18px 0"><a href="/mobilityware-solitaire-alternative/" style="color:var(--c-ink);font-weight:600">→ See how Solitaire, FreeCell and Spider compares to MobilityWare Solitaire</a></p>
 
                     <h2 id="klondike" class="variant-h2">Klondike Solitaire — Draw 1 &amp; Draw 3</h2>
                     <p><strong>Classic Klondike Solitaire</strong> is the version most people simply call "Solitaire" — the one that shipped with Windows for decades. Play it in both <strong>draw-one and draw-three</strong> modes (also called turn 1 and turn 3), with smart hints, unlimited undo, and auto-complete once the game is won. Pick a card face, a card back, and one of 13 background themes.</p>
-                    <p class="variant-guide">New here? <a href="/how-to-play-klondike-solitaire/" style="color:var(--c);font-weight:600">How to play Klondike Solitaire →</a></p>
+                    <p class="variant-guide">New here? <a href="/how-to-play-klondike-solitaire/" style="color:var(--c-ink);font-weight:600">How to play Klondike Solitaire →</a></p>
 
                     <h2 id="freecell" class="variant-h2">FreeCell Solitaire</h2>
                     <p><strong>FreeCell Solitaire</strong> is the strategy-first variant where <strong>nearly every deal is winnable</strong> — almost any game can be solved with the right moves, so it rewards planning over luck. (Some players type it as "free cell.") Free, fully offline, and with no pop-up ads on iPhone, iPad, and Android.</p>
-                    <p class="variant-guide">Learn the rules: <a href="/how-to-play-freecell/" style="color:var(--c);font-weight:600">How to play FreeCell →</a></p>
+                    <p class="variant-guide">Learn the rules: <a href="/how-to-play-freecell/" style="color:var(--c-ink);font-weight:600">How to play FreeCell →</a></p>
 
                     <h2 id="spider" class="variant-h2">Spider Solitaire — 1, 2 &amp; 4 Suit</h2>
                     <p><strong>Spider Solitaire</strong> comes in all three difficulties: <strong>1 suit</strong> (the easiest, great for first-timers), <strong>2 suit</strong> (the most popular everyday mode), and <strong>4 suit</strong> (the full classic challenge) — just like the Spider Solitaire many people remember from Windows. Switch difficulty whenever you like, and play offline with no pop-up ads.</p>
-                    <p class="variant-guide">Learn the rules: <a href="/how-to-play-spider-solitaire/" style="color:var(--c);font-weight:600">How to play Spider Solitaire →</a></p>
+                    <p class="variant-guide">Learn the rules: <a href="/how-to-play-spider-solitaire/" style="color:var(--c-ink);font-weight:600">How to play Spider Solitaire →</a></p>
 
                     <h2>Key Features</h2>
                     <ul>
@@ -286,10 +319,10 @@
                     <p>Klondike, FreeCell, and Spider in one free app for iPhone, iPad, iPod touch, and Android — no pop-up ads, works offline.</p>
                     <div class="store-badges" style="justify-content:center">
                         <a href="https://apps.apple.com/us/app/solitaire-freecell-spider/id6764765081" class="app-store-button" rel="noopener" target="_blank">
-                            <img src="/Images/common/app-store-badge.png" alt="Download Solitaire, FreeCell and Spider on the App Store" loading="lazy">
+                            <img width="718" height="240" src="/Images/common/app-store-badge.png" alt="Download Solitaire, FreeCell and Spider on the App Store" loading="lazy">
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.solitaire" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                            <img src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
+                            <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Solitaire, FreeCell and Spider on Google Play" loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -328,13 +361,12 @@
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
 
-    <script src="../game.js"></script>
-    <script src="/app-banner.js" defer></script>
+    <script src="../game.js" defer></script>
 
 </body>
 </html>

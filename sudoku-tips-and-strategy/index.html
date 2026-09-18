@@ -22,33 +22,33 @@
     <meta property="og:description" content="Sudoku strategy: learn the key techniques and tips to win more games — a clear guide for players who know the basics.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://asappsgames.com/sudoku-tips-and-strategy/">
-    <meta property="og:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-sudoku.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sudoku Tips &amp; Strategy">
     <meta name="twitter:description" content="Sudoku strategy: learn the key techniques and tips to win more games — a clear guide for players who know the basics.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-sudoku.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@graph": [
         {
             "@type": "Article",
+            "datePublished": "2026-06-17",
+            "dateModified": "2026-09-18",
             "headline": "Sudoku Tips & Strategy",
             "description": "Sudoku strategy: learn the key techniques and tips to win more games — a clear guide for players who know the basics.",
-            "author": {
-                "@type": "Organization",
-                "name": "ASApps Games",
-                "url": "https://asappsgames.com/"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "ASApps Games",
-                "url": "https://asappsgames.com/"
-            },
+            "author": { "@id": "https://asappsgames.com/#organization" },
+            "publisher": { "@id": "https://asappsgames.com/#organization" },
             "mainEntityOfPage": "https://asappsgames.com/sudoku-tips-and-strategy/"
         },
         {
@@ -126,6 +126,43 @@
                     "item": "https://asappsgames.com/sudoku-tips-and-strategy/"
                 }
             ]
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://asappsgames.com/#organization",
+            "name": "ASApps Games",
+            "alternateName": "AS Apps Games",
+            "url": "https://asappsgames.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://asappsgames.com/Images/common/icon-512.png",
+                "width": 512,
+                "height": 512
+            },
+            "image": "https://asappsgames.com/Images/common/og-studio.jpg",
+            "description": "Independent mobile game studio publishing five free puzzle and card games with no pop-up ads: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra. No full-screen interruptions, no required in-app purchases, no subscriptions, and every game works offline. All five are on the App Store for iPhone and iPad; Sudoku, Solitaire and Color Blocks are also on Google Play for Android.",
+            "foundingDate": "2016",
+            "knowsAbout": [
+                "Sudoku",
+                "Solitaire",
+                "Klondike",
+                "FreeCell",
+                "Spider Solitaire",
+                "Block puzzle games",
+                "Casual mobile puzzle games"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "support@asappsgames.com",
+                "contactType": "customer support",
+                "availableLanguage": "English"
+            },
+            "sameAs": [
+                "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                "https://play.google.com/store/apps/developer?id=ASAppsGamesAU",
+                "https://github.com/asappsgames",
+                "https://www.wikidata.org/wiki/Q140260149"
+            ]
         }
     ]
 }
@@ -135,9 +172,10 @@
     .guide-cta-btn{display:inline-block;background:var(--c);color:#0c0b11;font-weight:700;padding:14px 24px;border-radius:14px;transition:transform .15s ease}
     .guide-cta-btn:hover{transform:translateY(-2px)}
     </style>
-    <script src="../game.js"></script>
+    <script src="../game.js" defer></script>
 </head>
 <body data-accent="sudoku">
+    <script src="/app-banner.js"></script>
     <header>
         <nav>
             <a href="/" class="logo">ASApps Games</a>
@@ -158,7 +196,7 @@
                 <nav class="crumbs" aria-label="Breadcrumb"><a href="https://asappsgames.com/">Home</a> <span style="opacity:.5">&rsaquo;</span> <a href="https://asappsgames.com/guides/">Guides</a> <span style="opacity:.5">&rsaquo;</span> <strong>Sudoku Tips &amp; Strategy</strong></nav>
                 <h1>Sudoku Tips &amp; Strategy</h1>
                 <p class="lede">You already know the rules: every row, column, and 3x3 box must contain the digits 1 through 9 exactly once. This guide is about turning that knowledge into a reliable solving method. We&#x27;ll move from the techniques that crack easy puzzles to the logic that unlocks hard ones, in the exact order you should learn them, so each new idea builds naturally on the last.</p>
-                <p style="margin:6px 0 0"><a href="/how-to-play-sudoku/" style="color:var(--c);font-weight:600">New here? Start with How to Play Sudoku →</a></p>
+                <p style="margin:6px 0 0"><a href="/how-to-play-sudoku/" style="color:var(--c-ink);font-weight:600">New here? Start with How to Play Sudoku →</a></p>
                 <div class="game-detail-description">
                     <h2>Scanning and Cross-Hatching: Your First Move Every Time</h2>
                     <p>Scanning is the habit of picking one digit and sweeping it across the whole grid before touching anything else. Cross-hatching is the targeted version: you focus on a single 3x3 box and ask where one specific digit can go inside it. Take the digit 5. Look at the box you&#x27;re solving. Now trace every row and every column that already contains a 5 and mentally cross out all the cells those lines pass through. Since a 5 can&#x27;t repeat in any row, column, or box, those cells are eliminated. If only one empty cell in the box survives, that cell must be a 5. For example, if a box has a 5 sitting in the row above its top cells and another 5 in the column on its left, those two lines may eliminate every candidate cell except one, instantly placing your digit. Always start here, because it requires no notes and solves most easy puzzles entirely on its own.</p>
@@ -224,11 +262,10 @@
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
-    <script src="/app-banner.js" defer></script>
 
 </body>
 </html>

@@ -23,21 +23,29 @@
     <meta property="og:description" content="Drag and drop multi-color blocks and match 3 or more of the same color. Unlock new colors, create combos, and play without pop-up ads. Rated 4.7 stars.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asappsgames.com/color-blocks/">
-    <meta property="og:image" content="https://asappsgames.com/Images/color-blocks/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-color-blocks.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Color Blocks - Addictive Color Match Puzzle Game">
     <meta name="twitter:description" content="Drag and drop multi-color blocks and match 3 or more of the same color. No pop-up ads.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/color-blocks/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-color-blocks.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "VideoGame",
+                "@type": ["VideoGame", "MobileApplication"],
+                "datePublished": "2026-02-09",
+                "dateModified": "2026-09-18",
                 "@id": "https://asappsgames.com/color-blocks/#game",
                 "name": "Color Blocks - Block Match",
                 "alternateName": ["Color Blocks", "Color Blocks Wooduko"],
@@ -46,7 +54,7 @@
                 "applicationSubCategory": "Puzzle",
                 "genre": ["Puzzle", "Color Match", "Casual"],
                 "gamePlatform": ["iOS", "iPhone", "iPad", "Android"],
-                "operatingSystem": "iOS 13.0 or later; Android",
+                "operatingSystem": "iOS, Android",
                 "inLanguage": "en",
                 "offers": {
                     "@type": "Offer",
@@ -86,9 +94,33 @@
                 "name": "ASApps Games",
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
-                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent mobile game studio publishing puzzle games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases.",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://asappsgames.com/Images/common/icon-512.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "image": "https://asappsgames.com/Images/common/og-studio.jpg",
+                "description": "Independent mobile game studio publishing five free puzzle and card games with no pop-up ads: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra. No full-screen interruptions, no required in-app purchases, no subscriptions, and every game works offline. All five are on the App Store for iPhone and iPad; Sudoku, Solitaire and Color Blocks are also on Google Play for Android.",
+                "foundingDate": "2016",
+                "knowsAbout": [
+                    "Sudoku",
+                    "Solitaire",
+                    "Klondike",
+                    "FreeCell",
+                    "Spider Solitaire",
+                    "Block puzzle games",
+                    "Casual mobile puzzle games"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "support@asappsgames.com",
+                    "contactType": "customer support",
+                    "availableLanguage": "English"
+                },
                 "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://play.google.com/store/apps/developer?id=ASAppsGamesAU",
                     "https://github.com/asappsgames",
                     "https://www.wikidata.org/wiki/Q140260149"
                 ]
@@ -194,17 +226,18 @@
 
                 <div class="store-badges">
                     <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="app-store-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
+                        <img width="718" height="240" src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store">
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.colorBlocks" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                        <img src="/Images/common/google-play-badge.png" alt="Get Color Blocks on Google Play" loading="lazy">
+                        <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Color Blocks on Google Play">
                     </a>
                 </div>
             </div>
         </div>
         <section class="game-detail-section">
             <div class="game-detail-container animate-on-scroll">
-                <div class="game-slider" data-game="color-blocks">
+                <div class="game-slider" data-game="color-blocks" data-count="6">
+                    <div class="screenshot-container"><img src="/Images/color-blocks/screenshot1.webp?v=2" alt="Color Blocks gameplay screenshot 1" class="game-screenshot" width="640" height="1385" fetchpriority="high" decoding="async"></div>
                     <div class="slider-nav"></div>
                 </div>
 
@@ -264,10 +297,10 @@
                     <p>Available on iPhone, iPad, and iPod touch via the App Store, and on Android via Google Play.</p>
                     <div class="store-badges" style="justify-content:center">
                         <a href="https://apps.apple.com/us/app/color-blocks-block-match/id1476903896" class="app-store-button" rel="noopener" target="_blank">
-                            <img src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
+                            <img width="718" height="240" src="/Images/common/app-store-badge.png" alt="Download Color Blocks on the App Store" loading="lazy">
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=com.ASAppsGamesAU.colorBlocks" class="app-store-button google-play-button" rel="noopener" target="_blank">
-                            <img src="/Images/common/google-play-badge.png" alt="Get Color Blocks on Google Play" loading="lazy">
+                            <img width="646" height="250" src="/Images/common/google-play-badge.png" alt="Get Color Blocks on Google Play" loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -306,13 +339,12 @@
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
 
-    <script src="../game.js"></script>
-    <script src="/app-banner.js" defer></script>
+    <script src="../game.js" defer></script>
 
 </body>
 </html>

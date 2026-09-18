@@ -1,21 +1,31 @@
 /* ASApps Games — game detail page script (gallery + mobile menu + reveal) */
 document.addEventListener('DOMContentLoaded', function () {
 
-    /* --- Screenshot gallery: auto-discover screenshots, build device-framed strip --- */
+    /* --- Screenshot gallery: build device-framed strip ---
+       The first screenshot is static HTML (so it is the LCP image and reserves its
+       space — no layout shift). data-count says how many exist, so the rest are added
+       without probing for a missing file (no 404 in the console). Falls back to
+       probing when data-count is absent. --- */
     document.querySelectorAll('.game-slider').forEach(function (slider) {
         var folder = slider.dataset.game;
         if (!folder) return;
         var nav = slider.querySelector('.slider-nav');
-        var index = 1;
+        var count = parseInt(slider.dataset.count, 10) || 0;
+        var index = slider.querySelectorAll('.screenshot-container').length + 1;
+        var titleEl = document.querySelector('.game-detail-header h1');
+        var label = titleEl ? titleEl.textContent.trim() : folder.replace(/-/g, ' ');
 
-        function add(path) {
+        function pathFor(i) { return '/Images/' + folder + '/screenshot' + i + '.webp?v=2'; }
+
+        function add(path, i) {
             var container = document.createElement('div');
             container.className = 'screenshot-container';
             var img = document.createElement('img');
             img.src = path;
-            img.alt = folder.replace('-', ' ') + ' gameplay screenshot';
+            img.alt = label + ' gameplay screenshot ' + i;
             img.className = 'game-screenshot';
             img.loading = 'lazy';
+            img.decoding = 'async';
             img.width = 640;
             img.height = (folder === 'solitaire' || folder === 'blocks') ? 1391 : 1385;
             container.appendChild(img);
@@ -24,12 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function probe() {
             var test = new Image();
-            var path = '../Images/' + folder + '/screenshot' + index + '.webp?v=2';
-            test.onload = function () { add(path); index++; probe(); };
+            var path = pathFor(index);
+            test.onload = function () { add(path, index); index++; probe(); };
             test.onerror = function () { /* stop at first missing */ };
             test.src = path;
         }
-        probe();
+
+        if (count) { for (; index <= count; index++) add(pathFor(index), index); }
+        else probe();
     });
 
     /* --- Mobile hamburger menu --- */

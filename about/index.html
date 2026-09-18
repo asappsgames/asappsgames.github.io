@@ -21,21 +21,29 @@
     <meta property="og:description" content="A small independent mobile studio making puzzle and card games that respect your time — no pop-up ads, no subscriptions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asappsgames.com/about/">
-    <meta property="og:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta property="og:image" content="https://asappsgames.com/Images/common/og-studio.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ASApps Games">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About ASApps Games">
     <meta name="twitter:description" content="A small independent mobile studio making puzzle and card games with no pop-up ads.">
-    <meta name="twitter:image" content="https://asappsgames.com/Images/sudoku/screenshot1.png">
+    <meta name="twitter:image" content="https://asappsgames.com/Images/common/og-studio.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230C0B11'/><text x='50%25' y='55%25' text-anchor='middle' dominant-baseline='central' font-size='18' font-weight='bold' fill='%23FF5A45'>A</text></svg>">
     <link rel="stylesheet" href="../game.css">
     <link rel="stylesheet" href="/fonts/poppins.css">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-600.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-800.woff2" crossorigin>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": ["AboutPage", "WebPage"],
+                "datePublished": "2026-06-17",
+                "dateModified": "2026-09-18",
                 "@id": "https://asappsgames.com/about/#webpage",
                 "url": "https://asappsgames.com/about/",
                 "name": "About ASApps Games",
@@ -49,16 +57,33 @@
                 "name": "ASApps Games",
                 "alternateName": "AS Apps Games",
                 "url": "https://asappsgames.com/",
-                "logo": "https://asappsgames.com/Images/common/app-store-badge.png",
-                "description": "Independent mobile game studio publishing puzzle and card games with no pop-up ads. No pop-up ads, no full-screen interruptions, no required in-app purchases, no subscriptions to play. Five titles on iPhone and iPad, with Sudoku, Solitaire, FreeCell and Spider, and Color Blocks also on Android via Google Play.",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://asappsgames.com/Images/common/icon-512.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "image": "https://asappsgames.com/Images/common/og-studio.jpg",
+                "description": "Independent mobile game studio publishing five free puzzle and card games with no pop-up ads: Sudoku No Pop-up Ads, Solitaire, FreeCell and Spider, Color Blocks, Block Blast Puzzle Jewel, and Sudoku Blocks, Tetra. No full-screen interruptions, no required in-app purchases, no subscriptions, and every game works offline. All five are on the App Store for iPhone and iPad; Sudoku, Solitaire and Color Blocks are also on Google Play for Android.",
                 "foundingDate": "2016",
-                "knowsAbout": ["Sudoku", "Solitaire", "Klondike", "FreeCell", "Spider Solitaire", "Block puzzle games", "Casual mobile puzzle games"],
+                "knowsAbout": [
+                    "Sudoku",
+                    "Solitaire",
+                    "Klondike",
+                    "FreeCell",
+                    "Spider Solitaire",
+                    "Block puzzle games",
+                    "Casual mobile puzzle games"
+                ],
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "email": "support@asappsgames.com",
-                    "contactType": "customer support"
+                    "contactType": "customer support",
+                    "availableLanguage": "English"
                 },
                 "sameAs": [
+                    "https://apps.apple.com/us/developer/faraj-ebrahimi/id1130781534",
+                    "https://play.google.com/store/apps/developer?id=ASAppsGamesAU",
                     "https://github.com/asappsgames",
                     "https://www.wikidata.org/wiki/Q140260149"
                 ]
@@ -84,9 +109,10 @@
     .guide-cta-btn{display:inline-block;background:var(--c);color:#0c0b11;font-weight:700;padding:14px 24px;border-radius:14px;transition:transform .15s ease}
     .guide-cta-btn:hover{transform:translateY(-2px)}
     </style>
-    <script src="../game.js"></script>
+    <script src="../game.js" defer></script>
 </head>
-<body style="--c:#FFB23E">
+<body style="--c:#FFB23E;--c-ink:#A76400">
+    <script src="/app-banner.js"></script>
     <header>
         <nav>
             <a href="/" class="logo">ASApps Games</a>
@@ -135,7 +161,7 @@
                     </ul>
 
                     <h2>Built for iPhone, iPad &amp; Android</h2>
-                    <p>All our games are built for iPhone and iPad, and Sudoku, Solitaire, FreeCell and Spider, and Color Blocks are also available on Android via Google Play. They play offline and are updated regularly based on player feedback. We're a tiny team, we read every message, and we'd genuinely love to hear from you at <a href="mailto:support@asappsgames.com" style="color:var(--c);font-weight:600">support@asappsgames.com</a>.</p>
+                    <p>All our games are built for iPhone and iPad, and Sudoku, Solitaire, FreeCell and Spider, and Color Blocks are also available on Android via Google Play. They play offline and are updated regularly based on player feedback. We're a tiny team, we read every message, and we'd genuinely love to hear from you at <a href="mailto:support@asappsgames.com" style="color:var(--c-ink);font-weight:600">support@asappsgames.com</a>.</p>
                 </div>
 
                 <div class="game-detail-cta">
@@ -156,11 +182,10 @@
                 <a href="/contact.html">Contact</a>
             </div>
             <div class="copyright">
-                &copy; 2025 ASApps Games. All rights reserved.<br><span style="opacity:.6;font-size:12px">Last updated June 2026</span>
+                &copy; 2026 ASApps Games. All rights reserved.<br><span class="updated">Last updated <time datetime="2026-09-18">18 September 2026</time></span>
             </div>
         </div>
     </footer>
-    <script src="/app-banner.js" defer></script>
 
 </body>
 </html>
