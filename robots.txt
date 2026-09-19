@@ -1,3 +1,10 @@
+# asappsgames.com crawler policy
+# Everything is open on purpose. Search engines, the AI search/citation crawlers
+# (Googlebot, Bingbot, Applebot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot,
+# Claude-User, PerplexityBot) and model-training crawlers (GPTBot, ClaudeBot,
+# Google-Extended, Applebot-Extended, CCBot, ...) may all read the site.
+# To opt out of model training later, add "User-agent: <bot>" + "Disallow: /"
+# groups for the training bots only; never block the search/citation crawlers.
 User-agent: *
 Allow: /
 

@@ -14,6 +14,8 @@
 
 - [Studio homepage](https://asappsgames.com/): Overview of all five games and the studio's no-pop-up-ads philosophy.
 - [GitHub](https://github.com/asappsgames): Studio's GitHub presence.
+- [Facebook](https://www.facebook.com/ASApps-Games-534413823415111/): Studio Facebook page.
+- [Instagram](https://www.instagram.com/asappsgames): Studio Instagram account.
 - [Contact](https://asappsgames.com/contact.html): Email contact for support and feedback (support@asappsgames.com).
 - [Privacy policy](https://asappsgames.com/Privacy-Policy/): How player data is handled.
 

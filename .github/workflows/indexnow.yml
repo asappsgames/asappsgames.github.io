@@ -1,0 +1,65 @@
+# Tell Bing (and the other IndexNow engines: Yandex, Naver, Seznam, Yep) which
+# pages changed, right after each push has been deployed by GitHub Pages.
+# The key is public by design; it only proves that whoever pings owns the site,
+# because the same key is served from https://asappsgames.com/<key>.txt
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    env:
+      HOST: asappsgames.com
+      KEY: 596d71feafc70b880ba7806f553fe147
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work out which page URLs changed in this push
+        id: urls
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then BEFORE="${{ github.sha }}~1"; fi
+          git diff --name-only --diff-filter=AM "$BEFORE" "${{ github.sha }}" -- '*.html' \
+            | grep -vE '^(404\.html|_mockups/|_tools/|\.github/)' \
+            | sed -E 's#(^|/)index\.html$#\1#' \
+            | sed -E "s#^#https://$HOST/#" \
+            | sort -u > urls.txt || true
+          echo "count=$(wc -l < urls.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "Changed page URLs:"; cat urls.txt
+
+      - name: Wait until GitHub Pages has deployed this commit
+        if: steps.urls.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 40); do
+            J=$(gh api "repos/${{ github.repository }}/pages/builds/latest" 2>/dev/null || echo '{}')
+            SHA=$(echo "$J" | jq -r '.commit // empty'); ST=$(echo "$J" | jq -r '.status // empty')
+            echo "build: $ST $SHA"
+            if [ "$SHA" = "${{ github.sha }}" ] && [ "$ST" = "built" ]; then exit 0; fi
+            if [ -z "$SHA" ] && [ "$i" -ge 3 ]; then echo "Pages API unavailable; falling back to a fixed wait"; sleep 120; exit 0; fi
+            sleep 15
+          done
+          echo "Pages build not confirmed after 10 minutes; pinging anyway"
+
+      - name: Submit to IndexNow
+        if: steps.urls.outputs.count != '0'
+        run: |
+          jq -n --arg host "$HOST" --arg key "$KEY" \
+                --arg keyLocation "https://$HOST/$KEY.txt" \
+                --rawfile urls urls.txt \
+                '{host:$host, key:$key, keyLocation:$keyLocation, urlList:($urls | split("\n") | map(select(length>0)))}' > body.json
+          cat body.json
+          CODE=$(curl -s -o response.txt -w '%{http_code}' -X POST "https://api.indexnow.org/indexnow" \
+                 -H 'Content-Type: application/json; charset=utf-8' --data-binary @body.json)
+          echo "IndexNow HTTP $CODE"; cat response.txt || true
+          case "$CODE" in 200|202) exit 0 ;; *) exit 1 ;; esac
